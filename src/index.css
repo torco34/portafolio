@@ -2,10 +2,10 @@
   margin: 0px;
 }
 body {
-  margin: 0;
-  display: flex;
+  /* margin: 0; */
+  /* display: flex; */
   /* place-items: center; */
-  min-width: 320px;
-  min-height: 100vh;
-  background-color: #747bff;
+  /* min-width: 100%; */
+  /* min-height: 100vh; */
+  /* background-color: #747bff; */
 }
