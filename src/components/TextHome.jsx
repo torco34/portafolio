@@ -1,5 +1,5 @@
 import React from "react";
 
 export const TextHome = () => {
-  return <div>TextHome</div>;
+  return <div>TextHome </div>;
 };
