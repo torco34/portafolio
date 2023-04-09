@@ -1,0 +1,40 @@
+header {
+  padding: 2rem;
+  text-align: center;
+  background-color: aquamarine;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  background-color: #333;
+}
+nav a {
+  color: #ddd;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+aside {
+  flex: 30px;
+  background-color: bisque;
+  padding: 20px;
+}
+section {
+  flex: 70%;
+  background-color: rgb(188, 126, 50);
+  padding: 20px;
+  width: ;
+}
+footer {
+  background-color: #333;
+  height: 20px;
+}
+@media screen and (max-width: 750px) {
+  nav ul,
+  .row {
+    flex-direction: column;
+  }
+}
