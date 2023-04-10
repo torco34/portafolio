@@ -1,40 +1,113 @@
-header {
-  padding: 2rem;
-  text-align: center;
-  background-color: aquamarine;
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;600;800&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Work Sans";
+  margin: 0;
+  padding: 0;
 }
-nav ul {
-  display: flex;
-  flex-direction: row;
-  background-color: #333;
+body {
+  font-size: calc(0.5em + 0.5vw);
 }
-nav a {
-  color: #ddd;
-  padding: 14px 20px;
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+/* HEADER LISTA */
+.color {
+  color: #f9f8f7;
   text-decoration: none;
+  padding: 0px;
+  margin: 10px;
 }
-.row {
+.color.active {
+  color: #da985a;
+}
+.color:hover {
+  color: #da985a;
+}
+.navbar-nav {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
-aside {
-  flex: 30px;
-  background-color: bisque;
-  padding: 20px;
+/* CUERPO PAGINA */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 1;
 }
-section {
-  flex: 70%;
-  background-color: rgb(188, 126, 50);
-  padding: 20px;
-  width: ;
+.icono a {
+  width: 100%;
+  margin-left: 1rem;
+  font-size: calc(0.7em + 0.7vw);
 }
-footer {
-  background-color: #333;
-  height: 20px;
+.div-img {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
-@media screen and (max-width: 750px) {
-  nav ul,
-  .row {
-    flex-direction: column;
-  }
+.container-img-div {
+  position: absolute;
+  /* top: 200px; */
+  width: 30%;
+  background-color: #1a1211;
+  height: 80vh;
+  /* border: #da985a solid 2px; */
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+.container-img {
+  /* border: #da985a solid 2px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.div-img img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+}
+
+.div-img:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: linear-gradient(rgba(30, 27, 24, 0.9), rgb(35, 33, 31));
+}
+/* IMG REDONDA */
+
+.div-img {
+}
+.div-img-redond img {
+  border: 10px solid #da985a;
+  box-shadow: 0px 10px 14px rgba(0, 0, 0.2);
+  border-radius: 50%;
+  height: auto;
+  overflow: hidden;
+  object-fit: cover;
+  height: 200px;
+  width: 200px;
+}
+.paleta {
+  color: #da985a;
+  color: #4f430e;
+  color: #8ec4bf;
+  color: #55778c;
+}
+.paleta2 {
+  color: #a57c69;
+  color: #1a1211;
+  color: #d6d0d1;
+  color: #5c3327;
 }
