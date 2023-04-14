@@ -6,7 +6,7 @@
   padding: 0;
 }
 body {
-  font-size: calc(0.5em + 0.5vw);
+  font-size: calc(0.6em + 0.6vw);
 }
 html {
   font-size: 62.5%;
@@ -47,12 +47,13 @@ html {
 .container-img-grande {
   background-image: linear-gradient(
       to top,
-      rgba(30, 35, 38, 0.8),
-      rgb(30, 35, 38, 1)
+      rgba(75, 104, 107, 0.8),
+      rgb(0, 0, 0, 1)
     ),
     url(../img/index2.jpg);
   background-size: cover;
   height: 100vh;
+  width: 100%;
   color: aliceblue;
   display: flex;
   justify-content: center;
@@ -63,8 +64,8 @@ html {
 .container-img-grande .container-img-pequena {
   padding: 3rem;
   background-color: #1e2326;
-  height: 70vh;
   max-width: 450px;
+  width: 100%;
   margin: auto;
   align-items: center;
   border-radius: 5%;
@@ -76,10 +77,11 @@ html {
 
 .container-img-pequena img {
   margin-top: 4rem;
-  border: 10px solid #da985a;
+  border: 12px solid #da985a;
   display: block;
   flex-direction: column;
   width: 80%;
+  box-shadow: 0px 10px 14px rgba(0, 0, 0.2);
   margin: auto;
   border-radius: 100%;
   overflow: hidden;
@@ -94,11 +96,14 @@ html {
 .container-img-pequena h1 {
   margin-top: 4rem;
   font-size: 3rem;
+  font-weight: bold;
   font-family: "Righteous";
+  text-align: center;
 }
 .container-img-pequena h2 {
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-family: normal;
+  text-align: center;
 }
 .container-img-pequena .redes-sociales {
   display: flex;
@@ -124,7 +129,7 @@ html {
 
 .container-img-pequena .redes-sociales a:hover {
   background-color: #da985a;
-  color: #1a1211;
+  /* color: #1a1211; */
 }
 /* ////// */
 /* SECTION  S O B R E  M I */
@@ -132,8 +137,9 @@ html {
 .sobremi {
   background-color: #1e2326;
   color: #d6d0d1;
+  width: 100%;
   padding: 50px 20px;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 .sobremi h2 {
   font-size: 4rem;
@@ -141,10 +147,12 @@ html {
   text-align: center;
   padding: 2rem 0;
   font-weight: bold;
+  width: 100%;
 }
 .sobremi .container-sobre-mi {
-  max-width: 1100px;
   margin: auto;
+  width: 100%;
+  flex-direction: column;
 }
 
 .sobremi .container-sobre-mi p {
@@ -157,16 +165,16 @@ html {
   font-weight: bold;
 }
 .sobremi .fila .col {
-  width: 50%;
   font-family: "Righteous";
 }
 .sobremi .fila {
-  display: flex;
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
 
 .sobremi .fila .col h3 {
-  font-size: 2.5rem;
-  /* font-size: calc(1em + 1vw); */
+  font-size: 3rem;
   font-family: "Righteous";
   margin-bottom: 2.5rem;
   font-weight: bold;
@@ -202,7 +210,7 @@ html {
 .sobremi .fila .col .container-intereses .interes {
   width: 100px;
   height: 100px;
-  background-color: #1a1211;
+  background-color: #252a2e;
   margin: 0 15px 15px 0;
   display: flex;
   flex-direction: column;
@@ -223,13 +231,14 @@ html {
   background-color: #da985a;
 }
 .sobremi .fila .col .container-intereses .interes i {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 .sobremi button {
   cursor: pointer;
   background-color: transparent;
   border: 2px solid #fff;
+  border-radius: 10px;
   width: fit-content;
   display: block;
   margin: 2rem auto;
@@ -238,8 +247,13 @@ html {
   color: #fff;
   position: relative;
   z-index: 1;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
-.sobremi button .overlay {
+
+.sobremi a button .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -248,10 +262,17 @@ html {
   background-color: #da985a;
   z-index: -1;
   transition: 1s;
-  -webkit-transition: 1s;
-  -moz-transition: 1s;
-  -ms-transition: 1s;
-  -o-transition: 1s;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.sobremi a {
+  text-decoration: none;
+}
+.sobremi a button i {
+  font-size: 3rem;
 }
 .sobremi button:hover .overlay {
   width: 100%;
@@ -261,7 +282,10 @@ html {
   background-color: #1e2326;
   color: #d6d0d1;
   padding: 50px 20px;
-  /* font-size: 1.6rem; */
+
+  /* margin: auto;
+  width: 100%;
+  flex-direction: column; */
 }
 .habilidades h2 {
   font-size: 4rem;
@@ -271,20 +295,25 @@ html {
   font-weight: bold;
 }
 .habilidades .container-habilidades {
-  max-width: 1100px;
+  /* max-width: 1100px; */
+  /* margin: auto; */
   margin: auto;
+  width: 100%;
+  flex-direction: column;
 }
 /* hh */
 .habilidades .fila {
-  display: flex;
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
 
 .habilidades .fila .col {
-  width: 50%;
+  width: 100%;
   padding: 0 20px;
 }
 .habilidades .fila h3 {
-  font-size: 2rem;
+  font-size: 3rem;
   /* font-size: calc(1em + 1vw); */
   font-family: "Righteous";
   margin-bottom: 2.5rem;
@@ -339,7 +368,7 @@ html {
     width: 0%;
   }
   100% {
-    width: 70%;
+    width: 40%;
   }
 }
 
@@ -370,23 +399,22 @@ html {
     width: 0%;
   }
   100% {
-    width: 80%;
+    width: 40%;
   }
 }
-
-/* gitgithub */
-.habilidades .habilida .gitgithub {
+/* los que falta   */
+.habilidades .habilida .gitHub {
   width: 0%;
-  animation: 2s gitgithub forwards;
-  -webkit-animation: 2s gitgithub forwards;
+  animation: 2s gitHub forwards;
+  -webkit-animation: 2s gitHub forwards;
 }
 
-@keyframes gitgithub {
+@keyframes gitHub {
   0% {
     width: 0%;
   }
   100% {
-    width: 30%;
+    width: 40%;
   }
 }
 
@@ -402,7 +430,82 @@ html {
     width: 0%;
   }
   100% {
-    width: 20%;
+    width: 30%;
+  }
+}
+
+/* gitgithub */
+.habilidades .habilida .comunicacion {
+  width: 0%;
+  animation: 2s comunicacion forwards;
+  -webkit-animation: 2s comunicacion forwards;
+}
+
+@keyframes comunicacion {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+.habilidades .habilida .equipo {
+  width: 0%;
+  animation: 2s equipo forwards;
+  -webkit-animation: 2s equipo forwards;
+}
+
+@keyframes equipo {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+.habilidades .habilida .creativid {
+  width: 0%;
+  animation: 2s creativid forwards;
+  -webkit-animation: 2s creativid forwards;
+}
+
+@keyframes creativid {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+.habilidades .habilida .dedicacio {
+  width: 0%;
+  animation: 2s dedicacio forwards;
+  -webkit-animation: 2s dedicacio forwards;
+}
+
+@keyframes dedicacio {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+.habilidades .habilida .proyecto {
+  width: 0%;
+  animation: 2s proyecto forwards;
+  -webkit-animation: 2s proyecto forwards;
+}
+
+@keyframes proyecto {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
   }
 }
 /* SECTION DE CURRICULUM */
@@ -425,14 +528,16 @@ html {
 }
 
 .curriculum .fila {
-  display: flex;
-  justify-content: space-between;
-  gap: 2.5rem;
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+
+  gap: 1rem;
 }
 
 .curriculum .fila .col {
   font-size: 4rem;
-  width: 49%;
+  width: 100%;
   padding: 0 20px;
 }
 .curriculum .fila .col h3 {
@@ -465,7 +570,6 @@ html {
   color: #da985a;
   display: block;
   font-size: 22px;
-
   font-weight: bold;
 }
 .curriculum .fila .item .fecha {
@@ -504,6 +608,10 @@ html {
   float: right;
   position: relative;
   bottom: 4px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 /*  */
 .curriculum .fila .item .conector {
@@ -525,12 +633,20 @@ html {
   float: left;
   position: relative;
   bottom: 4px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 /* portafoli */
 .portafolio {
   background-color: #252a2e;
   color: #d6d0d1;
   padding: 50px 20px;
+  display: grid;
+  /* border: solid 5px #f17508; */
+
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
 .portafolio .contenerdo-seccio {
   max-width: 1100px;
@@ -543,12 +659,12 @@ html {
   text-align: center;
   padding: 2rem 0;
   font-weight: bold;
+  /* border: solid 5px #2e1fb8; */
 }
 .portafolio .galeria {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  /* border: solid 2px red; */
+  /* border: solid 5px #2e1fb8; */
 }
 .portafolio .galeria .proyecto {
   position: relative;
@@ -595,6 +711,169 @@ html {
 .overlay:hover h3 {
   margin-bottom: 0px;
   transition: 1s;
+}
+
+/* CONTACTO */
+
+.contacto {
+  background-image: url(../img/mapa.jpeg);
+  background-color: #1a1211;
+  color: #d6d0d1;
+  padding: 50px 0;
+}
+.contacto .contenido-seccion {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  border: solid 5px #f17508;
+
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+.contacto h2 {
+  font-size: 48px;
+  font-family: "Ri";
+  text-align: center;
+  padding: 20px 0;
+}
+.contacto .fila {
+  display: flex;
+}
+
+.contacto .col {
+  width: 50%;
+  padding: 10px;
+  position: relative;
+}
+.contacto .col input,
+.contacto .col textarea {
+  display: block;
+  width: 100%;
+  padding: 2rem;
+  border: none;
+  margin-bottom: 2rem;
+  background-color: #252a2e;
+  color: #fff;
+  font-size: 2rem;
+}
+.contacto button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #fff;
+  width: fit-content;
+  display: block;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.contacto button .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #da985a;
+  z-index: -1;
+  transition: 1s;
+  -webkit-transition: ;
+  -moz-transition: ;
+  -ms-transition: ;
+  -o-transition: ;
+}
+
+.contacto button:hover .overlay {
+  width: 100%;
+}
+
+.contacto .col img {
+  width: 100%;
+  height: 100vh;
+}
+.contacto .col .info {
+  position: absolute;
+  top: 40%;
+  background-color: #252a2e;
+  padding: 2rem;
+  max-width: 600rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.contacto .col .info ul {
+  list-style: none;
+}
+
+.contacto .col .info ul li {
+  margin-bottom: 2rem;
+}
+.contacto .col .info ul li i {
+  color: #da985a;
+  display: inline-block;
+  margin-right: 30px;
+}
+/* footer */
+footer {
+  background-color: #252a2e;
+  color: #d6d0d1;
+  padding: 50px 0 30px 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+footer .redes {
+  margin-bottom: 20px;
+}
+footer .redes a {
+  /*margin-bottom: 20px;
+  */
+  color: #d6d0d1;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #d6d0d1;
+  border-radius: 100%;
+  width: 4rem;
+  height: 4rem;
+  line-height: 42px;
+  transition: 3s;
+  font-size: 2rem;
+  margin: 4rem 1rem;
+  text-align: center;
+  -webkit-transition: 3s;
+  -moz-transition: 3s;
+  -ms-transition: 3s;
+  -o-transition: 3s;
+}
+footer .arriba {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #da985a;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: -25px;
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  line-height: 50px;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 980px) {
 }
 .paleta {
   color: #da985a;
