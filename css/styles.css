@@ -9,26 +9,24 @@
 }
 body {
   font-size: calc(0.6em + 0.6vw);
+  /* overflow: hidden; */
 }
-:root {
-  --purpe: #a38cb5;
-  --negro: #2b2537;
-  --beige: #f3f3ff;
-  --blanco: #ffffff;
-  --amartillo: #f4f08f;
-}
+
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; 
+  /* overflow: hidden; */
+
 }
 /* HEADER LISTA */
 
 .navbar {
   position: fixed;
   width: 100%;
+  left: 0;
   top: 0px;
   z-index: 1;
-  padding: 2rem;
+
   background-color: #494228;
 }
 /* botón responsive */
@@ -67,6 +65,7 @@ html {
     url(../img/fondo.jpg);
   background-size: cover;
   height: 100vh;
+top: 2rem;
   width: 100%;
   color: #494228;
   color: #F5F5F5;
@@ -103,10 +102,7 @@ html {
   object-fit: cover;
   height: 200px;
   width: 200px;
-  -webkit-border-radius:;
-  -moz-border-radius:;
-  -ms-border-radius:;
-  -o-border-radius:;
+
 }
 .container-img-pequena h1 {
   margin-top: 5rem;
@@ -140,10 +136,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  -webkit-border-radius:;
-  -moz-border-radius:;
-  -ms-border-radius:;
-  -o-border-radius:;
+
 }
 
 .container-img-pequena .redes-sociales a:hover {
@@ -156,11 +149,11 @@ html {
 /* SECTION  S O B R E  M I */
 
 .sobremi {
-  font-size: 3rem;
+  font-size: 1rem;
   background-color: var(--beige);
   color: #3f385fb3;
   width: 100%;
-  padding: 50px 20px;
+  /* padding: 50px 20px; */
   max-height: 100%;
   padding-top: 5rem;
 }
@@ -195,10 +188,11 @@ html {
 }
 
 .sobremi .container-sobre-mi p span {
-  font-size: 3rem;
+  font-size: 1rem;
   color: #a38cb5;
   font-family: "Bebas Neue", sans-serif;
   font-weight: bold;
+
 }
 .sobremi .fila .col {
   font-family: "Righteous";
@@ -212,7 +206,7 @@ html {
   font-size: 3rem;
   margin-bottom: 4rem;
   font-weight: bold;
-  /* border: solid red 1px; */
+  border: solid rgb(30, 255, 0) 1px;
   font-family: "Bebas Neue", sans-serif;
   margin-top: 7rem;
   color: var(--purpe);
@@ -224,7 +218,10 @@ html {
   margin: 3rem 0;
   font-family: "Open Sans", sans-serif;
 }
-
+/* estetete */
+.container-intereses{
+ 
+}
 .sobremi .fila .col ul li strong {
   display: inline-block;
   color: #a38cb5;
@@ -245,7 +242,8 @@ html {
 }
 /* entereses */
 .sobremi .fila .col .container-intereses {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   flex-direction: wrap;
   /* border: solid red 1px; */
 }
@@ -265,10 +263,10 @@ html {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
+  -webkit-transition:;
+  -moz-transition:;
+  -ms-transition:;
+  -o-transition:;
 }
 .sobremi .fila .col .container-intereses .interes:hover {
   background-color: #f1f0a5;
@@ -352,27 +350,26 @@ html {
   background-image: linear-gradient(to top, var(--purpe), var(--negro));
 }
 .habilidades .container-habilidades {
-  margin: auto;
-  width: 100%;
-  /* border: solid red 2px; */
-  padding: 100px;
+
+  /* width: 100%; */
+  border: solid rgb(162, 0, 255) 2px;
+  /* padding: 100px; */
   flex-direction: column;
 }
 /* hh */
 .habilidades .fila {
   display: grid;
-  padding: 2rem;
-  /* border: solid 2px rgb(115, 255, 0); */
+  padding: 1rem;
+  border: solid 2px rgb(115, 255, 0);
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
 }
 
 .habilidades .fila .col {
   width: 100%;
-  padding: 0 20px;
+  /* padding: 0 20px; */
 }
 .habilidades .fila h3 {
-  font-size: 3rem;
-
+  /* font-size: 1rem; */
   font-family: "Righteous";
   margin-bottom: 2.5rem;
   font-weight: bold;
@@ -380,7 +377,9 @@ html {
 .habilidades .habilida > span {
   font-weight: bold;
   display: block;
+  width: 50%;
   margin-bottom: 10px;
+  border: solid rgb(255, 251, 0) 2px;
 }
 .habilidades .habilida .barra-habilidades {
   height: 8px;
@@ -388,6 +387,7 @@ html {
   background-color: #1a1211;
   position: relative;
   margin-bottom: 30px;
+  border: solid red 2px;
 }
 .habilidades .habilida .progreso {
   background-color: var(--amartillo);
@@ -405,20 +405,22 @@ html {
   border-radius: 100px;
   line-height: 3rem;
   text-align: center;
+  border: solid rgb(38, 255, 0) 2px;
   top: -1rem;
   right: -2px;
   font-size: 1.5rem;
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
 }
 /* con javascrip  */
 .habilidades .habilida .javascript {
   width: 0%;
   animation: 2s javascript forwards;
   -webkit-animation: 2s javascript forwards;
+  border: solid red 2px;
 }
 
 @keyframes javascript {
@@ -505,12 +507,14 @@ html {
   }
   100% {
     width: 50%;
+    border: solid 2px rgb(115, 255, 0);
   }
 }
 .habilidades .habilida .equipo {
   width: 0%;
   animation: 2s equipo forwards;
   -webkit-animation: 2s equipo forwards;
+
 }
 
 @keyframes equipo {
@@ -590,6 +594,7 @@ html {
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 3rem;
   padding: 2rem;
+  border: solid red 2px;
 }
 
 .curriculum .fila .col {
