@@ -1,0 +1,439 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Work Sans";
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+}
+body {
+  font-size: calc(0.6em + 0.6vw);
+  /* overflow: hidden; */
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+.imgfondo {
+  background-image: linear-gradient(
+      to top,
+      rgb(70, 130, 169, 0.9),
+      rgba(240, 243, 244, 0.6)
+    ),
+    url(../img/imagen.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div-img {
+  width: 100%;
+  background-color: #f8f9fa;
+  display: flex;
+  color: #454040;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.div-img img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 3px solid #749bc2; /* Color del borde */
+  box-shadow: 0px 10px 14px rgba(0, 0, 0.2);
+}
+/* SOBRE MI */
+.sobre {
+  background-image: linear-gradient(
+    to top,
+    rgb(70, 130, 169, 0.9),
+    rgba(240, 243, 244, 0.6)
+  );
+
+  font-size: 2.5rem;
+  padding: 4rem;
+}
+.texto h2 {
+  font-size: 3rem;
+}
+.iconos {
+  gap: 10px;
+}
+.holaSoytorco {
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: "Bebas Neue", sans-serif;
+}
+.iconos {
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+/* hablidades */
+.habilida .barra-habilidades {
+  height: 20px;
+  width: 60%;
+  background-color: #91c8e4;
+  position: relative;
+  margin-bottom: 30px;
+}
+.habilida > span {
+  font-weight: bold;
+  display: block;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.habilida .progreso {
+  background-color: #4682a9;
+  position: absolute;
+  height: 20px;
+}
+
+.habilida .barra-habilidades span {
+  position: absolute;
+  background-color: #f6f4eb;
+  color: var(--negro);
+  height: 3rem;
+  width: 3rem;
+  border-radius: 100px;
+  line-height: 3rem;
+  text-align: center;
+  top: -1rem;
+  right: -2px;
+  font-size: 1rem;
+  border-radius: 50%;
+  /* color: #4682a9; */
+}
+.habilida .javascript {
+  width: 0%;
+  animation: 2s javascript forwards;
+  -webkit-animation: 2s javascript forwards;
+  width: 50%;
+  /* background-color: #4682a9; */
+}
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+.habilida .htmlcss {
+  animation: 3s htmlcss forwards;
+  -webkit-animation: 3s htmlcss forwards;
+  /* background-color: #4682a9; */
+}
+@keyframes htmlcss {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+/* 3 */
+.habilida .bootstrap {
+  width: 0%;
+  animation: 2s bootstrap forwards;
+  -webkit-animation: 2s bootstrap forwards;
+}
+
+@keyframes bootstrap {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 40%;
+  }
+}
+/* 4 */
+.habilida .gitHub {
+  width: 0%;
+  animation: 2s gitHub forwards;
+  -webkit-animation: 2s gitHub forwards;
+}
+
+@keyframes gitHub {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+/* 5 */
+.habilida .react {
+  width: 0%;
+  animation: 2s react forwards;
+  -webkit-animation: 2s react forwards;
+}
+
+@keyframes react {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+.habilida .typescript {
+  width: 0%;
+  animation: 2s typescript forwards;
+  -webkit-animation: 2s typescript forwards;
+}
+
+@keyframes typescript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+/* KEYFRAMES DERECHO */
+
+/* 1  COMUNICACIONES*/
+.habilida .comunicacion {
+  width: 0%;
+  animation: 2s comunicacion forwards;
+  -webkit-animation: 2s comunicacion forwards;
+}
+
+@keyframes comunicacion {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+/* 2 EQUIPO*/
+
+.habilida .equipo {
+  width: 0%;
+  animation: 2s equipo forwards;
+  -webkit-animation: 2s equipo forwards;
+}
+
+@keyframes equipo {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+/* 3 CREATIVIDAD */
+.habilida .creativid {
+  width: 0%;
+  animation: 2s creativid forwards;
+  -webkit-animation: 2s creativid forwards;
+}
+
+@keyframes creativid {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+/* 4 DEDICACION*/
+.habilida .dedicacio {
+  width: 0%;
+  animation: 2s dedicacio forwards;
+  -webkit-animation: 2s dedicacio forwards;
+}
+
+@keyframes dedicacio {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+/* PROYECTOS */
+.habilida .proyecto {
+  width: 0%;
+  animation: 2s proyecto forwards;
+  -webkit-animation: 2s proyecto forwards;
+}
+
+@keyframes proyecto {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+/* CURRICULUM  */
+
+.curriculum {
+  background-color: var(--beige);
+  color: var(--purpe);
+  padding: 50px 20px;
+}
+
+.fecha {
+  font-size: 15px;
+}
+.contenido-section h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.contenido-section,
+.contenido-sectiond p {
+  line-height: 25px;
+  font-size: 2rem;
+}
+
+.contenido-section {
+  position: relative;
+  border-right: 15px solid #749bc2;
+  margin-right: 20px;
+  margin-top: 1rem;
+  background-color: #ffff;
+}
+.contenido-sectiond {
+  position: relative;
+  margin-left: 18px;
+  border-left: 15px solid #749bc2;
+  margin-top: 1rem;
+  background-color: #fff;
+}
+.conectores {
+  height: 5px;
+  background-color: #91c8e4;
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  right: -50px;
+}
+.conectoresd {
+  height: 5px;
+  background-color: #91c8e4;
+  position: absolute;
+
+  width: 47px;
+  top: 50%;
+  left: -47px;
+  z-index: 5;
+}
+.conectoresd .circulos {
+  display: block;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  background-color: #4682a9;
+  float: left;
+  position: relative;
+  bottom: 4px;
+}
+.conectores .circulo {
+  display: block;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  background-color: #4682a9;
+  float: right;
+  position: relative;
+  bottom: 4px;
+}
+/* lineas */
+.rowfhadher {
+  gap: 4rem;
+}
+.gapDerecho {
+  border-right: 3px solid #4682a9;
+}
+.gapIzquierda {
+  border-left: 3px solid #4682a9;
+}
+/* MI PROYECTOS */
+
+.galeria {
+  position: relative;
+  max-width: 100%;
+  height: 340px;
+  margin: 10px;
+  cursor: pointer;
+  /* background-color: #749bc2; */
+}
+.overlay {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgb(145, 200, 228);
+  /* background-color: #f0f4f6; */
+  display: flex;
+  color: #d6d0d1;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s;
+  font-size: 2rem;
+  letter-spacing: 4px;
+  opacity: 0;
+}
+.galeria .overlay:hover {
+  opacity: 1;
+}
+.overlay:hover h2 {
+  margin-bottom: 0px;
+  transition: 2s;
+  line-height: 3rem;
+}
+.galeria img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  object-fit: cover;
+}
+.overlay a {
+  color: #1c1a1b;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.overlay span {
+  font-size: 1.5rem;
+}
+.footer {
+  background-color: #393e46;
+  font-size: 2.5rem;
+  padding: 4rem;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  color: aliceblue;
+  font-size: 3rem;
+}
+.icons i {
+  color: aliceblue;
+  font-size: 5rem;
+}
+.infomacion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: aliceblue;
+}
