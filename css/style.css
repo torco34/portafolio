@@ -1,100 +1,57 @@
-@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,500&display=swap");
+/* uno */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+/* dos */
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+/* logo */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+/*  */
 
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
 * {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  /* font-family: "Bebas Neue", sans-serif; */
   margin: 0;
   padding: 0;
 }
-body {
-  /* font-size: calc(0.7em + 0.7vw); */
-  /* overflow: hidden; */
-  font-size: 1rem;
-}
 html {
-  /* font-size: 62.5%; */
-  font-size: 16px;
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 p {
-  font-size: 1.3rem;
-}
-.h2 {
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: bold;
-  color: var(--blanco);
-  font-size: 1.5rem;
-}
-.buton {
-  background-color: var(--verde);
-  color: var(--gris);
-  font-size: 1.5rem;
-  font-family: "Roboto Condensed", sans-serif;
-}
-.title {
-  color: var(--blanco);
-  font-size: 2rem;
-  font-weight: bold;
-  font-family: "EB Garamond", serif;
-}
-/* nuevo habilidades */
-
-.deparar {
-  gap: 3rem;
-}
-.habilida .progreso {
-  background-color: var(--verde);
-  position: absolute;
-  height: 10px;
-
-  display: block;
-}
-/* nuevo habilidades */
-
-.linea {
-  /* border: solid 3px var(--verde); */
-  color: var(--verde);
-}
-.container-abaut {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.linea2 {
-  border-left: 5px solid var(--verde);
-  padding-left: 8px;
-}
-
-.decoraImg {
-  width: 100%;
-  background-color: var(--gris);
-  height: 60%;
-}
-.text {
-  color: var(--verde);
   font-size: calc(0.6em + 0.6vw);
 }
-/*nuevo*/
-.containerGeneral {
-  color: var(--blanco);
-  background-color: #393e46;
+/* logo */
+.logo {
+  font-family: "Satisfy", cursive;
+  max-width: 100%;
+  /* display: none; */
 }
-.colorfondo {
-  background-color: var(--gris);
+.logo h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(0.5em + 0.5vw);
+  color: var(--white);
 }
+.logo span {
+  width: 50%;
+  background-color: var(--black);
+  color: var(--white);
+  border: 3px solid var(--green);
+  font-size: calc(0.5em + 0.5vw);
+  box-shadow: 0px 10px 14px rgb(0, 7, 5);
+  border-radius: 50%;
+}
+/* logo */
 :root {
-  --verde: #26c7b1;
-  --negro: #21242a;
-  --gris: #2e353e;
-  --morado: #ae8fdb;
-  --blanco: #f6f4f6;
-  --naraja: #d9534f;
-  --amartillo: #fef8b4;
+  --green: #26c7b1;
+  --black: #040d12;
+  --purple: #ae8fdb;
+  --white: #f6f4f6;
+  --white2: #f2f2f2;
+  --block2: #21242a;
+  --gry: #2e353e;
 }
+/* codigo comun */
 .imgfondo {
   background-image: linear-gradient(
       to top,
@@ -110,80 +67,111 @@ p {
   align-items: center;
   justify-content: center;
 }
-.div-img {
-  display: flex;
-  color: var(--blanco);
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+/* inicio */
+.containerImg img {
+  border: 3px solid var(--black); /* Color del borde */
+  box-shadow: 0px 10px 15px rgba(0, 0, 0.2);
+  width: 80%;
+  height: 30vh;
+}
+.containerInicioText {
+  width: 100%;
+}
+.containerInicioText .h2Developer {
+  font-family: "EB Garamond", serif;
+  font-size: calc(1em + 1vw);
+  font-weight: bold;
+  color: var(--green);
 }
 
-.div-img img {
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  border: 3px solid var(--blanco); /* Color del borde */
-  box-shadow: 0px 10px 14px rgba(0, 0, 0.2);
+.containerInicioText .h2Skills {
+  font-family: "EB Garamond", serif;
+  font-size: calc(0.8em + 0.8vw);
 }
+/* Button the cv */
+.divButtonCv .button a {
+  padding: 10px 20px;
+  background-color: var(--green);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 5px;
+  font-size: calc(0.4em + 0.4vw); 
+  color: var(--gry);
+
+  
+}
+
+.divButtonCv a:hover {
+  background-color: var(--white);
+  color: var(--black);
+  transform: scale(1.05);
+}
+/* codigo universal */
+
+.hr {
+  color: var(--green);
+}
+.titles {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Archivo Black", sans-serif;
+  font-size: calc(1em + 1vw);
+}
+.bordes {
+  border-left: 7px solid var(--green);
+  padding-left: 8px;
+}
+
+/* about for my */
+
+.div-containerAbout .span {
+  font-family: "EB Garamond", serif;
+
+  font-size: calc(0.9em + 0.9vw);
+  font-weight: bold;
+}
+
+.h2 {
+  font-family: "Archivo Black", sans-serif;
+  font-size: calc(0.7em + 0.7vw);
+  color: var(--green);
+  font-weight: bold;
+}
+.h3 {
+  font-family: "EB Garamond", serif;
+  font-size: calc(0.5em + 0.5vw);
+}
+.t {
+  color: var(--green);
+}
+.colorGreen {
+  color: var(--green);
+  font-weight: bold;
+}
+
+.colorBackgroun {
+  background-color: var(--green);
+}
+
+.allBlocks {
+  background-color: var(--block2);
+  color: var(--white);
+}
+/* seca de mi */
 .imagen2 img {
   width: 100%;
   height: 100%;
   border: 2px solid var(--blanco); /* Color del borde */
   box-shadow: 0px 10px 14px rgba(0, 0, 0.2);
 }
-.div-contain-text h1 {
-  /* color: var(--verde); */
-  font-size: 5rem;
-  font-weight: bold;
-  font-family: "Roboto Condensed", sans-serif;
-}
-.funcional {
-  font-family: "EB Garamond", serif;
-  font-family: "Roboto Condensed", sans-serif;
-  font-family: "Prompt", sans-serif;
-}
-
-/* SOBRE MI */
-.sobre {
-  /* background-color: #393e46; */
-  font-size: 2.5rem;
-  padding: 4rem;
-  color: var(--blanco);
-}
-
-.iconos {
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: calc(1em + 1vw);
-  /* gap: 10px;
-  color: var(--verde); */
-}
-
-.holaSoytorco {
-  font-weight: bold;
-  font-size: 3rem;
-  font-family: "Bebas Neue", sans-serif;
-}
-.iconos {
-  width: 100%;
-  font-size: 1.6rem;
-}
-
-/* hablidades */
-.habilida .barra-habilidades {
-  height: 20px;
-  width: 60%;
-  height: 10px;
-  background-color: var(--blanco);
-  border-radius: 50%;
-  position: relative;
-  top: 10px;
-  margin-bottom: 30px;
-}
+/* habilidades */
 
 .habilida .barra-habilidades span {
   position: absolute;
-  background-color: var(--verde);
-  color: var(--negro);
+  background-color: var(--green);
+  color: var(--black);
   height: 3rem;
   width: 3rem;
   border-radius: 100px;
@@ -195,13 +183,31 @@ p {
   text-align: center;
   border-radius: 50%;
 }
+
+.habilida .barra-habilidades {
+  height: 20px;
+  width: 60%;
+  height: 10px;
+  background-color: var(--white);
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+  margin-bottom: 30px;
+}
+
 .habilida .javascript {
   width: 0%;
   animation: 2s javascript forwards;
   -webkit-animation: 2s javascript forwards;
   width: 50%;
-  /* background-color: #4682a9; */
 }
+.habilida .progreso {
+  background-color: var(--green);
+  position: absolute;
+  height: 10px;
+  display: block;
+}
+
 @keyframes javascript {
   0% {
     width: 0%;
@@ -213,8 +219,8 @@ p {
 .habilida .htmlcss {
   animation: 3s htmlcss forwards;
   -webkit-animation: 3s htmlcss forwards;
-  /* background-color: #4682a9; */
 }
+
 @keyframes htmlcss {
   0% {
     width: 0%;
@@ -253,12 +259,10 @@ p {
     width: 50%;
   }
 }
-
-/* 5 */
-.habilida .react {
+.habilida .gitHub {
   width: 0%;
-  animation: 2s react forwards;
-  -webkit-animation: 2s react forwards;
+  animation: 2s gitHub forwards;
+  -webkit-animation: 2s gitHub forwards;
 }
 
 @keyframes react {
@@ -269,10 +273,11 @@ p {
     width: 50%;
   }
 }
-.habilida .typescript {
+
+.habilida .react {
   width: 0%;
-  animation: 2s typescript forwards;
-  -webkit-animation: 2s typescript forwards;
+  animation: 2s react forwards;
+  -webkit-animation: 2s react forwards;
 }
 
 @keyframes typescript {
@@ -283,165 +288,99 @@ p {
     width: 30%;
   }
 }
-/* KEYFRAMES DERECHO */
-
-/* 1  COMUNICACIONES*/
-.habilida .comunicacion {
+.habilida .typescript {
   width: 0%;
-  animation: 2s comunicacion forwards;
-  -webkit-animation: 2s comunicacion forwards;
+  animation: 2s typescript forwards;
+  -webkit-animation: 2s typescript forwards;
 }
-
-@keyframes comunicacion {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
+.h4 {
+  font-family: "EB Garamond", serif;
+  color: var(--white);
+  font-weight: bold;
 }
-/* 2 EQUIPO*/
-
-.habilida .equipo {
-  width: 0%;
-  animation: 2s equipo forwards;
-  -webkit-animation: 2s equipo forwards;
+.deparar {
+  gap: 3rem;
 }
-
-@keyframes equipo {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
+.progreso {
+  width: 75%;
+  background-color: #26c7b1;
+  font-size: 2rem;
 }
-/* 3 CREATIVIDAD */
-.habilida .creativid {
-  width: 0%;
-  animation: 2s creativid forwards;
-  -webkit-animation: 2s creativid forwards;
-}
-
-@keyframes creativid {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 60%;
-  }
-}
-/* 4 DEDICACION*/
-.habilida .dedicacio {
-  width: 0%;
-  animation: 2s dedicacio forwards;
-  -webkit-animation: 2s dedicacio forwards;
-}
-
-@keyframes dedicacio {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-/* PROYECTOS */
-.habilida .proyecto {
-  width: 0%;
-  animation: 2s proyecto forwards;
-  -webkit-animation: 2s proyecto forwards;
-}
-
-@keyframes proyecto {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 50%;
-  }
-}
-
-/* CURRICULUM  */
-/* nuevo */
-.sectiNever {
-  background-color: var(--gris);
-}
-/*  */
-
-.fecha {
-  font-size: 1.6rem;
-}
-
+/* Estudios */
 .contenido-section {
   position: relative;
-  border-right: 15px solid var(--blanco);
+  border-right: 15px solid var(--white);
   margin-right: 18px;
   margin-top: 1rem;
 }
-
 .contenido-sectiond {
   position: relative;
   margin-left: 18px;
-  border-left: 15px solid var(--blanco);
+  border-left: 15px solid var(--white);
   margin-top: 1rem;
 }
+
 .conectores {
   height: 5px;
-  background-color: var(--blanco);
+  background-color: var(--white);
   width: 50px;
   position: absolute;
   top: 50%;
   right: -50px;
 }
+
 .conectoresd {
   height: 5px;
-  background-color: var(--blanco);
+  background-color: var(--white);
   position: absolute;
   width: 47px;
   top: 50%;
   left: -47px;
   z-index: 5;
 }
-
 .conectoresd .circulos {
   display: block;
   height: 13px;
   width: 13px;
   border-radius: 50%;
-  background-color: var(--blanco);
+  background-color: var(--white);
   float: left;
   position: relative;
   bottom: 4px;
 }
+
 .conectores .circulo {
   display: block;
   height: 13px;
   width: 13px;
   border-radius: 50%;
-  background-color: var(--blanco);
+  background-color: var(--white);
   float: right;
   position: relative;
   bottom: 4px;
 }
-/* lineas */
+
 .rowfhadher {
   gap: 5rem;
 }
 .gapDerecho {
-  border-right: 3px solid var(--verde);
+  border-right: 3px solid var(--green);
 }
 .gapIzquierda {
-  border-left: 3px solid var(--verde);
+  border-left: 3px solid var(--green);
 }
-/* MI PROYECTOS */
+
+.sectiNever {
+  background-color: var(--gry);
+}
+
+/* galeria */
 
 .galeria {
   position: relative;
   max-width: 100%;
   height: 340px;
   margin: 10px;
-
   cursor: pointer;
 
   /* background-color: var(--blanco); */
@@ -457,6 +396,7 @@ p {
   flex-direction: column;
   justify-content: center;
   transition: 1s;
+  color: var(--white);
   font-size: 2rem;
   letter-spacing: 4px;
   opacity: 0;
@@ -484,8 +424,13 @@ p {
 .overlay span {
   font-size: 1.5rem;
 }
+.letra {
+  color: var(--white);
+  background-color: var(--green);
+}
+
 .footer {
-  background-color: #393e46;
+  background-color: var(--gry);
   font-size: 2.5rem;
   padding: 4rem;
 }
@@ -498,7 +443,7 @@ p {
   font-size: 3rem;
 }
 .icons i {
-  color: aliceblue;
+  color: var(--white);
   font-size: 5rem;
 }
 .infomacion {
@@ -506,5 +451,5 @@ p {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  color: aliceblue;
+  color: var(--white);
 }
