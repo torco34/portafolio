@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 /* logo */
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-/*  */
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
 * {
@@ -24,9 +24,6 @@ p {
   font-family: "Satisfy", cursive;
   max-width: 100%;
   /* display: none; */
-}
-.text-link{
-  font-size: calc(0.6em + 0.6vw);
 }
 .logo h2 {
   display: flex;
@@ -93,17 +90,13 @@ p {
 }
 /* Button the cv */
 .divButtonCv .button a {
-  padding: 10px 20px;
-  background-color: var(--green);
-  color: #fff;
+  background-color: var(--black);
+  color: var(--green);
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  border-radius: 5px;
-  font-size: calc(0.4em + 0.4vw); 
-  color: var(--gry);
-
-  
+  font-family: "EB Garamond", serif;
+  font-size: calc(0.6em + 0.6vw);
 }
 
 .divButtonCv a:hover {
@@ -112,7 +105,12 @@ p {
   transform: scale(1.05);
 }
 /* codigo universal */
-
+.tipocrefia {
+  /* uno */
+  font-family: "Roboto Condensed", sans-serif;
+  /* dos */
+  font-family: "Archivo Black", sans-serif;
+}
 .hr {
   color: var(--green);
 }
@@ -146,7 +144,7 @@ p {
   font-family: "EB Garamond", serif;
   font-size: calc(0.5em + 0.5vw);
 }
-.t {
+.t{
   color: var(--green);
 }
 .colorGreen {
@@ -427,13 +425,13 @@ p {
 .overlay span {
   font-size: 1.5rem;
 }
-.letra {
+.letra{
   color: var(--white);
-  background-color: var(--green);
+ background-color: var(--green);
 }
 
 .footer {
-  background-color: var(--gry);
+  background-color:var(--gry);
   font-size: 2.5rem;
   padding: 4rem;
 }
