@@ -12,6 +12,13 @@
   margin: 0;
   padding: 0;
 }
+body {
+  font-size: 100%; /* Tamaño de fuente base al 100% */
+}
+
+h2 {
+  font-size: 2em; /* Tamaño de fuente en relación con la fuente base */
+}
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;

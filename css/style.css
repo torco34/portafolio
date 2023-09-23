@@ -16,6 +16,13 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+body {
+  font-size: 100%; /* Tamaño de fuente base al 100% */
+}
+
+h2 {
+  font-size: 2em; /* Tamaño de fuente en relación con la fuente base */
+}
 p {
   font-size: 2.5rem;
   font-family: "EB Garamond", serif;
@@ -559,7 +566,6 @@ p {
 
 .divcontainerText h2 {
   color: var(--green);
- 
 }
 .divcontainerText span {
   color: var(--green);
@@ -584,4 +590,16 @@ p {
   background-color: var(--green);
   transform: scale(1.1);
   transition: transform 0.2s ease-in-out;
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Tamaño de fuente para dispositivos móviles */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
 }
