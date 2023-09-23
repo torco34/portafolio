@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 /* logo */
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-/*  */
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
 * {
@@ -17,14 +17,10 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-size: 100%; /* Tamaño de fuente base al 100% */
-}
-
-h2 {
-  font-size: 2em; /* Tamaño de fuente en relación con la fuente base */
+  font-size: calc(1em + 0.8vw);
 }
 p {
-  font-size: 2.5rem;
+  font-size: calc(0.6em + 0.7vw);
   font-family: "EB Garamond", serif;
 }
 /* css con javascrip */
@@ -70,9 +66,9 @@ p {
   margin-top: 20px;
   /* display: none; */
 }
-.text-link {
+/* .text-link {
   font-size: calc(0.6em + 0.6vw);
-}
+} */
 .logo h2 {
   display: flex;
   flex-direction: column;
@@ -180,7 +176,7 @@ p {
   padding-left: 8px;
 }
 
-/* about for my */
+/* ABAUT ME */
 .imagen2 img {
   width: 100%;
   height: 100%;
@@ -192,15 +188,17 @@ p {
 }
 .div-containerAbout span {
   font-family: "Archivo Black", sans-serif;
-  font-size: 2.3rem;
+  /* font-size: 2.3rem; */
+
   font-weight: bold;
 }
 
 .div-containerAbout h2 {
   font-family: "Archivo Black", sans-serif;
-  font-size: 1.8rem;
   color: var(--green);
   font-weight: bold;
+
+  font-size: calc(0.5em + 0.6vw);
 }
 /* data about */
 
@@ -227,9 +225,16 @@ p {
 .div-container-habilidad {
   width: 100%;
 }
+.bajo {
+  position: relative;
+  top: 5rem;
+  height: auto;
+  /* padding-bottom: 5rem; */
+}
 .div-container-habilidad p {
   font-weight: bold;
-  /* border: solid 2px red; */
+
+  border: solid 2px rgb(0, 255, 8);
 }
 .habilida .barra-habilidades span {
   position: absolute;
@@ -380,18 +385,19 @@ p {
   margin-top: 1rem;
   /* border: solid red 3px; */
 }
-.div-plataformas h2 {
+.div-plataformas h3 {
   width: 100%;
-  font-size: 1.8rem;
-  color: var(--green);
+  font-size: calc(0.6em + 0.5vw);
+  color: var(--white);
   font-weight: bold;
 }
 /* .plataform{*/
 
 .div-plataformas .plataform {
   width: 100%;
-  font-size: 2rem;
-  font-weight: bold;
+  color: var(--green);
+
+  font-size: calc(0.5em + 0.5vw);
   font-family: "Archivo Black", sans-serif;
 }
 .conectores {
@@ -447,7 +453,12 @@ p {
 .sectiNever {
   background-color: var(--gry);
 }
-
+/* espacio scrol */
+.espacie-container {
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+  padding: auto;
+}
 /* galeria */
 
 .galeria {
@@ -457,7 +468,7 @@ p {
   margin: 10px;
   cursor: pointer;
 
-  /* background-color: var(--blanco); */
+  background-color: var(--green);
 }
 .overlay {
   position: absolute;
@@ -471,7 +482,8 @@ p {
   justify-content: center;
   transition: 1s;
   color: var(--white);
-  font-size: 2rem;
+  /* font-size: 2rem; */
+
   letter-spacing: 4px;
   opacity: 0;
 }
@@ -482,6 +494,7 @@ p {
   margin-bottom: 0px;
   transition: 2s;
   line-height: 3rem;
+  border: solid #18aaf8;
 }
 .galeria img {
   width: 100%;
@@ -501,6 +514,7 @@ p {
 .letra {
   color: var(--white);
   background-color: var(--green);
+  border: solid #18aaf8;
 }
 
 .footer {
@@ -562,15 +576,30 @@ p {
 }
 .divcontainerText {
   background-color: var(--gry);
+  padding: 2rem;
 }
-
-.divcontainerText h2 {
-  color: var(--green);
-}
-.divcontainerText span {
+.textfoton {
+  font-size: calc(0.5em + 0.5vw);
   color: var(--green);
   font-weight: bold;
 }
+.divcontainerText strong {
+  color: var(--green);
+}
+.divcontainerText h2 {
+  color: var(--green);
+}
+
+.divcontainerText .objetivo {
+  color: var(--white2);
+  font-weight: bold;
+  font-family: "Archivo Black", sans-serif;
+}
+.divcontainerText {
+  /* color: var(--green);
+  font-weight: bold; */
+}
+
 /* boton proyecto */
 .boton-ovalado {
   background-color: var(--green);
@@ -590,16 +619,4 @@ p {
   background-color: var(--green);
   transform: scale(1.1);
   transition: transform 0.2s ease-in-out;
-}
-@media (min-width: 768px) {
-  body {
-    font-size: 16px;
-  }
-}
-
-/* Tamaño de fuente para dispositivos móviles */
-@media (max-width: 767px) {
-  body {
-    font-size: 14px;
-  }
 }
