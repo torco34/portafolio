@@ -14,8 +14,8 @@
   </head>
   <body>
     <section>
-      <nav class="navbar fixed-top container ">
-        <div class="container-fluid text-uppercas">
+      <nav class="navbar fixed-top navbar-top P-5">
+        <div class="container-fluid text-uppercas container">
           <div class="logo">
             <h2 class="">
               <span class="navbar-brand text-center"> T.AA</span>
@@ -30,10 +30,10 @@
             aria-controls="offcanvasNavbar"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon text-dark p-4"></span>
           </button>
           <div
-            class="offcanvas offcanvas-end"
+            class="offcanvas offcanvas-end bg-dark text-light"
             tabindex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
@@ -44,32 +44,35 @@
               </h2>
               <button
                 type="button"
-                class="btn-close"
+                class="btn-close bg-light"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
               ></button>
             </div>
-            <div class="offcanvas-body">
+            <div class="offcanvas-body bg-dark">
               <ul
-                class="navbar-nav justify-content-end flex-grow-1 pe-3 text-link"
+                class="navbar-nav justify-content-end flex-grow-1 p-5 text-link text-light"
               >
-                <li class="nav-item">
-                  <a class="nav-link active" href="#inicio">Inicio</a>
+                <li class="nav-item active dropdown change-color">
+                  <a class="nav-link nav-link-item" href="#inicio">Inicio</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#sobre">Sobre mi</a>
+                <li class="nav-item dropdown change-color">
+                  <a class="nav-link nav-link-item" href="#sobre">Sobre mi</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link" href="#habili">Habilidades</a>
+                <!-- Agrega clases "change-color" para cambiar los colores al hacer clic -->
+                <li class="nav-item dropdown change-color">
+                  <a class="nav-link nav-link-item" href="#habili"
+                    >Habilidades</a
+                  >
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link" href="#curri">Curriculum</a>
+                <li class="nav-item dropdown change-color">
+                  <a class="nav-link nav-link-item" href="#curri">Curriculum</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link" href="#porta">Proyectos</a>
+                <li class="nav-item dropdown change-color">
+                  <a class="nav-link nav-link-item" href="#porta">Proyectos</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link" href="#footer">Contacto</a>
+                <li class="nav-item dropdown change-color">
+                  <a class="nav-link nav-link-item" href="#footer">Contacto</a>
                 </li>
               </ul>
             </div>
@@ -115,7 +118,7 @@
     </section>
     <!-- SECTION SOBRE MI  -->
     <section id="sobre" class="allBlocks">
-      <a href="index.html">borrador</a>
+      <a href="./borrador.html">borrador</a>
       <div class="container">
         <div class="row">
           <div class="p-5 text-center">
@@ -129,98 +132,85 @@
           <div class="col-xs-12 col-sm-6 col-lg-6 col-md-6 p-5">
             <div class="p-5 div-containerAbout">
               <p class="">
-                <span class="span">Hello, I'm Torcoroma Arias Ascanio</span>
-                &nbsp A self-taught web developer with a passion for self-driven
-                learning and taking on constant challenges. Each solution found
-                has been an achievement that has propelled me to keep learning.
-                My commitment to continuous improvement and the pursuit of
-                knowledge drives me to be an exceptional web developer..<br />
+                <span class="bordes">Hello, I'm Torcoroma Arias Ascanio</span
+                ><span class="p-3 punto">.</span> &nbsp A self-taught web
+                developer with a passion for self-driven learning and taking on
+                constant challenges. Each solution found has been an achievement
+                that has propelled me to keep learning. My commitment to
+                continuous improvement and the pursuit of knowledge drives me to
+                be an exceptional web developer..<br />
                 <br />
               </p>
-              <h2 class="h2">!Thank you for visiting my portfolio!</h2>
+              <h2>! Thank you for visiting my portfolio !</h2>
             </div>
             <div class="row">
               <div class="col">
-                <div class="p-5">
-                  <div class="">
-                    <p class="">
-                      <span class="h3 colorGreen">Name: &nbsp </span> Torcoroma
-                      Arias Ascanio
-                    </p>
-                  </div>
-                  <hr class="hr" />
-                  <!--  -->
-                  <div class="">
-                    <p class="">
-                      <span class="h3 colorGreen">Correo: &nbsp </span>
-                      torcoromaarias@gmail.com
-                    </p>
-                  </div>
-                  <hr class="hr" />
-                  <!--  -->
-                  <div class="">
-                    <p class="">
-                      <span class="h3 colorGreen">City:&nbsp </span>
-                      San José de Cúcuta,
-                    </p>
-                  </div>
-                  <hr class="hr" />
-                  <!--  -->
-                  <div class="">
-                    <p class="">
-                      <span class="h3 colorGreen">Experience:&nbsp</span>
-                      En proyectos reales.
-                    </p>
-                  </div>
-                  <hr class="hr" />
-                  <!--  -->
-                  <div class="">
-                    <p class="">
-                      <span class="h3 colorGreen">Education: &nbsp </span>
-                      Talenlogy, Platzi, Edimy y YouTube.
-                    </p>
+                <div class="p-5 div-container-data">
+                  <div class="d-flex">
+                    <p class="colorGreen">Name: &nbsp</p>
+                    <p>Torcoroma Arias Ascanio</p>
                   </div>
                   <hr class="hr" />
                   <!--  -->
 
-                  <div class="">
-                    <p class="">
-                      <span class="h3 colorGreen">Carrera: &nbsp </span>
-                      Front-End developer
-                    </p>
+                  <div class="d-flex">
+                    <p class="colorGreen">Correo: &nbsp</p>
+                    <p>torcoromaarias@gmail.com</p>
+                  </div>
+                  <hr class="hr" />
+                  <!--  -->
+
+                  <div class="d-flex">
+                    <p class="colorGreen">City: &nbsp</p>
+                    <p>San José de Cúcuta.</p>
+                  </div>
+                  <hr class="hr" />
+                  <!--  -->
+
+                  <div class="d-flex">
+                    <p class="colorGreen">Experience:&nbsp</p>
+                    <p>En proyectos reales.</p>
+                  </div>
+
+                  <hr class="hr" />
+                  <!--  -->
+
+                  <div class="d-flex">
+                    <p class="colorGreen">Education: &nbsp</p>
+                    <p>Talenlogy, Platzi, Edimy y YouTube.</p>
+                  </div>
+                  <hr class="hr" />
+                  <!--  -->
+
+                  <div class="d-flex">
+                    <p class="colorGreen">Carrera: &nbsp</p>
+                    <p>Front-End developer</p>
                   </div>
                   <hr class="hr" />
                 </div>
               </div>
             </div>
           </div>
-          <!-- <div class="col-12 p-5 border">
-            <i class="bi bi-house-fill"></i>
-            <i class="bi bi-envelope-at-fill"></i>
-            <i class="bi bi-file-earmark-music-fill"></i>
-            <i class="bi bi-film"></i>
-            <i class="bi bi-airplane-engines-fill"></i>
-            <i class="bi bi-bicycle"></i>
-            <i class="bi bi-book-fill"></i>
-          </div> -->
         </div>
       </div>
     </section>
     <!-- SECTION HABILIDADES -->
     <section id="habili" class="allBlocks">
-      <div class="habili">
+      <div class="habili border p-5">
         <div class="container">
           <div class="">
-            <h2 class="text-center titles p-3">
+            <h2 class="text-center titles p-5">
               <span class="bordes"></span>Habilidades Técnicas
             </h2>
           </div>
 
-          <div class="row d-flex align-items-center justify-content-center">
+          <div
+            class="row d-flex align-items-center justify-content-center border div-container-habilidad"
+          >
             <div class="col-md-8 p-5">
               <!-- 1 -->
               <div class="habilida d-flex deparar">
-                <div class="text-center"><p class="h4">JavaScript</p></div>
+                <div class="text-center"><p class="">JavaScript</p></div>
                 <div class="rounded-pill barra-habilidades shadow">
                   <div class="rounded-pill progreso javascript shadow">
                     <span class="shadow h4">50%</span>
@@ -230,7 +220,7 @@
               <hr class="p-2 linea" width="100%" />
               <!-- 2 -->
               <div class="habilida d-flex text-center deparar">
-                <div class="text-center"><p class="h4">Html5 y Css</p></div>
+                <div class="text-center"><p class="">Html5 y Css</p></div>
                 <div class="rounded-pill barra-habilidades shadow">
                   <div class="rounded-pill progreso htmlcss shadow">
                     <span class="shadow h4">70%</span>
@@ -240,7 +230,7 @@
               <hr class="p-2" width="100%" />
               <!-- 3 -->
               <div class="habilida d-flex deparar">
-                <div class=""><p class="h4">Bootstrap</p></div>
+                <div class=""><p class="">Bootstrap</p></div>
                 <div class="rounded-pill barra-habilidades shadow">
                   <div class="rounded-pill progreso bootstrap shadow">
                     <span class="shadow h4">40%</span>
@@ -250,7 +240,7 @@
               <hr class="p-2" width="100%" />
               <!-- 4 -->
               <div class="habilida d-flex deparar">
-                <div class="text-center"><p class="h4">Git y GitHub</p></div>
+                <div class="text-center"><p>Git y GitHub</p></div>
                 <div class="rounded-pill barra-habilidades shadow">
                   <div class="rounded-pill progreso gitHub shadow">
                     <span class="shadow h4">50%</span>
@@ -260,17 +250,17 @@
               <hr class="p-2" width="100%" />
               <!-- 5 -->
               <div class="habilida d-flex deparar">
-                <div class=""><p class="h4">React.js</p></div>
+                <div class=""><p>React.js</p></div>
                 <div class="rounded-pill barra-habilidades shadow">
                   <div class="rounded-pill progreso react shadow">
-                    <span class="shadow h4">50%</span>
+                    <span class="shadow">50%</span>
                   </div>
                 </div>
               </div>
               <!-- 6 -->
               <hr class="p-2" width="100%" />
               <div class="habilida d-flex deparar">
-                <div class=""><p class="h4">Typescript.js</p></div>
+                <div class=""><p>Typescript.js</p></div>
                 <div class="rounded-pill barra-habilidades shadow">
                   <div class="rounded-pill progreso typescript shadow">
                     <span class="shadow h4">30%</span>
@@ -286,8 +276,8 @@
     </section>
 
     <!-- SECTION DE CURRICULUM -->
-    <section id="curri" class="allBlocks">
-      <div class="container p-5">
+    <section id="curri" class="allBlocks p-5">
+      <div class="container border p-5">
         <div class="p-5">
           <h2 class="text-center titles">
             <span class="bordes"></span>EDUCACIÓN
@@ -296,11 +286,13 @@
 
         <div class="row rowfhadher">
           <div class="col-md-5 gapDerecho">
-            <div class="p-5 shadow contenido-section sectiNever">
-              <h2 class="title text p-5">Html5 Bootstrap Css3</h2>
-              <p class="d-block h2">Plataformas</p>
-              <p class="d-block">Platzi YouTube Udimy y talentLogy</p>
-              <p class="fecha d-block h2">2020-2023</p>
+            <div
+              class="p-5 div-plataformas shadow contenido-section sectiNever"
+            >
+              <h2 class="mb-5 mt-5 titles">Html5 Bootstrap Css3</h2>
+              <p class="plataform">Plataformas</p>
+              <p class="d-flex mb-4">Platzi, YouTube, Udemy y TalentLogy</p>
+              <p class="plataform mb-4 punto">2020-2023</p>
               <p class="">
                 Realicé unos cursos de HTML y Css en el que adquirí una bases
                 sólida para el desarrollo de páginas web.
@@ -315,11 +307,15 @@
             </div>
 
             <!-- 33 -->
-            <div class="p-5 shadow contenido-section sectiNever">
-              <h2 class="title text p-5">Typescript.js Javascript React.js</h2>
-              <p class="d-block h2">Plataformas</p>
-              <p class="d-block">Platzi y talentLogy</p>
-              <p class="fecha d-block h2">2020-2023</p>
+            <div
+              class="p-5 shadow div-plataformas contenido-section sectiNever"
+            >
+              <h2 class="mb-5 mt-5 titles">
+                Typescript.js Javascript React.js
+              </h2>
+              <p class="plataform">Plataformas</p>
+              <p class="d-flex mb-4">Platzi, YouTube, Udemy y TalentLogy</p>
+              <p class="plataform punto mb-4">2020-2023</p>
               <p class="">
                 TypeScript es un lenguaje de programación que se basa en
                 JavaScript, pero agrega un sistema de tipos estáticos que lo
@@ -342,13 +338,15 @@
 
             <!--  -->
           </div>
-          <div class="col-md-5 gapIzquierda">
+          <div class="col-md-6 gapIzquierda">
             <div class="">
-              <div class="p-5 shadow contenido-sectiond sectiNever">
-                <h2 class="p-5 title text">Mi experiencia</h2>
+              <div
+                class="p-5 div-plataformas shadow contenido-sectiond sectiNever"
+              >
+                <h2 class="mb-5 mt-5 titles">Mi experiencia</h2>
 
-                <p class="d-block">talentLogy</p>
-                <p class="fecha d-block">2020-2023</p>
+                <p class="d-block">TalentLogy</p>
+                <p class="plataform punto mb-4">2020-2023</p>
                 <p class="">
                   Durante mi aprendizaje, logré ingresar al programa llamado
                   "Talenlogy". Aquí, me encuentro trabajando en proyectos reales
@@ -363,10 +361,13 @@
                 </div>
               </div>
               <!--  -->
-              <div class="p-5 shadow contenido-sectiond sectiNever">
-                <h2 class="p-5 title text">Git y GitHub</h2>
-                <p class="d-block">Platzi y talentLogy</p>
-                <p class="fecha d-block">2020-2023</p>
+              <div
+                class="p-5 shadow div-plataformas contenido-sectiond sectiNever"
+              >
+                <h2 class="mb-5 mt-5 titles">Git y GitHub</h2>
+                <h4 class="plataform">Plataformas</h4>
+                <p class="d-flex mb-4">Platzi, YouTube, Udemy y TalentLogy</p>
+                <p class="plataform punto mb-4">2020-2023</p>
                 <p class="">
                   En resumen, mi experiencia de aprendizaje en Git y GitHub ha
                   sido fundamental para mi desarrollo como desarrollador de
@@ -390,222 +391,140 @@
     </section>
     <!-- SECTION DE PORTAFOLIO -->
     <section id="porta" class="allBlocks">
-      <div class="container">
-        <div class="">
-          <h2 class="text-center titles">
-            <span class="bordes"></span>MIS PROYECTOS
-          </h2>
+      <section id="" class="allBlocks">
+        <div class="text-center">
+          <a href="./"> volver</a>
+          <h2></h2>
         </div>
+        <div class="container">
+          <div class="row">
+            <div class="p-5 text-center">
+              <h2 class="titles">
+                <span class="bordes"></span>Galeria de Proyectos
+              </h2>
+            </div>
+            <div class="col-md-6">
+              <div class="divcontinerImg rounded p-5">
+                <img class="rounded" src="./img/proyecto1.png" alt="IMG" />
+              </div>
+              <div class="titles">
+                <h2 class="text-center">Ejercicios de Lógica en JavaScript</h2>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="divcontainerText rounded p-5 mb-4 flex-column">
+                <h2 class="m-5">
+                  <strong>Nombre: </strong>Proyecto de Ejercicios de Lógica en
+                  JavaScript<br />
 
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card galeria shadow rounded">
-              <img
-                src="./img/img1.png"
-                width="100%"
-                alt="img1"
-                class="rounded shadow"
-              />
-              <div class="overlay shadow rounded">
-                <h2>TalentLogy</h2>
-                <h2>Proceso de aprendizaje</h2>
-                <span>27-02-2023</span>
-                <div>
+                  <strong>Fecha: </strong>23/02/27
+                </h2>
+                <p><strong> Objetivo </strong></p>
+                <!-- <p><strong>Descripción del Proyecto </strong></p> -->
+
+                <p class="t-5">
+                  El objetivo principal de este proyecto es mejorar mis
+                  habilidades de programación y lógica al resolver una serie de
+                  ejercicios utilizando JavaScript.
                   <br />
-                  <a
-                    href="https://torco34.github.io/aprendizajeTalentLogy/"
-                    class="btn btn-dark letra p-3 h2 shadow"
-                    >Ver Link</a
+                  <br />
+                  <span>Herramientas Utilizadas.</span>
+                  <br /><strong>
+                    JavaScript, Editor de Código, Navegador Web.</strong
                   >
+                </p>
+                <div class="text-center">
+                  <a href="https://torco34.github.io/aprendizajeTalentLogy/">
+                    <button class="boton-ovalado">Haz clic</button>
+                  </a>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="galeria card shadow rounded">
-              <img
-                src="./img/telor.png"
-                width="100%"
-                alt="img1"
-                class="rounded shadow"
-              />
-              <div class="overlay rounded text-light">
-                <h2>Administración de tareas</h2>
-                <h2>Practica talentLogy</h2>
-                <span>27-02-2023</span>
-                <div>
+            <!-- </div> -->
+            <!-- 1 -->
+            <!-- <div class="row"> -->
+            <div class="col-md-6">
+              <div class="divcontainerText rounded p-5 mb-4 flex-column">
+                <h2 class="m-5">
+                  <strong>Nombre: </strong>Trello con localStorage<br />
+
+                  <strong>Fecha: </strong>23/02/27
+                </h2>
+                <p><strong> Objetivo </strong></p>
+                <!-- <p><strong>Descripción del Proyecto </strong></p> -->
+
+                <p class="t-5">
+                  El objetivo principal de este proyecto fue crear una
+                  aplicación web inspirada en Trello que permitiera a los
+                  usuarios Crear tableros, Añadir tarjetas, Editar y eliminar<br />
+                  <br />
+                  <span> Herramientas y tecnologías que utilicé </span>
+
+                  <br /><strong>
+                    HTML/CSS, JavaScript, localStorage, Editor de Código</strong
+                  >
+                </p>
+                <div class="text-center">
                   <a
                     href="https://torco34.github.io/administradorTareasTalentLogy/"
-                    class="btn btn-dark letra p-3 h2 shadow"
-                    >Ver link</a
                   >
+                    <button class="boton-ovalado">Haz clic</button>
+                  </a>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card galeria shadow rounded">
-              <img
-                src="./img/tareas.png"
-                width="100%"
-                alt="img1"
-                class="rounded shadow"
-              />
-              <div class="overlay shadow rounded">
-                <h2>Notas de Tareas</h2>
-                <h2>Practica talentLogy</h2>
-                <span>27-02-2023</span>
-                <div>
-                  <a
-                    href="https://torco34.github.io/tabla-tareas-TalentLogy/"
-                    class="btn btn-dark letra p-3 h2 shadow"
-                    >Ver link</a
+            <div class="col-md-6">
+              <div class="divcontinerImg rounded p-5">
+                <img src="./img/proyect2.png" alt="IMG" class="rounded" />
+              </div>
+              <div class="titles">
+                <h2 class="text-center">Trello con localStorage</h2>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="divcontinerImg rounded p-5">
+                <img src="./img/bots.png" alt="IMG" class="rounded" />
+              </div>
+
+              <div class="titles">
+                <h2 class="text-center">Página Saludable con Bootstrap.</h2>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="divcontainerText rounded p-5 mb-4 flex-column">
+                <h2 class="m-5">
+                  <strong>Nombre: </strong>Página de Alimentación Saludable con
+                  Bootstrap.<br />
+
+                  <strong>Fecha: </strong>23/05/13
+                </h2>
+                <p><strong> Objetivo </strong></p>
+                <!-- <p><strong>Descripción del Proyecto </strong></p> -->
+
+                <p class="t-5">
+                  A lo largo del proyecto, aproveché al máximo las
+                  características de Bootstrap<br />El objetivo principal de
+                  este proyecto es practicar. <br />
+                  <br />
+                  <span>Elementos Utilizados de Bootstrap</span>
+                  <br /><strong>
+                    Grid System, Componentes de UI, Estilos Personalizados
+                    Imágenes y Carrousel.</strong
                   >
+                </p>
+                <div class="text-center">
+                  <a
+                    href="https://torco34.github.io/administradorTareasTalentLogy/"
+                  >
+                    <button class="boton-ovalado">Haz clic</button>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- este -->
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card galeria shadow rounded">
-              <img
-                src="./img/twuter.png"
-                width="100%"
-                alt="img1"
-                class="rounded shadow"
-              />
-              <div class="overlay shadow rounded">
-                <h2>Replicas de twitter</h2>
-                <h2>Practica talentLogy</h2>
-                <span>27-02-2023</span>
-                <div>
-                  <a
-                    href="https://torco34.github.io/twitter/"
-                    class="btn btn-dark letra p-3 h2 shadow"
-                    >Ver link</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card galeria shadow rounded">
-              <img
-                src="./img/bots.png"
-                width="100%"
-                alt="img1"
-                class="rounded shadow"
-              />
-              <div class="overlay shadow rounded">
-                <h2>Utilizando Bootstrap</h2>
-                <h2>Practica talentLogy</h2>
-                <span>27-02-2023</span>
-                <div>
-                  <a
-                    href="https://torco34.github.io/bootstrap-web/"
-                    class="btn btn-dark letra p-3 h2 shadow"
-                    >Ver link</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card galeria shadow rounded">
-              <img
-                src="./img/map.jpeg"
-                width="100%"
-                alt="img1"
-                class="rounded shadow text-info-emphasis"
-              />
-              <div class="overlay shadow rounded">
-                <h2>Practicas en TalentLogy</h2>
-                <h2>Ejercicio de practica React.js</h2>
-
-                <span>27-02-2023</span>
-                <div>
-                  <a
-                    href="https://torco34.github.io/react-talentLogy/"
-                    class="btn btn-dark letra p-3 h2 shadow"
-                    >Ver link</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--  -->
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card galeria shadow rounded">
-              <img
-                src="./img/4.png"
-                width="100%"
-                alt="img1"
-                class="rounded shadow"
-              />
-              <div class="overlay shadow rounded">
-                <h2>Practicas en talentLogy</h2>
-                <h2>Nota de tareas</h2>
-
-                <span>27-02-2023</span>
-                <div>
-                  <a
-                    href="https://torco34.github.io/todos-tarea/"
-                    class="btn btn-dark letra p-3 h2 shadow"
-                    >Ver link</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card galeria shadow rounded">
-              <img
-                src="./img/img3.png"
-                width="100%"
-                alt="img1"
-                class="rounded shadow"
-              />
-              <div class="overlay shadow rounded">
-                <h2>Rick And Morty</h2>
-                <h2>Consumiendo API en react.js</h2>
-
-                <div>
-                  <a
-                    href="https://torco34.github.io/appRickAndMorty/"
-                    class="btn btn-dark letra p-3 h2 shadow"
-                    >Ver link</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card galeria shadow rounded">
-              <img
-                src="./img/libro.png"
-                width="100%"
-                alt="img1"
-                class="rounded shadow"
-              />
-              <div class="overlay shadow rounded">
-                <h2>Practica en Proyecto real</h2>
-                <h2>APP de talentLogy</h2>
-                <div>
-                  <a
-                    href="https://torco34.github.io/aprendizajeTalentLogy/"
-                    class="btn btn-dark letra p-3 h2 shadow"
-                    >Ver link</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </section>
     <!-- SECTION DE FOOTER -->
     <section id="footer" class="footer">
@@ -649,7 +568,7 @@
         </div>
       </div>
     </section>
-
+    <script src="./js/main.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>

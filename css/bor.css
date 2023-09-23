@@ -17,7 +17,8 @@ html {
   scroll-behavior: smooth;
 }
 p {
-  font-size: calc(0.6em + 0.6vw);
+  font-size: 2.5rem;
+  font-family: "EB Garamond", serif;
 }
 /* logo */
 .logo {
@@ -41,6 +42,16 @@ p {
   box-shadow: 0px 10px 14px rgb(0, 7, 5);
   border-radius: 50%;
 }
+.titles {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Archivo Black", sans-serif;
+  font-size: calc(1em + 1vw);
+}
+.bordes {
+  border-left: 7px solid var(--green);
+  padding-left: 8px;
+}
 /* logo */
 :root {
   --green: #26c7b1;
@@ -51,7 +62,6 @@ p {
   --block2: #21242a;
   --gry: #2e353e;
 }
-/* codigo comun */
 .imgfondo {
   background-image: linear-gradient(
       to top,
@@ -67,390 +77,74 @@ p {
   align-items: center;
   justify-content: center;
 }
-/* inicio */
 .containerImg img {
   border: 3px solid var(--black); /* Color del borde */
   box-shadow: 0px 10px 15px rgba(0, 0, 0.2);
-  width: 80%;
+  width: 100%;
   height: 30vh;
 }
-.containerInicioText {
-  width: 100%;
-}
-.containerInicioText .h2Developer {
-  font-family: "EB Garamond", serif;
-  font-size: calc(1em + 1vw);
-  font-weight: bold;
-  color: var(--green);
-}
-
-.containerInicioText .h2Skills {
-  font-family: "EB Garamond", serif;
-  font-size: calc(0.8em + 0.8vw);
-}
-/* Button the cv */
-.divButtonCv .button a {
-  background-color: var(--black);
-  color: var(--green);
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  font-family: "EB Garamond", serif;
-  font-size: calc(0.6em + 0.6vw);
-}
-
-.divButtonCv a:hover {
-  background-color: var(--white);
-  color: var(--black);
-  transform: scale(1.05);
-}
-/* codigo universal */
-.tipocrefia {
-  /* uno */
-  font-family: "Roboto Condensed", sans-serif;
-  /* dos */
-  font-family: "Archivo Black", sans-serif;
-}
-.hr {
-  color: var(--green);
-}
-.titles {
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: "Archivo Black", sans-serif;
-  font-size: calc(1em + 1vw);
-}
-.bordes {
-  border-left: 7px solid var(--green);
-  padding-left: 8px;
-}
-
-/* about for my */
-
-.div-containerAbout .span {
-  font-family: "EB Garamond", serif;
-
-  font-size: calc(0.9em + 0.9vw);
-  font-weight: bold;
-}
-
-.h2 {
-  font-family: "Archivo Black", sans-serif;
-  font-size: calc(0.7em + 0.7vw);
-  color: var(--green);
-  font-weight: bold;
-}
-.h3 {
-  font-family: "EB Garamond", serif;
-  font-size: calc(0.5em + 0.5vw);
-}
-.t{
-  color: var(--green);
-}
-.colorGreen {
-  color: var(--green);
-  font-weight: bold;
-}
-
-.colorBackgroun {
-  background-color: var(--green);
-}
-
 .allBlocks {
   background-color: var(--block2);
   color: var(--white);
 }
-/* seca de mi */
-.imagen2 img {
-  width: 100%;
-  height: 100%;
-  border: 2px solid var(--blanco); /* Color del borde */
-  box-shadow: 0px 10px 14px rgba(0, 0, 0.2);
+/* codigo comun */
+/* img */
+.divcontinerImg {
+  display: inline-block;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  overflow: hidden; /* Para que la animación de color funcione correctamente */
+  position: relative;
 }
-/* habilidades */
+.divcontinerImg img {
+  max-width: 100%;
+  max-height: 100vh;
+}
+.divcontinerImg:hover {
+  transform: scale(1.05);
+  background-color: var(--black);
+}
 
-.habilida .barra-habilidades span {
+.divcontinerImg::before {
+  content: "";
   position: absolute;
-  background-color: var(--green);
-  color: var(--black);
-  height: 3rem;
-  width: 3rem;
-  border-radius: 100px;
-  line-height: 3rem;
-  text-align: center;
-  top: -1rem;
-  right: -2px;
-  font-size: 1rem;
-  text-align: center;
-  border-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(10, 71, 71); /* Color de fondo inicial */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: -1;
 }
 
-.habilida .barra-habilidades {
-  height: 20px;
-  width: 60%;
-  height: 10px;
-  background-color: var(--white);
-  border-radius: 50%;
-  position: relative;
-  top: 10px;
-  margin-bottom: 30px;
+.divcontinerImg:hover::before {
+  opacity: 1;
 }
-
-.habilida .javascript {
-  width: 0%;
-  animation: 2s javascript forwards;
-  -webkit-animation: 2s javascript forwards;
-  width: 50%;
-}
-.habilida .progreso {
-  background-color: var(--green);
-  position: absolute;
-  height: 10px;
-  display: block;
-}
-
-@keyframes javascript {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 50%;
-  }
-}
-.habilida .htmlcss {
-  animation: 3s htmlcss forwards;
-  -webkit-animation: 3s htmlcss forwards;
-}
-
-@keyframes htmlcss {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
-}
-/* 3 */
-.habilida .bootstrap {
-  width: 0%;
-  animation: 2s bootstrap forwards;
-  -webkit-animation: 2s bootstrap forwards;
-}
-
-@keyframes bootstrap {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 40%;
-  }
-}
-/* 4 */
-.habilida .gitHub {
-  width: 0%;
-  animation: 2s gitHub forwards;
-  -webkit-animation: 2s gitHub forwards;
-}
-
-@keyframes gitHub {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 50%;
-  }
-}
-.habilida .gitHub {
-  width: 0%;
-  animation: 2s gitHub forwards;
-  -webkit-animation: 2s gitHub forwards;
-}
-
-@keyframes react {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 50%;
-  }
-}
-
-.habilida .react {
-  width: 0%;
-  animation: 2s react forwards;
-  -webkit-animation: 2s react forwards;
-}
-
-@keyframes typescript {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 30%;
-  }
-}
-.habilida .typescript {
-  width: 0%;
-  animation: 2s typescript forwards;
-  -webkit-animation: 2s typescript forwards;
-}
-.h4 {
-  font-family: "EB Garamond", serif;
-  color: var(--white);
-  font-weight: bold;
-}
-.deparar {
-  gap: 3rem;
-}
-.progreso {
-  width: 75%;
-  background-color: #26c7b1;
-  font-size: 2rem;
-}
-/* Estudios */
-.contenido-section {
-  position: relative;
-  border-right: 15px solid var(--white);
-  margin-right: 18px;
-  margin-top: 1rem;
-}
-.contenido-sectiond {
-  position: relative;
-  margin-left: 18px;
-  border-left: 15px solid var(--white);
-  margin-top: 1rem;
-}
-
-.conectores {
-  height: 5px;
-  background-color: var(--white);
-  width: 50px;
-  position: absolute;
-  top: 50%;
-  right: -50px;
-}
-
-.conectoresd {
-  height: 5px;
-  background-color: var(--white);
-  position: absolute;
-  width: 47px;
-  top: 50%;
-  left: -47px;
-  z-index: 5;
-}
-.conectoresd .circulos {
-  display: block;
-  height: 13px;
-  width: 13px;
-  border-radius: 50%;
-  background-color: var(--white);
-  float: left;
-  position: relative;
-  bottom: 4px;
-}
-
-.conectores .circulo {
-  display: block;
-  height: 13px;
-  width: 13px;
-  border-radius: 50%;
-  background-color: var(--white);
-  float: right;
-  position: relative;
-  bottom: 4px;
-}
-
-.rowfhadher {
-  gap: 5rem;
-}
-.gapDerecho {
-  border-right: 3px solid var(--green);
-}
-.gapIzquierda {
-  border-left: 3px solid var(--green);
-}
-
-.sectiNever {
+.divcontainerText {
   background-color: var(--gry);
 }
 
-/* galeria */
-
-.galeria {
-  position: relative;
-  max-width: 100%;
-  height: 340px;
-  margin: 10px;
-  cursor: pointer;
-
-  /* background-color: var(--blanco); */
+.divcontainerText h2 {
+  color: var(--green);
 }
-.overlay {
-  position: absolute;
-  top: 0%;
-  width: 100%;
-  height: 100%;
+/* boton proyecto */
+.boton-ovalado {
+  background-color: var(--green);
+  border: none;
+  border-radius: 50px;
+  color: var(--black);
+  padding: 15px 30px;
   text-align: center;
-  background-color: rgb(20, 23, 26);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: 1s;
-  color: var(--white);
-  font-size: 2rem;
-  letter-spacing: 4px;
-  opacity: 0;
-}
-.galeria .overlay:hover {
-  opacity: 1;
-}
-.overlay:hover h2 {
-  margin-bottom: 0px;
-  transition: 2s;
-  line-height: 3rem;
-}
-.galeria img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  overflow: hidden;
-  object-fit: cover;
-}
-.overlay a {
-  color: #1c1a1b;
   text-decoration: none;
-  font-size: 1rem;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  width: 50%;
 }
-.overlay span {
-  font-size: 1.5rem;
-}
-.letra{
-  color: var(--white);
- background-color: var(--green);
-}
-
-.footer {
-  background-color:var(--gry);
-  font-size: 2.5rem;
-  padding: 4rem;
-}
-.icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5rem;
-  color: aliceblue;
-  font-size: 3rem;
-}
-.icons i {
-  color: var(--white);
-  font-size: 5rem;
-}
-.infomacion {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  color: var(--white);
+.boton-ovalado:hover {
+  background-color: var(--green);
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
 }

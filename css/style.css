@@ -17,15 +17,53 @@ html {
   scroll-behavior: smooth;
 }
 p {
-  font-size: calc(0.6em + 0.6vw);
+  font-size: 2.5rem;
+  font-family: "EB Garamond", serif;
 }
+/* css con javascrip */
+.change-color a {
+  color: #fff;
+  font-size: 2rem;
+  font-family: "EB Garamond", serif;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.change-color a:hover,
+.change-color a:focus {
+  color: var(--green);
+}
+
+/* Estilo para la clase "active" en el elemento de navegación */
+
+.change-color a.nav-link.active {
+  color: var(--green);
+}
+/* SCROL */
+.navbar {
+  background-color: var(--black);
+  transition: background-color 0.3s;
+}
+
+/* Estilo del navbar cuando está en la parte superior */
+.navbar.navbar-top {
+  background-color: transparent;
+}
+
+/* Estilo para la clase "active" en el elemento de navegación */
+.change-color .nav-link-item.active {
+  color: var(--green);
+}
+
+/* TERMINA */
 /* logo */
 .logo {
   font-family: "Satisfy", cursive;
   max-width: 100%;
+  margin-top: 20px;
   /* display: none; */
 }
-.text-link{
+.text-link {
   font-size: calc(0.6em + 0.6vw);
 }
 .logo h2 {
@@ -81,10 +119,14 @@ p {
   width: 100%;
 }
 .containerInicioText .h2Developer {
-  font-family: "EB Garamond", serif;
-  font-size: calc(1em + 1vw);
+  /* font-family: "EB Garamond", serif; */
+  /* font-size: calc(1em + 1vw); */
   font-weight: bold;
   color: var(--green);
+  font-family: "Archivo Black", sans-serif;
+  /* font-size: 1.8rem; */
+  color: var(--green);
+  font-weight: bold;
 }
 
 .containerInicioText .h2Skills {
@@ -100,10 +142,8 @@ p {
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
   border-radius: 5px;
-  font-size: calc(0.4em + 0.4vw); 
+  font-size: calc(0.4em + 0.4vw);
   color: var(--gry);
-
-  
 }
 
 .divButtonCv a:hover {
@@ -114,6 +154,12 @@ p {
 /* codigo universal */
 
 .hr {
+  color: var(--green);
+}
+.h3 {
+  font-family: "EB Garamond", serif;
+}
+.t {
   color: var(--green);
 }
 .titles {
@@ -128,27 +174,33 @@ p {
 }
 
 /* about for my */
-
-.div-containerAbout .span {
-  font-family: "EB Garamond", serif;
-
-  font-size: calc(0.9em + 0.9vw);
-  font-weight: bold;
+.imagen2 img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--blanco); /* Color del borde */
+  box-shadow: 0px 10px 14px rgba(0, 0, 0.2);
 }
-
-.h2 {
+.punto {
+  color: var(--green);
+}
+.div-containerAbout span {
   font-family: "Archivo Black", sans-serif;
-  font-size: calc(0.7em + 0.7vw);
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.div-containerAbout h2 {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.8rem;
   color: var(--green);
   font-weight: bold;
 }
-.h3 {
-  font-family: "EB Garamond", serif;
-  font-size: calc(0.5em + 0.5vw);
+/* data about */
+
+.div-container-data {
+  width: 100%;
 }
-.t {
-  color: var(--green);
-}
+/* color universy */
 .colorGreen {
   color: var(--green);
   font-weight: bold;
@@ -162,15 +214,16 @@ p {
   background-color: var(--block2);
   color: var(--white);
 }
-/* seca de mi */
-.imagen2 img {
-  width: 100%;
-  height: 100%;
-  border: 2px solid var(--blanco); /* Color del borde */
-  box-shadow: 0px 10px 14px rgba(0, 0, 0.2);
-}
-/* habilidades */
+/* finish universy code */
 
+/* habilidades */
+.div-container-habilidad {
+  width: 100%;
+}
+.div-container-habilidad p {
+  font-weight: bold;
+  /* border: solid 2px red; */
+}
 .habilida .barra-habilidades span {
   position: absolute;
   background-color: var(--green);
@@ -182,9 +235,10 @@ p {
   text-align: center;
   top: -1rem;
   right: -2px;
-  font-size: 1rem;
+  font-size: 1.4rem;
   text-align: center;
   border-radius: 50%;
+  font-weight: bold;
 }
 
 .habilida .barra-habilidades {
@@ -209,6 +263,7 @@ p {
   position: absolute;
   height: 10px;
   display: block;
+  /* border: solid 2px red; */
 }
 
 @keyframes javascript {
@@ -296,11 +351,6 @@ p {
   animation: 2s typescript forwards;
   -webkit-animation: 2s typescript forwards;
 }
-.h4 {
-  font-family: "EB Garamond", serif;
-  color: var(--white);
-  font-weight: bold;
-}
 .deparar {
   gap: 3rem;
 }
@@ -321,8 +371,22 @@ p {
   margin-left: 18px;
   border-left: 15px solid var(--white);
   margin-top: 1rem;
+  /* border: solid red 3px; */
 }
+.div-plataformas h2 {
+  width: 100%;
+  font-size: 1.8rem;
+  color: var(--green);
+  font-weight: bold;
+}
+/* .plataform{*/
 
+.div-plataformas .plataform {
+  width: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Archivo Black", sans-serif;
+}
 .conectores {
   height: 5px;
   background-color: var(--white);
@@ -455,4 +519,69 @@ p {
   justify-content: center;
   gap: 2rem;
   color: var(--white);
+}
+/* condigo nueno */
+.divcontinerImg {
+  display: inline-block;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  overflow: hidden; /* Para que la animación de color funcione correctamente */
+  position: relative;
+}
+.divcontinerImg img {
+  max-width: 100%;
+  max-height: 100vh;
+}
+.divcontinerImg:hover {
+  transform: scale(1.05);
+  background-color: var(--black);
+}
+
+.divcontinerImg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(10, 71, 71); /* Color de fondo inicial */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.divcontinerImg:hover::before {
+  opacity: 1;
+}
+.divcontainerText {
+  background-color: var(--gry);
+}
+
+.divcontainerText h2 {
+  color: var(--green);
+ 
+}
+.divcontainerText span {
+  color: var(--green);
+  font-weight: bold;
+}
+/* boton proyecto */
+.boton-ovalado {
+  background-color: var(--green);
+  border: none;
+  border-radius: 50px;
+  color: var(--black);
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  width: 50%;
+}
+.boton-ovalado:hover {
+  background-color: var(--green);
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
 }
