@@ -90,10 +90,7 @@ p {
   width: 100%;
   height: 30vh;
 }
-.allBlocks {
-  background-color: var(--block2);
-  color: var(--white);
-}
+
 /* codigo comun */
 /* img */
 .divcontinerImg {
@@ -125,33 +122,4 @@ p {
   z-index: -1;
 }
 
-.divcontinerImg:hover::before {
-  opacity: 1;
-}
-.divcontainerText {
-  background-color: var(--gry);
-}
-
-.divcontainerText h2 {
-  color: var(--green);
-}
 /* boton proyecto */
-.boton-ovalado {
-  background-color: var(--green);
-  border: none;
-  border-radius: 50px;
-  color: var(--black);
-  padding: 15px 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 10px 2px;
-  cursor: pointer;
-  width: 50%;
-}
-.boton-ovalado:hover {
-  background-color: var(--green);
-  transform: scale(1.1);
-  transition: transform 0.2s ease-in-out;
-}

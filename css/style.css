@@ -580,8 +580,10 @@ p {
 }
 .textfoton {
   font-size: calc(0.5em + 0.5vw);
-  color: var(--green);
+  color: var(--white);
   font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Archivo Black", sans-serif;
 }
 .divcontainerText strong {
   color: var(--green);
@@ -595,17 +597,14 @@ p {
   font-weight: bold;
   font-family: "Archivo Black", sans-serif;
 }
-.divcontainerText {
-  /* color: var(--green);
-  font-weight: bold; */
-}
+
 
 /* boton proyecto */
 .boton-ovalado {
   background-color: var(--green);
   border: none;
   border-radius: 50px;
-  color: var(--black);
+  color: var(--gry);
   padding: 15px 30px;
   text-align: center;
   text-decoration: none;
@@ -614,6 +613,7 @@ p {
   margin: 10px 2px;
   cursor: pointer;
   width: 50%;
+  
 }
 .boton-ovalado:hover {
   background-color: var(--green);
