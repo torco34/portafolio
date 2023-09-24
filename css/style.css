@@ -20,7 +20,7 @@ body {
   font-size: calc(1em + 0.8vw);
 }
 p {
-  font-size: calc(0.6em + 0.7vw);
+ 
   font-family: "EB Garamond", serif;
 }
 /* css con javascrip */
@@ -29,9 +29,15 @@ p {
   font-size: 2rem;
   font-family: "EB Garamond", serif;
   font-weight: bold;
+
   transition: background-color 0.3s, color 0.3s;
 }
-
+.portafolio h2 {
+  font-family: "EB Garamond", serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--green);
+}
 .change-color a:hover,
 .change-color a:focus {
   color: var(--green);
@@ -44,7 +50,7 @@ p {
 }
 /* SCROL */
 .navbar {
-  background-color: var(--black);
+  background-color: var(--gry);
   transition: background-color 0.3s;
 }
 
@@ -577,27 +583,35 @@ p {
 .divcontainerText {
   background-color: var(--gry);
   padding: 2rem;
+  margin-top: 2rem;
+  padding-right: 2rem;
 }
-.textfoton {
+
+.textfoton h3 {
   font-size: calc(0.5em + 0.5vw);
   color: var(--white);
   font-weight: bold;
   text-transform: uppercase;
+  /* border: solid red; */
   font-family: "Archivo Black", sans-serif;
 }
 .divcontainerText strong {
   color: var(--green);
+  font-family: "Archivo Black", sans-serif;
 }
-.divcontainerText h2 {
-  color: var(--green);
+.divcontainerText h3 {
+  width: 100%;
+  font-size: calc(0.6em + 0.4vw);
+  color: var(--white);
+  font-weight: bold;
 }
 
 .divcontainerText .objetivo {
   color: var(--white2);
   font-weight: bold;
+  font-size: calc(0.6em + 0.4vw);
   font-family: "Archivo Black", sans-serif;
 }
-
 
 /* boton proyecto */
 .boton-ovalado {
@@ -605,15 +619,14 @@ p {
   border: none;
   border-radius: 50px;
   color: var(--gry);
-  padding: 15px 30px;
+
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: calc(0.6em + 0.4vw);
   margin: 10px 2px;
   cursor: pointer;
   width: 50%;
-  
 }
 .boton-ovalado:hover {
   background-color: var(--green);

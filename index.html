@@ -38,9 +38,9 @@
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
           >
-            <div class="offcanvas-header">
-              <h2 class="offcanvas-title titles" id="offcanvasNavbarLabel">
-                Portafolio
+            <div class="offcanvas-header portafolio">
+              <h2 class="offcanvas-title p-5" id="offcanvasNavbarLabel">
+                PORTAFOLIO
               </h2>
               <button
                 type="button"
@@ -98,21 +98,21 @@
               <span class="bordes"></span>I'm Torcoroma Arias Ascanio
             </h2>
             <hr class="hr" />
-            <h2 class="h2Developer">Front-End developer</h2>
+            <div class="div-containerAbout">
+              <h2 class="">Front-End developer</h2>
+            </div>
+
             <hr class="hr" />
             <h3 class="h2Skills">
               JavaScript.js, React.js, TypeScript.js Html5, <br />Css3,
               Bootstrap, Git y GitHub.
               <hr class="hr" />
             </h3>
-            <div class="divButtonCv">
-              <h3 class="button">
-                <a href="./img/TORCOROMAARIAS.pdf" class="btn btn-dark shadow">
-                  Descargar cv<br />
-                  <i class="bi bi-arrow-down-circle-fill"></i>
-                </a>
-              </h3>
-            </div>
+            <div class="text-center"></div>
+
+            <a href="./img/TORCOROMAARIAS.pdf">
+              <button class="boton-ovalado p-2">Descargar cv</button>
+            </a>
           </div>
         </div>
         <div class="col-2"></div>
@@ -125,22 +125,23 @@
         <div class="mt-5 p-5 text-center">
           <h2 class="titles"><span class="bordes"></span>ABOUT ME</h2>
         </div>
+        <br />
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-lg-6">
             <div class="imagen2">
-              <img src="./img/mi.jpg" width="100px" alt="" />
+              <img src="./img/mifoto2.jpg" width="100px" alt="" />
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-lg-6 col-md-6 p-5">
             <div class="div-containerAbout">
               <p class="">
                 <span class="bordes">Hello, I'm Torcoroma Arias Ascanio</span
-                ><span class="p-3 punto">.</span> &nbsp A self-taught web
-                developer with a passion for self-driven learning and taking on
-                constant challenges. Each solution found has been an achievement
-                that has propelled me to keep learning. My commitment to
-                continuous improvement and the pursuit of knowledge drives me to
-                be an exceptional web developer..<br />
+                ><span class="p-3 punto">.</span> &nbsp <br />
+                <br />A self-taught web developer with a passion for self-driven
+                learning and taking on constant challenges. Each solution found
+                has been an achievement that has propelled me to keep learning.
+                My commitment to continuous improvement and the pursuit of
+                knowledge drives me to be an exceptional web developer..<br />
                 <br />
               </p>
               <h2>! Thank you for visiting my portfolio !</h2>
@@ -203,6 +204,7 @@
         <div class="mt-5 p-5 text-center">
           <h2 class="titles"><span class="bordes"></span>TECHNICAL SKILLS</h2>
         </div>
+        <br />
         <div class="row">
           <div class="col-md-8 p-5">
             <!-- 1 -->
@@ -214,7 +216,7 @@
                 </div>
               </div>
             </div>
-            <hr class="p-2 linea" width="100%" />
+            <hr class="p-2 hr" width="100%" />
             <!-- 2 -->
             <div class="habilida d-flex text-center deparar">
               <div class="text-center"><p class="">Html5 y Css</p></div>
@@ -224,7 +226,7 @@
                 </div>
               </div>
             </div>
-            <hr class="p-2" width="100%" />
+            <hr class="p-2 hr" width="100%" />
             <!-- 3 -->
             <div class="habilida d-flex deparar">
               <div class=""><p class="">Bootstrap</p></div>
@@ -234,7 +236,7 @@
                 </div>
               </div>
             </div>
-            <hr class="p-2" width="100%" />
+            <hr class="p-2 hr" width="100%" />
             <!-- 4 -->
             <div class="habilida d-flex deparar">
               <div class="text-center"><p>Git y GitHub</p></div>
@@ -244,7 +246,7 @@
                 </div>
               </div>
             </div>
-            <hr class="p-2" width="100%" />
+            <hr class="p-2 hr" width="100%" />
             <!-- 5 -->
             <div class="habilida d-flex deparar">
               <div class=""><p>React.js</p></div>
@@ -255,7 +257,7 @@
               </div>
             </div>
             <!-- 6 -->
-            <hr class="p-2" width="100%" />
+            <hr class="p-2 hr" width="100%" />
             <div class="habilida d-flex deparar">
               <div class=""><p>Typescript.js</p></div>
               <div class="rounded-pill barra-habilidades shadow">
@@ -264,7 +266,7 @@
                 </div>
               </div>
             </div>
-            <hr class="p-2" width="100%" />
+            <hr class="p-2 hr" width="100%" />
             <!-- fini -->
           </div>
         </div>
@@ -277,6 +279,7 @@
         <div class="mt-5 p-5 text-center">
           <h2 class="titles"><span class="bordes"></span>EDUCATION</h2>
         </div>
+        <br />
         <div class="row rowfhadher">
           <div class="col-md-5 gapDerecho">
             <div
@@ -375,78 +378,82 @@
         <div class="mt-5 p-5 text-center">
           <h2 class="titles"><span class="bordes"></span>PROJECT GALLERY</h2>
         </div>
+        <br />
         <div class="row">
           <div class="col-md-6 shadow">
             <div class="divcontinerImg rounded p-5">
               <img class="rounded" src="./img/proyecto1.png" alt="IMG" />
             </div>
-            <div class="textfoton">
-              <h2 class="text-center p-5">
-                Ejercicios de Lógica en JavaScript
-              </h2>
-              <div class="text-center divboton">
+            <div class="textfoton p-5">
+              <h3 class="text-center">Ejercicios de Lógica en JavaScript</h3>
+              <div class="text-center">
                 <a href="https://torco34.github.io/aprendizajeTalentLogy/">
-                  <button class="boton-ovalado">Haz clic</button>
+                  <button class="boton-ovalado p-2">Haz clic</button>
                 </a>
               </div>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="divcontainerText rounded p-5 mb-4 flex-column">
-              <h2 class="">
-                <strong>Nombre: </strong>Ejercicios de Lógica en JavaScript<br />
-              </h2>
-              <h2><strong>Fecha: </strong>23/02/27</h2>
-              <br />
-              <p class="mt-5 objetivo">Objetivo</p>
-              <!-- <p><strong>Descripción del Proyecto </strong></p> -->
+            <div class="divcontainerText rounded flex-column">
+              <div class="p-4">
+                <h3 class="">
+                  <strong> Nombre:</strong> Ejercicios de Lógica en
+                  JavaScript<br />
+                </h3>
+                <h3><strong>Fecha: </strong>23/02/27</h3>
+                <br />
+                <p class="objetivo">Objetivo</p>
 
-              <p class="t-5">
-                El objetivo principal de este proyecto es mejorar mis
-                habilidades de programación y lógica al resolver una serie de
-                ejercicios utilizando JavaScript.
-                <br />
-                <br />
-                <strong>Herramientas Utilizadas.</strong>
-                <br />
-                JavaScript, Editor de Código, Navegador Web. >
-              </p>
+                <p class="">
+                  El objetivo principal de este proyecto es mejorar mis
+                  habilidades de programación y lógica al resolver una serie de
+                  ejercicios utilizando JavaScript.
+                </p>
+              </div>
+              <br />
+              <div class="p-4">
+                <h3><strong>Herramientas Utilizadas.</strong></h3>
+                JavaScript, Editor de Código, Navegador Web.
+              </div>
             </div>
           </div>
 
           <div class="col-md-6">
-            <div class="divcontainerText rounded p-5 mb-4 flex-column">
-              <h2 class="">
-                <strong>Nombre: </strong>Trello con localStorage<br />
-              </h2>
+            <div class="divcontainerText rounded flex-column">
+              <div class="p-4">
+                <h3 class="">
+                  <strong>Nombre: </strong>Trello con localStorage<br />
+                </h3>
 
-              <h2><strong>Fecha: </strong>23/02/27</h2>
-              <p class="mt-5 objetivo">Objetivo</p>
-              <!-- <p><strong>Descripción del Proyecto </strong></p> -->
-
-              <p class="t-5">
-                El objetivo principal de este proyecto fue crear una aplicación
-                web inspirada en Trello que permitiera a los usuarios Crear
-                tableros, Añadir tarjetas, Editar y eliminar<br />
+                <h3><strong>Fecha: </strong>23/02/27</h3>
                 <br />
-                <br />
-                <strong> Herramientas y tecnologías que utilicé </strong>
+                <p class="objetivo">Objetivo</p>
 
-                HTML/CSS, JavaScript, localStorage, Editor de Código >
-              </p>
+                <p>
+                  El objetivo principal de este proyecto fue crear una
+                  aplicación web inspirada en Trello que permitiera a los
+                  usuarios Crear tableros, Añadir tarjetas, Editar y eliminar<br />
+                </p>
+              </div>
+              <div class="p-4">
+                <h3>
+                  <strong> Herramientas y tecnologías que utilicé </strong>
+                </h3>
+                HTML/CSS, JavaScript, localStorage, Editor de Código
+              </div>
             </div>
           </div>
           <div class="col-md-6 shadow">
             <div class="divcontinerImg rounded p-5">
               <img src="./img/proyect2.png" alt="IMG" class="rounded" />
             </div>
-            <div class="textfoton">
-              <h2 class="text-center p-5">Trello con localStorage</h2>
+            <div class="textfoton p-5">
+              <h3 class="text-center">Trello con localStorage</h3>
               <div class="text-center">
                 <a
                   href="https://torco34.github.io/administradorTareasTalentLogy/"
                 >
-                  <button class="boton-ovalado">Haz clic</button>
+                  <button class="boton-ovalado p-2">Haz clic</button>
                 </a>
               </div>
             </div>
@@ -457,48 +464,48 @@
               <img src="./img/proy.png" alt="IMG" class="rounded" />
             </div>
 
-            <div class="textfoton">
-              <h2 class="text-center p-5">Página Saludable con Bootstrap.</h2>
+            <div class="textfoton p-5">
+              <h3 class="text-center">Página Saludable con Bootstrap.</h3>
               <div class="text-center">
-                <a
-                href="https://torco34.github.io/bootstrap-web/"
-                >
-                  <button class="boton-ovalado">Haz clic</button>
+                <a href="https://torco34.github.io/bootstrap-web/">
+                  <button class="boton-ovalado p-2">Haz clic</button>
                 </a>
               </div>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="divcontainerText rounded p-5 mb-4 flex-column">
-              <h2 class="">
-                <strong>Nombre: </strong>Página de Alimentación Saludable con
-                Bootstrap.<br />
-              </h2>
-              <h2><strong>Fecha: </strong>23/05/13</h2>
+            <div class="divcontainerText rounded flex-column">
+              <div class="p-4">
+                <h3 class="">
+                  <strong>Nombre: </strong>Página de Alimentación Saludable con
+                  Bootstrap.<br />
+                </h3>
+                <h3><strong>Fecha: </strong>23/05/13</h3>
 
-              <p class="mt-5 objetivo">Objetivo</p>
-              <!-- <p><strong>Descripción del Proyecto </strong></p> -->
+                <p class="mt-5 objetivo">Objetivo</p>
+                <!-- <p><strong>Descripción del Proyecto </strong></p> -->
 
-              <p class="t-5">
-                A lo largo del proyecto, aproveché al máximo las características
-                de Bootstrap<br />El objetivo principal de este proyecto es
-                practicar. <br />
-                <br />
-                <br />
-                <strong>Elementos Utilizados de Bootstrap</strong>
-
-                <br /><span>
+                <p class="t-5">
+                  A lo largo del proyecto, aproveché al máximo las
+                  características de Bootstrap<br />El objetivo principal de
+                  este proyecto es practicar. <br />
+                </p>
+              </div>
+              <div class="p-4">
+                <h3>
+                  <strong>Elementos Utilizados de Bootstrap</strong>
+                </h3>
+                <p>
                   Grid System, Componentes de UI, Estilos Personalizados
-                  Imágenes y Carrousel.</span
-                >
-              </p>
+                  Imágenes y Carrousel.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-   
-   
+
     <!-- SECTION DE FOOTER -->
     <section id="footer" class="footer">
       <div class="container">
