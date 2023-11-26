@@ -28,7 +28,6 @@ p {
   font-size: 2rem;
   font-family: "EB Garamond", serif;
   font-weight: bold;
-
   transition: background-color 0.3s, color 0.3s;
 }
 .portafolio h2 {
@@ -76,7 +75,7 @@ p {
   flex-direction: column;
   align-items: center;
   font-size: calc(0.5em + 0.5vw);
-  color: var(--white);
+  color: var(--green);
 }
 .logo span {
   width: 50%;
@@ -99,12 +98,8 @@ p {
 }
 /* codigo comun */
 .imgfondo {
-  background-image: linear-gradient(
-      to top,
-      rgba(27, 28, 28),
-      rgba(16, 17, 17, 0.4)
-    ),
-    url(../img/imagen.jpg);
+  background-image: linear-gradient(to top, rgb(6, 5, 5), rgba(1, 0, 0, 0.3)),
+    url(../img/compu.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -116,7 +111,7 @@ p {
 /* inicio */
 .containerImg img {
   border: 3px solid var(--black); /* Color del borde */
-  box-shadow: 0px 10px 15px rgba(0, 0, 0.2);
+  box-shadow: 0px 10px 15px rgb(0, 0, 0);
   width: 100%;
   height: 30vh;
 }
@@ -153,7 +148,7 @@ p {
   color: var(--black);
   transform: scale(1.05);
 }
-/* codigo universal */
+/* CÓDIGO UNIVERSAL */
 
 .hr {
   color: var(--green);
@@ -177,17 +172,16 @@ p {
 
 /* ABAUT ME */
 
-.div-columna{
+.div-columna {
   background-color: var(--gry);
 }
 .imagen2 img {
   width: 70%;
- 
 
   border: 2px solid var(--black);
-  /*Colordelborde*/box-shadow: 0px 10px 14px rgba(0, 0, 0.2);
-  border-radius: 10px ;
- 
+  /*Colordelborde*/
+  box-shadow: 0px 10px 14px rgba(0, 0, 0.2);
+  border-radius: 10px;
 }
 .punto {
   color: var(--green);
@@ -225,7 +219,7 @@ p {
   background-color: var(--block2);
   color: var(--white);
 }
-/* finish universy code */
+/* FINALIZO */
 
 /* habilidades */
 .div-container-habilidad {
@@ -238,19 +232,16 @@ p {
   /* padding-bottom: 5rem; */
 }
 /* galería */
-.div-img-habilidades{
+.div-img-habilidades {
   width: 100%;
   border-radius: 10px;
   background-color: var(--gry);
-
 }
 .div-img-habilidades img {
- width: 100%;
- height: auto;
- overflow: hidden;
- background-color: var(--);
-
- 
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: var(--);
 }
 .imagen {
   position: relative;
@@ -677,8 +668,22 @@ p {
 }
 /* boton de pied para ver mas proyectos */
 .botonVerMasProyecto{
-width: 50%;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  
+  font-family: "EB Garamond", serif;
+}
+.botonVerMasProyecto button{
 
-padding: 20px;
-text-align: center;
+  color: var(--black);
+  font-size: 30px;
+ 
+}
+.linkVolverDefault a {
+  font-family: "EB Garamond", serif;
+  text-decoration: none;
+  color: var(--green);
+
+  margin-left: 30px;
 }

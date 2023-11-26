@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: calc(1em + 0.8vw);
+}
+:root {
+  --green2: #55af96;
+  --green: #6fdcbf;
+  --black: #404040;
+  --black2: #040d12;
+  --block3: #21242a;
+  --gry: #2e353e;
+  --purple: #ad8fdb;
+  --white: #f6f4f6;
+  --white2: #f7f7f7;
+  --yellow1: #fef8b4;
+  --yellow: #fec34f;
+}
+
+/* CÓDIGO UNIVERSAL */
+.titles {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Archivo Black", sans-serif;
+  font-size: calc(1em + 1vw);
+}
+.h3 {
+  font-family: "EB Garamond", serif;
+}
+p {
+  font-family: "EB Garamond", serif;
+}
+.div-containerAbout h2 {
+  font-family: "Archivo Black", sans-serif;
+  color: var(--green);
+  font-weight: bold;
+
+  font-size: calc(0.5em + 0.6vw);
+}
+.div-container-data {
+  width: 100%;
+}
+/* color universy */
+.colorGreen {
+  color: var(--green);
+  font-weight: bold;
+}
+
+.colorBackgrounds {
+  background-color: var(--green);
+}
+
+.colorDotaPagina {
+  background-color: var(--block3);
+  color: var(--white);
+}
+/* CÓDIGO DE BOTÓN VOLVER */
+
+.linkVolver {
+padding: 20px;
+
+}
+
+.linkVolver a{
+  font-family: "EB Garamond", serif;
+  text-decoration: none;
+  color: var(--green2);
+  margin-left: 30px;
+  
+  }
