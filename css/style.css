@@ -668,14 +668,14 @@ p {
 }
 /* boton de pied para ver mas proyectos */
 .botonVerMasProyecto{
-  width: 80%;
+  width: 300px;
   padding: 20px;
   text-align: center;
-  
+ 
   font-family: "EB Garamond", serif;
 }
 .botonVerMasProyecto button{
-
+  width: 100%;
   color: var(--black);
   font-size: 30px;
  
