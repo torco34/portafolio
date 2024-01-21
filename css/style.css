@@ -667,23 +667,21 @@ p {
   width: 100%;
 }
 /* boton de pied para ver mas proyectos */
-.botonVerMasProyecto{
-  width: 300px;
-  padding: 20px;
+.botonVerMasProyecto {
+  width: 40rem;
+  padding: 2rem;
   text-align: center;
- 
-  font-family: "EB Garamond", serif;
 }
-.botonVerMasProyecto button{
-  width: 100%;
-  color: var(--black);
-  font-size: 30px;
- 
+.botonVerMasProyecto a {
+  color: var(--green);
+}
+
+.botonVerMasProyecto a:hover {
+  color: rgb(70, 70, 207);
 }
 .linkVolverDefault a {
-  font-family: "EB Garamond", serif;
-  text-decoration: none;
   color: var(--green);
-
-  margin-left: 30px;
+}
+.linkVolverDefault a:hover {
+  color: rgb(70, 70, 207);
 }
