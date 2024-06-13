@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Detectar el desplazamiento de la página
 // Detectar el desplazamiento de la página
+
 window.addEventListener("scroll", function () {
   const navbar = document.querySelector(".navbar");
   const scrollY = window.scrollY;
