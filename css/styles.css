@@ -224,7 +224,7 @@ color: #333;
 
 #footer a:hover {
   color: #333;
-  /* Change link color on hover */
+ 
 }
 
 #footer .iconos {
@@ -233,7 +233,7 @@ color: #333;
 }
 
 /* Responsive Styles */
-@media (max-width: 767.98px) {
+/* @media (max-width: 767.98px) {
 
   .div-columna,
   .div-containerAbout {
@@ -249,7 +249,7 @@ color: #333;
     color: #333;
 
   }
-}
+} */
 
 /* FONDO DEL PROYECTO EN GENERAL */
 
