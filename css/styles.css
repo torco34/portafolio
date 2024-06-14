@@ -6,6 +6,7 @@ html {
   padding: 0;
   height: 100%;
   box-sizing: border-box;
+  /* overflow-x: hidden; */
   background: var(--white);
   /* font-family: "Roboto", sans-serif; */
   font-family: 'Georgia', serif;
@@ -37,6 +38,14 @@ html {
   background-color: var(--white2);
   border-radius: 5px;
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -88,8 +97,7 @@ html {
   font-size: 2.5rem;
   font-family: 'Arial', sans-serif;
   color: var(--black);
-  /* background-color: var(--white3); */
-  /* border: solid rgb(221, 235, 29); */
+
 }
 
 h2 {
@@ -107,11 +115,13 @@ h2 {
   line-height: 1.5;
 
   /*  */
-  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 
-
+/* .index.html{
+  width: 20%;
+} */
 
 
 /* imagenes  del proyecto */
@@ -133,6 +143,15 @@ h2 {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+.table{
+  width: 100%;
+  padding: 2rem;
+}
+.containerImgMia{
+  /* width: 500px;
+  height: 30vh; */
+  /* border: solid; */
+}
 .image-animation {
   width: 200px;
   height: 200px;
@@ -172,10 +191,12 @@ h2 {
   color: var(--black);
   font-weight: bold;
   font-size: 16;
+ background-color: #6e7e6e;
 }
 
 .colorBasico {
   color: #ffcc00;
+  
 }
 
 .colorIntermedio {
@@ -232,24 +253,6 @@ color: #333;
   margin-right: 10px;
 }
 
-/* Responsive Styles */
-/* @media (max-width: 767.98px) {
-
-  .div-columna,
-  .div-containerAbout {
-    padding: 1rem;
-  }
-
-  .display-3 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-    color: #333;
-
-  }
-} */
 
 /* FONDO DEL PROYECTO EN GENERAL */
 
