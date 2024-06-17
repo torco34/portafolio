@@ -146,6 +146,7 @@ h2 {
 .table{
   width: 100%;
   padding: 2rem;
+
 }
 .containerImgMia{
   /* width: 500px;
@@ -211,7 +212,7 @@ h2 {
 .offcanvas {
   background-color: var(--purple);
 }
-
+div-columna
 .nav-item .nav-link-item {
   color: #ffffff;
   margin-top: 0.5rem;
@@ -269,7 +270,7 @@ color: #333;
 
 /* fondo titulos */
 .imgfondo2 {
-  background: url('../img/fondoF1.jpg') no-repeat center center;
+
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -277,11 +278,25 @@ color: #333;
   justify-content: center;
   align-items: center;
 }
-.imgFondoPro{
+.imgFondoEstudio{
   background: url('../img/fondo5.jpg') no-repeat center center;
   background-size: cover;
-  color: #fff;
-  padding: 50px 0;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.imgFondoProyecto{
+  background: url('../img/index3.jpg') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 /* fondo proyectos */
