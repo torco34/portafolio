@@ -1,18 +1,17 @@
 
 /* Reset and Base Styles */
+/* Codigo todo la pagina */
 body,
 html {
   margin: 0;
   padding: 0;
   height: 100%;
   box-sizing: border-box;
-  /* overflow-x: hidden; */
   background: var(--white);
-  /* font-family: "Roboto", sans-serif; */
   font-family: 'Georgia', serif;
 }
 
-/* Variables */
+/* Variables color*/
 :root {
   --black: #555;
   --blockk: #333;
@@ -39,27 +38,7 @@ html {
   border-radius: 5px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/* Content Box */
-.content {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 40px;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Button Styles */
+/* ESTILOS PARA EL BOTON */
 .boton-ovalado {
   display: inline-block;
   background: linear-gradient(45deg, var(--black), var(--purple2));
@@ -79,7 +58,6 @@ html {
   transform: scale(1.1);
   background-position: 100% 100%;
 }
-
 /* los border de los titulos */
 .borders {
   height: 2px;
@@ -91,23 +69,21 @@ html {
   border: solid 3px var(--purple);
 
 }
-
 /* Typography  */
 .titles {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: 'Arial', sans-serif;
   color: var(--black);
 
 }
-
+/* ESTILOS DE TODAS LAS H2 */
 h2 {
-  /* font-size: 1.75rem; */
-  /* text-align: center; */
+ 
   color: var(--blackk);
 
-  /* border: solid rgb(0, 68, 255); */
-}
 
+}
+/* ESTILOS DE LOS TEXTOS */
 .textName,
 .p {
   color: #555;
@@ -117,13 +93,6 @@ h2 {
   /*  */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
-
-
-/* .index.html{
-  width: 20%;
-} */
-
-
 /* imagenes  del proyecto */
 .image-animation2:hover {
   transform: scale(1.1);
@@ -135,7 +104,50 @@ h2 {
   width: 100%;
 
 }
+/* termina  clases para codigo general */
 
+
+
+
+
+
+
+
+
+/* CODIGO CSS PARA INICIO */
+/* Content Box */
+.content {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.botonVerGitHud{
+ display: flex;
+ justify-content: center;
+}
+
+.botonVerGitHud a button{
+   width: 400px;
+ }
 /* Columns  sobre mi texto*/
 /* Image Animation imagen mi foto */
 .image-animation:hover {
@@ -148,11 +160,7 @@ h2 {
   padding: 2rem;
 
 }
-.containerImgMia{
-  /* width: 500px;
-  height: 30vh; */
-  /* border: solid; */
-}
+
 .image-animation {
   width: 200px;
   height: 200px;
@@ -164,11 +172,11 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Centra los elementos horizontalmente */
-  max-width: 100%; /* Asegura que el contenedor no exceda el ancho de la pantalla */
-  padding: 0 10px; /* Añade un poco de espacio a los lados */
+  align-items: center; 
+  max-width: 100%; 
+  padding: 0 10px; 
   gap: 10px; 
-  box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+  box-sizing: border-box;
 }
 
 .imgTrabajo img {
@@ -192,7 +200,7 @@ h2 {
   color: var(--black);
   font-weight: bold;
   font-size: 16;
- background-color: #6e7e6e;
+ /* background-color: #6e7e6e; */
 }
 
 .colorBasico {
@@ -210,9 +218,10 @@ h2 {
 
 /* ESTILOS MENU */
 .offcanvas {
-  background-color: var(--purple);
+  background-color: var(--white);
+  color: #ffff;
 }
-div-columna
+
 .nav-item .nav-link-item {
   color: #ffffff;
   margin-top: 0.5rem;
@@ -225,11 +234,13 @@ div-columna
 .nav-item.active .nav-link-item,
 .nav-item .nav-link-item:hover {
   color: var(--white);
-  background-color: var(--purple2);
+  background-color: var(--white2);
   border-radius: 8px;
+  color: #3696a3;
 
 }
 
+/* termina menu */
 
 #footer .container {
   background-color: rgba(0, 0, 0, 0.7);
