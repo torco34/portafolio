@@ -89,32 +89,24 @@ h2 {
   color: #555;
   font-family: 'Georgia', serif;
   line-height: 1.5;
-
-  /*  */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
-/* imagenes  del proyecto */
-.image-animation2:hover {
-  transform: scale(1.1);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 
-}
 
-.image-animation2 {
-  width: 100%;
+/* CONTAINER GENERAL */
+.div-containerAbout {
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  margin: 1rem 0;
+  border-radius: 8px;
 
 }
 /* termina  clases para codigo general */
 
 
 
-
-
-
-
-
-
-/* CODIGO CSS PARA INICIO */
+/* ESTILOS  PARA INICIO */
 /* Content Box */
 .content {
   background-color: rgba(0, 0, 0, 0.7);
@@ -124,42 +116,33 @@ h2 {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.botonVerGitHud{
- display: flex;
- justify-content: center;
+/* estilos menu */
+.offcanvas {
+  background-color: var(--white);
+  color: #ffff;
 }
-
-.botonVerGitHud a button{
-   width: 400px;
- }
-/* Columns  sobre mi texto*/
-/* Image Animation imagen mi foto */
-.image-animation:hover {
-  transform: scale(1.1);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+/* color texto menu */
+.nav-item .nav-link-item {
+  color: #8a1818;
+  margin-top: 0.5rem;
+  border-radius: none;
+  padding-left: 1rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
+/* hover y estilos de menu */
 
-.table{
-  width: 100%;
-  padding: 2rem;
+.nav-item.active .nav-link-item,
+.nav-item .nav-link-item:hover {
+  color: var(--white);
+  background-color: var(--white2);
+  border-radius: 8px;
+  color: #3696a3;
 
 }
+/* TERMINA ESTILOS DE INICIO */
+
+/* ESTILOS SOBRE MI */
+/* Estilos para foto personal*/
 
 .image-animation {
   width: 200px;
@@ -167,40 +150,22 @@ h2 {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-
-.imgTrabajo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; 
-  max-width: 100%; 
-  padding: 0 10px; 
-  gap: 10px; 
-  box-sizing: border-box;
+.image-animation:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
+/* estilos tabla habilidades */
 
-.imgTrabajo img {
-  width: 100%; /* Hace que las imágenes se adapten al ancho del contenedor */
-  max-width: 300px; /* Limita el ancho máximo de las imágenes */
-  height: auto; /* Mantiene la proporción de las imágenes */
-  object-fit: contain; /* Ajusta el contenido de la imagen para que se ajuste al contenedor */
-}
-
-.div-columna,
-.div-containerAbout {
-  background-color: #f2f2f2;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.table{
+  width: 100%;
   padding: 2rem;
-  margin: 1rem 0;
-  border-radius: 8px;
-  /* border: solid rgb(0, 255, 64); */
-}
 
+}
 .colorTabla {
   color: var(--black);
   font-weight: bold;
   font-size: 16;
- /* background-color: #6e7e6e; */
+ 
 }
 
 .colorBasico {
@@ -216,29 +181,104 @@ h2 {
   color: #32CD32;
 }
 
-/* ESTILOS MENU */
-.offcanvas {
-  background-color: var(--white);
-  color: #ffff;
+
+/* TERMINA ESTILOS SOBRE MI */
+
+/* ESTILOS DE LOS PROYECTO*/
+
+
+/* Estilos de la imagen de proyectos */
+/* .imgTrabajo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  max-width: 100%; 
+  padding: 0 10px; 
+  gap: 10px; 
+  box-sizing: border-box;
+} 
+  
+.imgTrabajo img {
+  width: 100%; 
+  max-width: 300px; 
+  height: auto; 
+  object-fit: contain; 
 }
 
-.nav-item .nav-link-item {
-  color: #ffffff;
-  margin-top: 0.5rem;
-  border-radius: none;
-  padding-left: 1rem;
-  transition: color 0.3s ease, background-color 0.3s ease;
-}
 
-/* estilos menu */
-.nav-item.active .nav-link-item,
-.nav-item .nav-link-item:hover {
-  color: var(--white);
-  background-color: var(--white2);
-  border-radius: 8px;
-  color: #3696a3;
+
+
+*/
+
+.image-animation2:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 
 }
+
+.image-animation2 {
+  width: 100%;
+
+}
+
+/* botones del proyecto */
+.botonVerGitHud{
+  display: flex;
+  justify-content: center;
+ }
+ 
+ .botonVerGitHud a button{
+    width: 400px;
+  }
+
+
+/* ESTTILOS DEL FOOTER */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* termina menu */
 
@@ -266,7 +306,7 @@ color: #333;
 }
 
 
-/* FONDO DEL PROYECTO EN GENERAL */
+/*ESTILOS DE LAS IMAGENES DE FINDO */
 
 /* Image Background */
 .imgfondo {
