@@ -17,7 +17,7 @@ html {
   --blockk: #333;
   --purple: #3696a3;
   --purple2: #52bcca;
-  --white: #D0D3D9;
+  --white: #f3f9fa;
   --white3: #f2f2f2;
   --white2: #fff;
 
@@ -45,7 +45,7 @@ html {
   color: var(--white2);
   padding: 10px 20px;
   text-decoration: none;
-  width: 40%;
+  width: 100%;
   border-radius: 5px;
   font-size: 1.2em;
   background-size: 200% 200%;
@@ -83,7 +83,6 @@ h2 {
  
   color: var(--blackk);
 
-
 }
 /* ESTILOS DE LOS TEXTOS */
 .textName,
@@ -97,7 +96,7 @@ h2 {
 
 /* CONTAINER GENERAL */
 .div-containerAbout {
-  background-color: #f2f2f2;
+  background-color: var(--white3);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 2rem;
   margin: 1rem 0;
@@ -121,25 +120,28 @@ h2 {
 
 /* estilos menu */
 .offcanvas {
-  background-color: var(--white);
-  color: #ffff;
+  background-color: var(--white3);
+  /* background-color: #555; */
+ 
+ 
 }
 /* color texto menu */
 .nav-item .nav-link-item {
-  color: #8a1818;
+  color: var(--black);
   margin-top: 0.5rem;
   border-radius: none;
   padding-left: 1rem;
+  font-weight: bold;
   transition: color 0.3s ease, background-color 0.3s ease;
 }
 /* hover y estilos de menu */
 
 .nav-item.active .nav-link-item,
 .nav-item .nav-link-item:hover {
-  color: var(--white);
-  background-color: var(--white2);
+  /* color: var(--white); */
+  background-color: var(--purple);
   border-radius: 8px;
-  color: #3696a3;
+  color: var(--white);
 
 }
 /* TERMINA ESTILOS DE INICIO */
