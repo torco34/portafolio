@@ -8,7 +8,7 @@ html {
   height: 100%;
   box-sizing: border-box;
   background: var(--white);
-  font-family: 'Georgia', serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Variables color*/
@@ -16,7 +16,7 @@ html {
   --black: #555;
   --blockk: #333;
   --purple: #3696a3;
-  --purple2: #49b1be;
+  --purple2: #52bcca;
   --white: #D0D3D9;
   --white3: #f2f2f2;
   --white2: #fff;
@@ -41,7 +41,7 @@ html {
 /* ESTILOS PARA EL BOTON */
 .boton-ovalado {
   display: inline-block;
-  background: linear-gradient(45deg, var(--black), var(--purple2));
+  background: linear-gradient(45deg, var(--purple), var(--purple2));
   color: var(--white2);
   padding: 10px 20px;
   text-decoration: none;
@@ -51,7 +51,9 @@ html {
   background-size: 200% 200%;
   transition: background-position 0.5s ease;
   background-position: 0% 0%;
-
+border: none;
+font-family: 'Georgia', serif;
+font-weight: bold;
 }
 
 .boton-ovalado:hover {
@@ -109,10 +111,11 @@ h2 {
 /* ESTILOS  PARA INICIO */
 /* Content Box */
 .content {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 40px;
   text-align: center;
   border-radius: 10px;
+  font-weight: bold;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -236,52 +239,6 @@ h2 {
 /* ESTTILOS DEL FOOTER */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* termina menu */
-
 #footer .container {
   background-color: rgba(0, 0, 0, 0.7);
 color: #333;
@@ -306,7 +263,7 @@ color: #333;
 }
 
 
-/*ESTILOS DE LAS IMAGENES DE FINDO */
+/*ESTILOS DE LAS IMAGENES DE FoNDO */
 
 /* Image Background */
 .imgfondo {
@@ -358,12 +315,3 @@ color: #333;
   padding: 50px 0;
  
 }
-
-
-
-
-
-
-
-
-
