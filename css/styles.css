@@ -10,13 +10,15 @@ html {
   box-sizing: border-box;
 font-size: 16px;
   font-family: 'Roboto', sans-serif;
+  background-color: var(--purple2);
+  /* background: linear-gradient(45deg, var(--purple), var(--purple2)); */
 }
 
 /* Variables color*/
 :root {
   --black: #555;
   --blockk: #333;
-  --purple: #3696a3;
+  --purple: #52bcca;
   --purple2: #52bcca;
   --white: #f3f9fa;
   --white3: #f2f2f2;
@@ -30,7 +32,7 @@ font-size: 16px;
 }
 
 
-.container,
+
 .espacie-container {
   width: 100%;
   margin-top: 5rem;
@@ -51,10 +53,7 @@ font-size: 16px;
   color: var(--white2);
   padding: 10px 20px;
   text-decoration: none;
-  width: 100%;
   border-radius: 5px;
-  /* font-size: 1.2em; */
-  font-size: calc(10px + 0.5vw);
   background-size: 200% 200%;
   transition: background-position 0.5s ease;
   background-position: 0% 0%;
@@ -80,18 +79,19 @@ font-weight: bold;
 }
 
 h2.titles {
-  font-size: calc(10px + 1.5vw);
+  font-size: 36px; 
+ 
   color: var(--black) ; 
   font-family: 'Roboto', sans-serif;
 }
 
 p {
-  font-size: calc(10px + 0.5vw); 
+  font-size: 16px; 
   color: var(--black);
   font-family: 'Roboto', sans-serif;
 }
 h3.fw-bold {
-  font-size: calc(9px + 1vw);
+  font-size: calc(4px + 0.8vw);
   color: var(--blockk);
 }
 /* ESTILOS DE LOS TEXTOS */
@@ -302,34 +302,55 @@ background-color: #f2f2f2;
  
 }
 
-@media (max-width: 600px) {
 
-  .image-animation {
-    width: 150px;
-    height: 150px;
- 
-  }
-  .imgfondoMi{
-    height: 4vh;
-  }
-  .titles{
-width: 100px;
-  }
-
-  h2 {
-    font-size: 0.8em; 
-  }
-  .imgFondoProyecto{
-    height: 4vh;
-  }
-  .imgFondoEstudio{
-width: 100%;
-    height: 4vh;
+@media (max-width: 700px) {
+  h2.titles {
+    display: none;
+     font-size: 17px; 
+   width: 100%; 
   
   }
+
+  .boton-ovalado {
+  padding: 0;
+
+    font-size: 16px;
+   
+  }
+  
+}
+
+/* Media query para pantallas menores a 3none50px */
+@media (max-width: 400px) {
  
+  .imgfondoMi {
+ 
+    display: none;
+  }
+  .imgFondoProyecto{
+    display: none;
+  }
+  .imgFondoEstudio{
+    display: none;
+  }
+  .div-containerAbout{
+    /* background-color: #32CD32; */
+   width: 400px;
+   margin: 0;
+   margin-top: 30px;
+  
+   
+  }
+  .boton-ovalado {
+   
+    font-size: 10px;
+   
+  }
+.espacie-container {
+  width: 400px;
+  font-size: 10px; 
+  padding: 0;
 
-
-
-
+  margin: 0;
+}
 }
