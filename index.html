@@ -99,7 +99,7 @@
 
   <section id="sobre" class="container ">
     <div class="container-fluid espacie-container">
-      <div class="imgfondoMi p-5" data-aos="fade-up-right" data-oas="zoom-in-up">
+      <div class="imgfondo p-5" data-aos="fade-up-right" data-oas="zoom-in-up">
         <h2 class="titles fw-bold shadow  rounded bg-light text-center">
           <span class="borders mx-3"></span>Acerca de mí<span class="borders mx-3"></span>
         </h2>
@@ -229,7 +229,7 @@
   <!-- SECTION HABILIDADES -->
   <section id="habili" class=" container ">
     <div class="container-fluid espacie-container  ">
-      <div class=" p-5 imgFondoEstudio" data-aos="zoom-in-up">
+      <div class=" p-5 imgfondo" data-aos="zoom-in-up">
         <h2 class="titles  bg-white shadow  rounded fw-bold text-center">
           <span class="borders mx-3"></span>Estudios Realizados<span class="borders mx-3"></span>
         </h2>
@@ -296,7 +296,7 @@
     <div class="container-fluid mb-5 espacie-container">
       <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-12">
-          <div class=" mb-5 p-5 text-center imgFondoProyecto " data-aos="zoom-in-up">
+          <div class=" mb-5 p-5 text-center imgfondo" data-aos="zoom-in-up">
             <h2 class="titles bg-white  rounded shadow fw-bold">
 
               <span class="borders fw-bold mx-3"></span>Proyectos realizados<span class="borders mx-3"></span>
@@ -307,198 +307,144 @@
 
       <div class="container my-5">
         <div class="row">
-
           <!-- project 1 -->
-          <div class="col-sm-12 col-md-12 col-lg-4 ">
-            <div class="project-card shadow div-containerAbout rounded p-4" data-aos="zoom-in-up">
-              <div class="project-image mb-3">
-                <img src="./img/proyect.png" alt="Trello con localStorage" class="rounded image-animation2 img-fluid" />
-              </div>
-              <div class="project-content my-5 text-cente">
-                <h3 class="mb-2 fw-bold">Ecommerce</h3>
-
-
-                <div class=" d-flex justify-content-cente " data-aos="zoom-in-up">
-                  <div class="div-button mt-4">
-                    <a href="https://github.com/torco34/ecommercevue"> <button
-                        class="boton-ovalado mx-3 mt-3">Visitar</button>
-                    </a>
-                  </div>
+          <div class="col-sm-12 col-md-12 col-lg-4 my-4">
+            <div class="card  shadow" data-aos="zoom-in">
+              <img src="./img/proyect.png" alt="Trello con localStorage" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="mb-2 fw-bold">Commerce</h5>
+                <p class="fw-bold">Fecha: <span class="fw-bold my-3 colorPrimario">12/04/2024</span></p>
+                <div class="d-flex  my-3">
+                  <h5 class="fw-bold">Tecnologías:</h5>
+                  <p class="mx-3">Vue.js, Node.js, MongoDB</p>
                 </div>
-                <div class="mt-4 mx-4">
-                  <h3 class="fw-bold">Tecnologías Utilizadas</h3>
-                  <p>Vue.js, Node.js, MongoDB</p>
-                  <span class="fw-bold colorPrimario">29/05/2024</span>
-                  <p>El proyecto de Commerce es una plataforma desarrollada para poner a prueba mis habilidades en el
-                    diseño y desarrollo de aplicaciones web. Esta aplicación utiliza una variedad de tecnologías,
-                    incluyendo Vue.js para la
-                    interfaz de usuario dinámica, Node.js para el backend y MongoDB para la base de datos. </p>
-                </div>
+                <p class="card-text">Commerce es una plataforma para probar mis habilidades en diseño y desarrollo web,
+                  utilizando Vue.js para la interfaz, Node.js para el backend y MongoDB para la base de datos.</p>
+                <a href="https://github.com/torco34/ecommercevue"> <button class="boton-ovalado  ">Visitar</button>
+                </a>
               </div>
             </div>
           </div>
           <!-- Project 2-->
-          <div class="col-sm-12 col-md-12 col-lg-4 ">
-            <div class="shadow div-containerAbout rounded p-4" data-aos="zoom-in-up">
-              <div class="project-image mb-5">
-                <img src="./img/banco.png" alt="Ejercicios con React.js" class="rounded image-animation2 img-fluid" />
-              </div>
-              <div class="project-content my-5">
-                <h3 class="mb-2 fw-bold">Gestion de Pago y contaduría </h3>
-                <div class=" d-flex justify-content-cente " data-aos="zoom-in-up">
-                  <div class="div-button mt-4">
-                    <a href="https://github.com/AngelPerazaGutierrez/GestionDePagos">
-                      <button class="boton-ovalado mx-3 mt-3">Visitar</button>
-                    </a>
-                  </div>
+          <div class="col-sm-12 col-md-12 col-lg-4 my-4 ">
+            <div class="card  shadow" data-aos="zoom-in">
+              <img src="./img/peaku.png" alt="Trello con localStorage" class="card-img-top" />
+              <div class="card-body">
+                <h3 class="mb-2 fw-bold">PeakU Empleo</h3>
+                <p>Fecha: <span class="fw-bold  colorPrimario">29/05/2024</span></p>
+                <div class="d-flex my-3">
+                  <h5 class="fw-bold">Tecnologías: </h5>
+                  <p class="mx-3">React y bootstrap</p>
                 </div>
-                <div class="mt-4 mx-4">
-                  <h3 class="fw-bold">Tecnologías Utilizadas</h3>
-                  <p>React, FastApi, MySQL </p>
-                  <span class="fw-bold colorPrimario">01/05/2024</span>
-                  <p>Este es una Plataforma Web que gestiona el flujo de pagos de una compañia en la parte contable y
-                    tesorera. En la cual he participado con otros compañeros, actualmente esta en proceso,
-                    yo he sido la encargada del Front-End con react utilizando componente reutilizables, mis compañeros
-                    de Back-End con FastApi y MySQL
-
-                  </p>
-                </div>
+                <p>Este proyecto recrea el sitio web PeakU en cuatro días, destacando por su modularización, componentes
+                  reutilizable, y manejo de arrays en React y Bootstrap.</p>
+                <a href="https://github.com/torco34/peaku-empleo"> <button class="boton-ovalado  ">Visitar</button>
+                </a>
               </div>
             </div>
           </div>
           <!-- Project 3 -->
-          <div class="col-sm-12 col-md-12 col-lg-4 ">
-            <div class="project-card  div-containerAbout shadow rounded p-4" data-aos="zoom-in-up">
-              <div class="project-image mb-3">
-                <img src="./img/proyecto3.png" alt="Ejercicios de lógica en Javascript"
-                  class="rounded image-animation2 img-fluid" />
-              </div>
-              <div class="project-content my-5">
-                <h3 class="mb-2 fw-bold">Perfil de estudiante</h3>
-
-
-                <div class=" d-flex justify-content-cente " data-aos="zoom-in-up">
-                  <div class="div-button mt-4">
-                    <a href="https://torco34.github.io/react-hook-form/">
-                      <button class="boton-ovalado mx-3 mt-3">Visitar</button>
-                    </a>
-                  </div>
+          <div class="col-sm-12 col-md-12 col-lg-4 my-4 ">
+            <div class="card  shadow" data-aos="zoom-in">
+              <img src="./img/peeku.png" alt="Trello con localStorage" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title fw-bold ">Trabook </h5>
+                <p class="fw-bold">Fecha: <span class="fw-bold colorPrimario">01/04/2024</span></p>
+                <div class="d-flex my-3">
+                  <h5 class="fw-bold">Tecnologías: </h5>
+                  <p class="mx-3">Html5, css, bootstrap</p>
                 </div>
-
-
-
-                <div class="mt-4 mx-4">
-                  <h3 class="fw-bold">Tecnologías Utilizadas</h3>
-                  <p>React, React Hook Form, react-router</p>
-                  <span class="fw-bold colorPrimario">10/08/2023</span>
-
-                  <p>Desarrollé esta página con el fin de practicar el uso de hooks, especialmente React Hook Form y la
-                    gestión de field arrays. También implementé rutas protegidas utilizando react-router. La página
-                    incluye un formulario dinámico que permite registrar profesores, alumnos, jornadas y materias, con
-                    la lógica de que cada profesor debe tener al menos un alumno por jornada.</p>
-
-
-                </div>
+                <p>Esta página web muestra mis habilidades en maquetación con HTML, CSS y Bootstrap, destacando un
+                  diseño modular y principios de diseño efectivos.</p>
+                <a href="https://torco34.github.io/peaku-templete-first/"><button
+                    class="boton-ovalado  ">Visitar</button>
+                </a>
               </div>
             </div>
           </div>
           <!-- Project 4 -->
-          <div class="col-sm-12 col-md-12 col-lg-4 gap-5 ">
-            <div class="project-card shadow div-containerAbout rounded p-4" data-aos="zoom-in-up">
-              <div class="project-image mb-3">
-                <img src="./img/peeku.png" alt="Trello con localStorage" class="rounded image-animation2 img-fluid" />
-              </div>
-              <div class="project-content my-5 text-cente">
-                <h3 class="mb-2 fw-bold">Trabook </h3>
-
-
-
-                <div class=" d-flex justify-content-cente " data-aos="zoom-in-up">
-                  <div class="div-button mt-4">
-                    <a href="https://torco34.github.io/peaku-templete-first/"> <button
-                        class="boton-ovalado mx-3 mt-3">Visitar</button>
-                    </a>
-                  </div>
+          <div class="col-sm-12 col-md-12 col-lg-4 my-4 ">
+            <div class="card  shadow" data-aos="zoom-in">
+              <img src="./img/estudiante.png" alt="Trello con localStorage" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title fw-bold ">Pagina estudiantil</h5>
+                <p class="fw-bold">Fecha: <span class="fw-bold colorPrimario">10/09/2023</span></p>
+                <div class="d-flex my-3">
+                  <h5 class="fw-bold">Tecnologías: </h5>
+                  <p class="mx-3">React</p>
                 </div>
-                <div class=" mt-4 mx-4">
-                  <h3 class="fw-bold">Tecnologías Utilizadas</h3>
-                  <p>Html5, css, bootstrap</p>
-                  <span class="fw-bold colorPrimario">01/04/2024</span>
-                  <p>Esta es una página web diseñada para demostrar mis habilidades en maquetación web utilizando HTML,
-                    CSS y Bootstrap. Cada elemento ha sido cuidadosamente estructurado y diseñado para mostrar un buen
-                    manejo de los principios de diseño y modularidad. Explora esta página para ver cómo he aplicado mis
-                    conocimientos
-                    en la creación de una interfaz web limpia .</p>
-                </div>
+                <p class="card-text">Creé una página estudiantil utilizando React, donde la interfaz se adapta
+                  dinámicamente al estado del usuario. Al registrarse o iniciar sesión, el header cambia automáticamente
+                  para mostrar opciones personalizadas, </p>
+                <a href="https://github.com/torco34/ecommercevue"> <button class="boton-ovalado  ">Visitar</button>
+                </a>
               </div>
             </div>
           </div>
           <!-- Project 5 -->
-          <div class="col-sm-12 col-md-12 col-lg-4 gap-5 ">
-            <div class="project-card shadow div-containerAbout rounded p-4" data-aos="zoom-in-up">
-              <div class="project-image mb-3">
-                <img src="./img/peaku.png" alt="Trello con localStorage" class="rounded image-animation2 img-fluid" />
-              </div>
-              <div class="project-content my-5 text-cente">
-                <h3 class="mb-2 fw-bold">PeakU Empleo</h3>
+          <div class="col-sm-12 col-md-12 col-lg-4 my-4 ">
+            <div class="card  shadow" data-aos="zoom-in">
+              <img src="./img/rike.png" alt="Trello con localStorage" class="card-img-top" />
+              <div class="card-body">
 
-
-
-                <div class=" d-flex justify-content-cente " data-aos="zoom-in-up">
-                  <div class="div-button mt-4">
-                    <a href="https://github.com/torco34/peaku-empleo"> <button
-                        class="boton-ovalado mx-3 mt-3">Visitar</button>
-                    </a>
-                  </div>
+                <h5 class="card-title fw-bold ">Rick and Morty</h5>
+                <p class="fw-bold">Fecha: <span class="fw-bold colorPrimario">10/04/2022</span></p>
+                <div class="d-flex my-3">
+                  <h5 class="fw-bold">Tecnologías: </h5>
+                  <p class="mx-3">React </p>
                 </div>
-                <div class=" mt-4 mx-4">
-                  <h3 class="fw-bold">Tecnologías Utilizadas</h3>
-                  <p>React y bootstrap</p>
-                  <span class="fw-bold colorPrimario">12/04/2024</span>
-                  <p>
-                    Este proyecto es una recreación del sitio web PeakU, desarrollado en un plazo de cuatro días. La
-                    aplicación ha recibido una calificación de 4.8 debido a varios factores:
-                    <b>Modularización eficiente, Componentes reutilizables, Excelente manejo de arrays y
-                      JSON:</b>
-                    Este proyecto demuestra habilidades en el uso de React y Bootstrap, así como en la
-                    creación de aplicaciones web modernas y funcionales.
-                  </p>
-
-                </div>
+                <p class="card-text">Desarrollé una aplicación en React que consume la API de Rick and Morty,
+                  permitiendo a los usuarios filtrar y navegar a través de las distintas páginas de personajes. La
+                  interfaz es interactiva y fácil de usar</p>
+                <a href="https://torco34.github.io/appRickAndMorty/"> <button class="boton-ovalado  ">Visitar</button>
+                </a>
               </div>
             </div>
           </div>
           <!-- project 6 -->
-          <div class="col-sm-12 col-md-12 col-lg-4 gap-5 ">
-            <div class="project-card shadow div-containerAbout rounded p-4" data-aos="zoom-in-up">
-              <div class="project-image mb-">
-                <img src="./img/todoTareas.png" alt="Trello con localStorage"
-                  class="rounded image-animation2 img-fluid" />
-              </div>
-              <div class="project-content my-5 text-cente">
-                <h3 class="mb-2 fw-bold">Gestor de Tareas</h3>
-
-
-
-                <div class=" d-flex justify-content-cente " data-aos="zoom-in-up">
-                  <div class="div-button mt-4">
-                    <a href="https://github.com/torco34/todos-tarea"> <button
-                        class="boton-ovalado mx-3 mt-3">Visitar</button>
-                    </a>
-                  </div>
+          <div class="col-sm-12  col-md-12 col-lg-4  my-4">
+            <div class="card shadow" data-aos="zoom-in">
+              <img src="./img/img4.png" alt="Trello con localStorage" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title fw-bold ">MacBook Air</h5>
+                <p class="fw-bold">Fecha: <span class="fw-bold colorPrimario">9/01/2022</span></p>
+                <div class="d-flex my-3">
+                  <h5 class="fw-bold">Tecnologías: </h5>
+                  <p class="mx-3">React y React router</p>
                 </div>
-                <div class=" mt-4 mx-4">
-                  <h3 class="fw-bold">Tecnologías Utilizadas</h3>
-                  <p>React, Local Storage</p>
-                  <span class="fw-bold colorPrimario">03/04/2023</span>
-                  <p>
-                    Este es uno de los primeros proyectos que desarrollé. En este proyecto, practiqué las operaciones
-                    CRUD (Crear, Leer, Actualizar, Eliminar) para gestionar tareas. Además, apliqué mis conocimientos en
-                    React para mejorar la funcionalidad y la experiencia del usuario.
-                  </p>
-                </div>
+                <p class="card-text">Desarrollé una réplica de la página de compra del MacBook Air como ejercicio
+                  práctico en React, enfocándome en la implementación de componentes, enrutamiento con React Router, y
+                  estilización utilizando styled-components</p>
+
+                <a href=" https://torco34.github.io/pages-apple/"> <button class="boton-ovalado  ">Visitar</button>
+                </a>
+
               </div>
             </div>
+
+          </div>
+
+          <!-- project 7 -->
+          <div class="col-sm-12  col-md-12 col-lg-4  my-4">
+            <div class="card shadow" data-aos="zoom-in">
+              <img src="./img/refugio.png" alt="Trello con localStorage" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title fw-bold ">Refugio Amor y Paz</h5>
+                <p class="fw-bold">Fecha: <span class="fw-bold colorPrimario">4/04/2022</span></p>
+                <div class="d-flex my-3">
+                  <h5 class="fw-bold">Tecnologías: </h5>
+                  <p class="mx-3">JavaScript, HTML y Css</p>
+                </div>
+                <p class="card-text">Este proyecto se basó en una plantilla web comprada, la cual personalicé al agregar
+                  imágenes, contenido, y realizar ajustes específicos para adaptarla completamente a las necesidades del
+                  cliente.</p>
+
+                <a href="https://torco34.github.io/refugio-amor-paz/"> <button class="boton-ovalado  ">Visitar</button>
+                </a>
+
+              </div>
+            </div>
+
           </div>
           <!-- button -->
           <div class="col-sm-12 col-md-12 col-lg-12 my-3">
