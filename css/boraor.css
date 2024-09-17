@@ -16,24 +16,16 @@ html {
 }
 
 
-  /* :root {
-    --lavender-gray: #90aacb;
-    --mustard-yellow: #FCDC94;
-    --charcoal: #333;
-    --sky-blue: #ecf1f7;
-
- 
- 
-  } */
   :root {
     /* --lavender-gray: #C96868; */
     /* --lavender-gray: #624E88; */
     /* --color-fondo: #f6f5f5; */
-    --color-fondo: #6256CA;
-   --collor: #009fbd ;
-    --mustard-yellow: #86D293;
-    --charcoal: #FDFAD9;
-    --sky-blue: #94752c ;
+    /* --color-fondo: #F8EDE3; */
+    --color-fondo: #F7F7F7;
+
+    --mustard-yellow: #FF8A8A;
+    --charcoal: #333;
+    --sky-blue: #fff;
 
  
  
@@ -66,12 +58,9 @@ p{
 .size-text-p{
 font-size: 22px;
 }
-.styles-background-fondo{
-  /* background: linear-gradient(135deg, #FCDC94, #90aacb); */
-  background: linear-gradient(135deg, #FF6F61, #6B5B95 );
-}
+
 /* estilos de link de lista */
-/* secion de de inicio  */
+/* sesión de body pagina  */
 
 section {
   width: 100%;
@@ -81,8 +70,7 @@ section {
 }
 .section-inicio {
   scroll-margin-top: 100px; 
-  /* margin-top: 30px; */
-  /* background-color: #f4f4f4; */
+ 
 }
 
 .section-experiencia {
@@ -110,55 +98,36 @@ section h2, section p {
 
 
 .container-image img{
-  width: 300px;
-  height: 500px;
+  margin-top: 120px;
+  width: 100%;
+  /* width: 300px; */
+  /* height: 500px; */
 
 }
 
-/* Media Query para pantallas más pequeñas */
-@media (max-width: 768px) { /* Ajusta el valor según tus necesidades */
-  .section-inicio {
-   
-    margin-top: 40px; 
-  }
 
-  .container-image img {
-   
-    width: 50%; 
-  }
+.containerText{
+  margin-top: 120px;
+  text-align: center;
 }
-
-/* Media Query para pantallas más grandes */
-@media (min-width: 769px) {
-  .section-inicio {
-    /* Estilos específicos para pantallas más grandes */
-    margin-top: 50px; /* Ejemplo de ajuste de margen superior */
-  }
-
-  .container-image img {
-    /* Ajusta el ancho o cualquier otro estilo para pantallas grandes aquí */
-    width: 100%; /* Asegúrate de que la imagen siga ocupando el 100% del contenedor */
-  }
-}
-
-
-
-.bg-darks{
-background-color: var( --color-fondo);
+.navContainer{
+background-color: var(--color-fondo);
 padding: 1rem;
 color: var(--charcoal);
+margin-bottom: 2rem;
 
 }
 .nav-link {
   text-decoration: none; 
   position: relative; 
-
+  /* color: var(--sky-blue); */
   padding-bottom: 2px; 
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .nav-link:hover {
-  color: var(--sky-blue)
+  color: var(--mustard-yellow);
+
 }
 /* Animación del linead lista */
 .nav-link::after {
@@ -197,14 +166,13 @@ color: var(--charcoal);
 /* estilos del button  */
 .boton-ovalado {
   background-color:var(--mustard-yellow);
-  /* background: linear-gradient(135deg, #FCDC94, #90aacb); */
-  /* background: linear-gradient(135deg, var(--mustard-yellow), var(--color-fondo)); */
+
   border-radius: 30px;
   padding: 10px 30px;
   font-weight: 600;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease;
-  color: var(--sky-blue);
+
 
 }
 
@@ -212,10 +180,36 @@ color: var(--charcoal);
 
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
   transform: translateY(-3px);
- background-color: var(--sky-blue) ;
- color: var(--charcoal);
- /* border: solid 1px var(--charcoal); */
+ background-color: var(--charcoal) ;
+ color: var(--sky-blue);
+
  
 }
 
 
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 768px) { /* Ajusta el valor según tus necesidades */
+  .section-inicio {
+   
+    margin-top: 40px; 
+  }
+
+  .container-image img {
+   
+    /* width: 50%;  */
+  }
+}
+
+/* Media Query para pantallas más grandes */
+@media (min-width: 769px) {
+  .section-inicio {
+    /* Estilos específicos para pantallas más grandes */
+    margin-top: 50px; /* Ejemplo de ajuste de margen superior */
+  }
+
+  .container-image img {
+    /* Ajusta el ancho o cualquier otro estilo para pantallas grandes aquí */
+    width: 100%; /* Asegúrate de que la imagen siga ocupando el 100% del contenedor */
+  }
+}
