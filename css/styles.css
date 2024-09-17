@@ -10,19 +10,15 @@ html {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   background-color: var(--purple2);
-  /* background: linear-gradient(45deg, var(--purple), var(--purple2)); */
+
 }
 
 /* Variables color  64CCDA*/
 :root {
   --black: #555;
   --blockk: #333;
-
-  /* --purple: #166cdd; */
   --purple: #1f71db;
-  /* --purple2: #52bcca; */
   --purple2: #90aacb;
-  /* --white3: #f2f2f2; */
   --white3: #eaeef7;
   --white2: #fff;
 }
@@ -44,6 +40,7 @@ html {
 .div-button {
   width: 300px;
 }
+
 .boton-ovalado {
   display: inline-block;
   background: linear-gradient(45deg, var(--purple), var(--purple2));
@@ -65,6 +62,7 @@ html {
   transform: scale(1.1);
   background-position: 100% 100%;
 }
+
 /* los border de los titulos */
 .borders {
   height: 2px;
@@ -88,10 +86,12 @@ p {
   color: var(--black);
   font-family: "Roboto", sans-serif;
 }
+
 h3.fw-bold {
   font-size: 18px;
   color: var(--blockk);
 }
+
 /* ESTILOS DE LOS TEXTOS */
 .textName,
 .p {
@@ -105,22 +105,18 @@ h3.fw-bold {
 /* CONTAINER GENERAL */
 .div-containerAbout {
   background-color: var(--white3);
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
-  /* padding: 2rem; */
-  /* margin: 1rem 0; */
-  /* border-radius: 8px; */
-
-  /* width: 100%; */
+  
 }
+
 /* termina  clases para codigo general */
 .project-image {
   width: 200px;
 }
 
-/* ESTILOS  PARA INICIO */
+/* ESTILOS  PARA INICIO  */
 /* Content Box */
 .content {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 40px;
   text-align: center;
   border-radius: 10px;
@@ -133,6 +129,7 @@ h3.fw-bold {
   background-color: var(--white3);
   /* background-color: #555; */
 }
+
 /* color texto menu */
 .nav-item .nav-link-item {
   color: var(--black);
@@ -142,6 +139,7 @@ h3.fw-bold {
   font-weight: bold;
   transition: color 0.3s ease, background-color 0.3s ease;
 }
+
 /* hover y estilos de menu */
 
 .nav-item.active .nav-link-item,
@@ -151,6 +149,7 @@ h3.fw-bold {
   border-radius: 8px;
   color: var(--white);
 }
+
 /* TERMINA ESTILOS DE INICIO */
 
 /* ESTILOS SOBRE MI */
@@ -166,12 +165,14 @@ h3.fw-bold {
   transform: scale(1.1);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
+
 /* estilos tabla habilidades */
 
 .table {
   width: 100%;
   padding: 2rem;
 }
+
 .colorTabla {
   color: var(--black);
   font-weight: bold;
@@ -204,9 +205,11 @@ h3.fw-bold {
   display: flex;
   justify-content: center;
 }
-.card{
+
+.card {
   background-color: var(--white3);
 }
+
 .botonVerGitHud a button {
   width: 400px;
 }
@@ -263,10 +266,12 @@ h3.fw-bold {
     font-size: 17px;
     width: 100%;
   }
+
   .boton-ovalado {
     padding: 35px 25px;
     font-size: 16px;
   }
+
   .boton-ovalado {
     padding: 0;
 
@@ -279,22 +284,27 @@ h3.fw-bold {
   .imgfondoMi {
     display: none;
   }
+
   .imgFondoProyecto {
     display: none;
   }
+
   .imgFondoEstudio {
     display: none;
   }
+
   .div-containerAbout {
     /* background-color: #32CD32; */
     width: 400px;
     margin: 0;
     margin-top: 30px;
   }
+
   .boton-ovalado {
     padding: 10px 10px;
     font-size: 16px;
   }
+
   .espacie-container {
     width: 400px;
     font-size: 10px;

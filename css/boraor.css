@@ -1,0 +1,219 @@
+/* Reset and Base Styles */
+/* Codigo todo la pagina */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: calc(10px + 0.5vw);
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--color-fondo);
+  /* background: linear-gradient(135deg, var(--mustard-yellow), var(--color-fondo)); */
+  color: var(--charcoal);
+
+}
+
+
+  /* :root {
+    --lavender-gray: #90aacb;
+    --mustard-yellow: #FCDC94;
+    --charcoal: #333;
+    --sky-blue: #ecf1f7;
+
+ 
+ 
+  } */
+  :root {
+    /* --lavender-gray: #C96868; */
+    /* --lavender-gray: #624E88; */
+    --color-fondo: #f6f5f5;
+   --collor: #009fbd ;
+    --mustard-yellow: #333;
+    --charcoal: #333;
+    --sky-blue: #94752c ;
+
+ 
+ 
+  }
+/* clases de base para aplicacion */
+p{
+  font-size: 18px;
+  color: var(--charcoal);
+}
+.color-text-title-primario{
+  color: var(--mustard-yellow);
+}
+.color-background-fondo-primario{
+  background-color: var(--mustard-yellow);
+}
+/*  */
+.color-text-subtitle-dark{
+  color: var(--charcoal);
+}
+.color-text-subtitle-light {
+  color: var(--sky-blue);
+}
+.color-background-light{
+  background-color: var( --sky-blue);
+}
+.color-background-dark{
+  background-color: var( --lavender-gray);
+
+}
+.size-text-p{
+font-size: 22px;
+}
+.styles-background-fondo{
+  /* background: linear-gradient(135deg, #FCDC94, #90aacb); */
+  background: linear-gradient(135deg, #FF6F61, #6B5B95 );
+}
+/* estilos de link de lista */
+/* secion de de inicio  */
+
+section {
+  width: 100%;
+  min-height: 100vh; /* Se asegura de que cada sección ocupe al menos la altura completa de la ventana */
+  padding: 20px;
+  box-sizing: border-box;
+}
+.section-inicio {
+  scroll-margin-top: 100px; 
+  /* margin-top: 30px; */
+  background-color: #f4f4f4;
+}
+
+.section-experiencia {
+  scroll-margin-top: 100px; 
+ 
+}
+
+.section-galeria {
+  scroll-margin-top: 100px; 
+
+}
+.section-estudios {
+  scroll-margin-top: 100px; 
+
+}
+
+.section-contacto {
+  scroll-margin-top: 100px; 
+}
+
+/* Asegura que el contenido no se apile */
+section h2, section p {
+  margin: 10px 0;
+}
+
+
+.container-image img{
+  width: 100%;
+
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 768px) { /* Ajusta el valor según tus necesidades */
+  .section-inicio {
+   
+    margin-top: 40px; 
+  }
+
+  .container-image img {
+   
+    width: 50%; 
+  }
+}
+
+/* Media Query para pantallas más grandes */
+@media (min-width: 769px) {
+  .section-inicio {
+    /* Estilos específicos para pantallas más grandes */
+    margin-top: 50px; /* Ejemplo de ajuste de margen superior */
+  }
+
+  .container-image img {
+    /* Ajusta el ancho o cualquier otro estilo para pantallas grandes aquí */
+    width: 100%; /* Asegúrate de que la imagen siga ocupando el 100% del contenedor */
+  }
+}
+
+
+
+.bg-darks{
+background-color: var( --color-fondo);
+padding: 1rem;
+color: var(--charcoal);
+
+}
+.nav-link {
+  text-decoration: none; 
+  position: relative; 
+  color: var(--charcoal);
+  padding-bottom: 2px; 
+  font-size: 16px;
+}
+
+.nav-link:hover {
+  color: var(--sky-blue)
+}
+/* Animación del linead lista */
+.nav-link::after {
+  content: ''; 
+  position: absolute; 
+  left: 0;
+  bottom: 0; 
+  width: 100%; 
+  height: 3px; 
+  background-color: var(--mustard-yellow);
+  transform: scaleX(0); 
+  transform-origin: bottom right; 
+  transition: transform 0.3s ease-out; 
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left; 
+}
+/* inicio estilos */
+.container-image {
+  width: 500px;
+
+  /* max-width: 300px; */
+
+}
+
+.espacie-container{
+ 
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+/* estilos del button  */
+.boton-ovalado {
+  background-color: #009fbd;
+  /* background: linear-gradient(135deg, #FCDC94, #90aacb); */
+  /* background: linear-gradient(135deg, var(--mustard-yellow), var(--color-fondo)); */
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-weight: 600;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  color: var(--sky-blue);
+
+}
+
+.boton-ovalado:hover {
+
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3px);
+ background-color: var(--lavender-gray) ;
+ /* color: var(--charcoal); */
+ /* border: solid 1px var(--charcoal); */
+ 
+}
+
+
