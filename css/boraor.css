@@ -28,10 +28,11 @@ html {
   :root {
     /* --lavender-gray: #C96868; */
     /* --lavender-gray: #624E88; */
-    --color-fondo: #f6f5f5;
+    /* --color-fondo: #f6f5f5; */
+    --color-fondo: #6256CA;
    --collor: #009fbd ;
-    --mustard-yellow: #333;
-    --charcoal: #333;
+    --mustard-yellow: #86D293;
+    --charcoal: #FDFAD9;
     --sky-blue: #94752c ;
 
  
@@ -81,7 +82,7 @@ section {
 .section-inicio {
   scroll-margin-top: 100px; 
   /* margin-top: 30px; */
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
 }
 
 .section-experiencia {
@@ -109,7 +110,8 @@ section h2, section p {
 
 
 .container-image img{
-  width: 100%;
+  width: 300px;
+  height: 500px;
 
 }
 
@@ -150,7 +152,7 @@ color: var(--charcoal);
 .nav-link {
   text-decoration: none; 
   position: relative; 
-  color: var(--charcoal);
+
   padding-bottom: 2px; 
   font-size: 16px;
 }
@@ -194,7 +196,7 @@ color: var(--charcoal);
 }
 /* estilos del button  */
 .boton-ovalado {
-  /* background-color: #009fbd; */
+  background-color:var(--mustard-yellow);
   /* background: linear-gradient(135deg, #FCDC94, #90aacb); */
   /* background: linear-gradient(135deg, var(--mustard-yellow), var(--color-fondo)); */
   border-radius: 30px;
@@ -210,8 +212,8 @@ color: var(--charcoal);
 
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
   transform: translateY(-3px);
- background-color: var(--lavender-gray) ;
- /* color: var(--charcoal); */
+ background-color: var(--sky-blue) ;
+ color: var(--charcoal);
  /* border: solid 1px var(--charcoal); */
  
 }
