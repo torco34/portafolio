@@ -194,7 +194,7 @@ color: var(--charcoal);
 }
 /* estilos del button  */
 .boton-ovalado {
-  background-color: #009fbd;
+  /* background-color: #009fbd; */
   /* background: linear-gradient(135deg, #FCDC94, #90aacb); */
   /* background: linear-gradient(135deg, var(--mustard-yellow), var(--color-fondo)); */
   border-radius: 30px;

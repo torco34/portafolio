@@ -6,10 +6,7 @@
     <title>Portafolio - Torcoroma Arias Ascanio</title>
 
     <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
 
     <!-- Bootstrap Icons -->
     <link
@@ -33,13 +30,12 @@
   </head>
 
   <body>
-    <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-lighttext-light fixed-top">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container d-flex justify-content-between align-items-center">
-        <a class="navbar-brand fw-bold" href="#inicio">Torcoroma Arias</a>
-        <span class="text-dark d-non d-lg-inline">Desarrolladora UI/UX</span>
+        <!-- Botón de toggle a la izquierda -->
         <button
-          class="navbar-toggler"
+          class="navbar-toggler d-lg-none me-2"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -49,7 +45,12 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse color-text navbar-collapse" id="navbarNav">
+        <!-- Enlace de la marca -->
+        <a class="navbar-brand fw-bold" href="#inicio">Torcoroma Arias</a>
+        <!-- Texto en el centro -->
+        <span class="text-dark d-none d-lg-inline">Desarrolladora UI/UX</span>
+        <!-- Contenido del menú -->
+        <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link" href="#inicio">Inicio</a>
@@ -70,69 +71,65 @@
         </div>
       </div>
     </nav>
-    
-<!-- seccion de inicio -->
-    <!-- <section id="inicio"  class="section-inicio "> 
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 col-md-12 d-flex justify-content-center mb-4 mb-lg-0">
-            <div class="container-imag container d-flex justify-content-center">
-              <img src="./img/blancoImg.jpg" alt="Foto de Torcoroma Arias" class="img-fluid rounded-circle" data-aos="fade-up" data-aos-delay="300" />
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-12  text-md-start">
-           <div>
-            <h1 class="display-4 mb-5 color-text-title-primario fw-bold" data-aos="fade-up" data-aos-delay="500">Hola</h1>
-            <p class="h4 fw-bold">Un poco de mí</p>
-            <p class="color-text-dark" data-aos="fade-up" data-aos-delay="700">
-              <span class="mb-3 fw-bold">Desarrolladora UI/UX</span> | Especialista en Interfaces Responsivas.
-            </p>
-            <p class="color-text-dark  " data-aos="fade-up" data-aos-delay="700">
-              Apasionada por crear experiencias digitales únicas, mi enfoque está en el diseño intuitivo y el desarrollo de soluciones innovadoras.
-            </p>
-            <p class="fw-bold" data-aos="fade-up" data-aos-delay="400">
-              <span class="fw-bold my-3">Habilidades</span><br />
-              JavaScript, Vue.js, Quasar, React, TypeScript, HTML5, CSS3, Bootstrap
-            </p>
-          
-           </div>
-           <div class="container d-flex flex-wrap justify-content-around">
-            <a href="#experiencia" class="boton-ovalado btn-warning text-dark my-2 mx-2 col-12 col-md-3 text-center" data-aos="fade-up" data-aos-delay="900">Curriculum</a>
-            <a href="#galeria" class="boton-ovalado btn-danger text-dark my-2 mx-2 col-12 col-md-3 text-center" data-aos="fade-up" data-aos-delay="900">Proyectos</a>
-            <a href="./img/CV2024.pdf" class="boton-ovalado bg-info text-dark my-2 mx-2 col-12 col-md-3 text-center" data-aos="fade-up" data-aos-delay="900">Contacto</a>
-          </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <section id="inicio" class="section-inicio"> 
+   <!-- sesión de inicio -->
+    <section id="inicio" class="section-inicio">
       <div class="container">
         <div class="row align-items-center">
           <!-- Primero la imagen y luego el texto en pantallas grandes -->
           <div class="col-lg-6 col-md-12 d-flex justify-content-center mb-4 mb-lg-0 order-2 order-lg-1">
             <div class="container-imag container d-flex justify-content-center">
-              <img src="./img/blancoImg.jpg" alt="Foto de Torcoroma Arias" class="img-fluid rounded-circle" data-aos="fade-up" data-aos-delay="300" />
+              <img
+                src="./img/blancoImg.jpg"
+                alt="Foto de Torcoroma Arias"
+                class="img-fluid rounded-circle"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              />
             </div>
           </div>
-          <div class="col-lg-6 col-md-12 text-md-end order-1 order-lg-2">
+          <div class="col-lg-6 col-md-12 text-start order-1 order-lg-2">
             <div>
-              <h1 class="display-4 mb-5 color-text-title-primario fw-bold" data-aos="fade-up" data-aos-delay="500">Hola</h1>
-              <p class="h4 fw-bold ">Un poco de mí</p>
-              <p class="color-text-dark " data-aos="fade-up" data-aos-delay="700">
-                <span class="mb-3 fw-bold">Desarrolladora UI/UX</span> | Especialista en Interfaces Responsivas.
+              <h1
+                class="display-4 mb-5  color-text-title-primario fw-bold"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                Hola
+              </h1>
+              <p class="h4 fw-bold">Un poco de mí</p>
+              <p class="color-text-dark" data-aos="fade-up" data-aos-delay="700">
+                <span class="mb-3 fw-bold">Desarrolladora UI/UX</span> |
+                Especialista en Interfaces Responsivas.
               </p>
-              <p class="color-text-dark " data-aos="fade-up" data-aos-delay="700">
-                Apasionada por crear experiencias digitales únicas, mi enfoque está en el diseño intuitivo y el desarrollo de soluciones innovadoras.
+              <p class="color-text-dark" data-aos="fade-up" data-aos-delay="700">
+                Apasionada por crear experiencias digitales únicas, mi enfoque
+                está en el diseño intuitivo y el desarrollo de soluciones
+                innovadoras.
               </p>
-              <p class="fw-bold " data-aos="fade-up" data-aos-delay="400">
+              <p class="fw-bold" data-aos="fade-up" data-aos-delay="400">
                 <span class="fw-bold my-3">Habilidades</span><br />
-                JavaScript, Vue.js, Quasar, React, TypeScript, HTML5, CSS3, Bootstrap
+                JavaScript, Vue.js, Quasar, React, TypeScript, HTML5, CSS3,
+                Bootstrap
               </p>
-              <div class="container d-flex flex-wrap justify-content-around">
-                <a href="#experiencia" class="boton-ovalado btn-warning text-dark my-2 mx-2 col-12 col-md-3 text-center" data-aos="fade-up" data-aos-delay="900">Curriculum</a>
-                <a href="#galeria" class="boton-ovalado btn-danger text-dark my-2 mx-2 col-12 col-md-3 text-center" data-aos="fade-up" data-aos-delay="900">Proyectos</a>
-                <a href="./img/CV2024.pdf" class="boton-ovalado bg-info text-dark my-2 mx-2 col-12 col-md-3 text-center" data-aos="fade-up" data-aos-delay="900">Contacto</a>
+              <div class="container d-flex flex-wrap justify-content-start">
+                <a
+                  href="#experiencia"
+                  class=" btn btn-warning boton-ovalado text-dark my-2 mx-2 col-12 col-md-3 text-center"
+                  data-aos="fade-up"
+                  data-aos-delay="900"
+                >Curriculum</a>
+                <a
+                  href="#galeria"
+                  class="boton-ovalado btn btn-danger text-dark my-2 mx-2 col-12 col-md-3 text-center"
+                  data-aos="fade-up"
+                  data-aos-delay="900"
+                >Proyectos</a>
+                <a
+                  href="./img/CV2024.pdf"
+                  class="boton-ovalado btn bg-info text-dark my-2 mx-2 col-12 col-md-3 text-center"
+                  data-aos="fade-up"
+                  data-aos-delay="900"
+                >Contacto</a>
               </div>
             </div>
           </div>
@@ -140,11 +137,8 @@
       </div>
     </section>
     
-    <!--  -->
-    <section
-      id="experiencia"
-      class="section-experiencia"
-    >
+    <!--sesión de experiencia  -->
+    <section id="experiencia" class="section-experiencia">
       <div class="container">
         <div class="text-center mb-5">
           <h2 class="fw-bold display-4" data-aos="fade-right">Currículum</h2>
@@ -221,12 +215,8 @@
         </div>
       </div>
     </section>
-
-
-    <section
-      id="estudios"
-      class="section-estudios"
-    >
+ <!--sesión de estudio  -->
+    <section id="estudios" class="section-estudios">
       <div class="container">
         <div class="text-center mb-5">
           <h2 class="fw-bold display-4" data-aos="fade-right">
@@ -295,55 +285,62 @@
             <div class="color-background-lavendar-gray p-4">
               <p class="text-muted fw-bold">Febrero 2024 - Actualmente</p>
               <h4 class="fw-bold color-text-yellow">Libros</h4>
-          
 
               <ul class="list-unstyled">
                 <li>
-                  <span class="fw-bold color-text-yellow">Clean JavaScript</span> Aplicar codigo limpio
+                  <span class="fw-bold color-text-yellow"
+                    >Clean JavaScript</span
+                  >
+                  Aplicar codigo limpio
+                </li>
+                <li>
+                  <span class="fw-bold color-text-yellow">Principio SOLID</span>
+                  (SRP), (OCP), (LSP), (ISP) y (DIP)
                 </li>
                 <li>
                   <span class="fw-bold color-text-yellow"
-                    >Principio SOLID</span
+                    >Arquitectura de Software</span
                   >
-                  (SRP), (OCP),  (LSP), (ISP) y (DIP)
-                </li>
-                <li>
-                  <span class="fw-bold color-text-yellow">Arquitectura de Software</span> 
                 </li>
               </ul>
-
             </div>
           </div>
-        
-           <!-- Estudio 3 -->
-           <div class="col-lg-5 col-md-6 mb-4" data-aos="fade-left">
+
+          <!-- Estudio 3 -->
+          <div class="col-lg-5 col-md-6 mb-4" data-aos="fade-left">
             <div class="color-background-lavendar-gray p-4">
               <p class="text-muted fw-bold">Febrero 2022 - Diciembre 2022</p>
               <h4 class="fw-bold color-text-yellow">Cursos de UX/UI</h4>
-           
-          
+
               <ul class="list-unstyled">
-                <li><span class="fw-bold color-text-yellow">Platzi:</span> Curso intensivo de UX/UI.</li>
-                <li><span class="fw-bold color-text-yellow">YouTube (Victor Robles):</span> Tutoriales sobre buenas prácticas de UX/UI y desarrollo web.</li>
-                <li><span class="fw-bold color-text-yellow">Udemy:</span> Curso completo sobre diseño de interfaces y experiencia de usuario.</li>
+                <li>
+                  <span class="fw-bold color-text-yellow">Platzi:</span> Curso
+                  intensivo de UX/UI.
+                </li>
+                <li>
+                  <span class="fw-bold color-text-yellow"
+                    >YouTube (Victor Robles):</span
+                  >
+                  Tutoriales sobre buenas prácticas de UX/UI y desarrollo web.
+                </li>
+                <li>
+                  <span class="fw-bold color-text-yellow">Udemy:</span> Curso
+                  completo sobre diseño de interfaces y experiencia de usuario.
+                </li>
               </ul>
-              
-           
             </div>
           </div>
-          
         </div>
       </div>
     </section>
-  
-
-    <section
-      id="galeria"
-      class="section-galeria"
-    >
+ <!--sesión de galería  -->
+    <section id="galeria" class="section-galeria">
       <div class="container">
         <div class="mb-5 text-center">
-          <h2 class="fw-bold" data-aos="fade-up">Galería de Proyectos</h2>
+          <h2 class="display-4 fw-bold" data-aos="fade-up">Galería de Proyectos</h2>
+          <p data-aos="fade-left">
+            Mis proyectos mas importantes
+          </p>
         </div>
 
         <div class="row">
@@ -395,10 +392,7 @@
     </section>
 
     <!-- Sección Contacto -->
-    <section
-      id="footer"
-      class="section-contacto"
-    >
+    <section id="footer" class="section-contacto">
       <div class="container">
         <h2 class="fw-bold mb-4" data-aos="fade-up">Contacto</h2>
         <p data-aos="fade-up">¿Quieres trabajar conmigo? ¡Hablemos!</p>
@@ -420,15 +414,8 @@
         </div>
       </div>
     </section>
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+
 
     <!-- AOS (Animate on Scroll) -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
