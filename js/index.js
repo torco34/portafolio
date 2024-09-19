@@ -1,18 +1,18 @@
-var img1 = document.getElementById("img1");
-var img2 = document.getElementById("img2");
-var img3 = document.getElementById("img3");
-var img4 = document.getElementById("img4");
-var img5 = document.getElementById("img5");
-var img5 = document.getElementById("img5");
+const img1 = document.getElementById("img1");
+const img2 = document.getElementById("img2");
+const img3 = document.getElementById("img3");
+const img4 = document.getElementById("img4");
+const img5 = document.getElementById("img5");
 
-var modal1 = document.getElementById("modal1");
-var modal2 = document.getElementById("modal2");
-var modal3 = document.getElementById("modal3");
-var modal4 = document.getElementById("modal4");
-var modal5 = document.getElementById("modal5");
+
+const modal1 = document.getElementById("modal1");
+const modal2 = document.getElementById("modal2");
+const modal3 = document.getElementById("modal3");
+const modal4 = document.getElementById("modal4");
+const modal5 = document.getElementById("modal5");
 
 // Mostrar modal al hacer clic en la imagen
-img1.onclick = function () {
+img1.onclick = () => {
     modal1.style.display = "block";
 }
 

@@ -11,14 +11,15 @@ html {
   font-family: "Roboto", sans-serif;
   background-color: var(--color-fondo);
   color: var(--charcoal);
+  /* color: var(--sky-blue); */
 
 }
 
 
   :root {
 
-    --color-fondo: #F7F7F7;
-    --mustard-yellow: #FF8A8A;
+    --color-fondo: #F5F5F5;
+    --mustard-yellow: #5A639C;
     --charcoal: #333;
     --sky-blue: #fff;
 
@@ -130,6 +131,7 @@ margin-bottom: 2rem;
 
 .nav-link:hover {
   color: var(--mustard-yellow);
+  
 
 }
 /* Animación del linead lista */
@@ -169,23 +171,23 @@ margin-bottom: 2rem;
 /* estilos del button  */
 .boton-ovalado {
   background-color:var(--mustard-yellow);
-
+  color: var(--color-fondo);
   border-radius: 30px;
   padding: 10px 30px;
   font-weight: 600;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease;
 
-
+  border: solid 2px transparent;
 }
 
 .boton-ovalado:hover {
 
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
   transform: translateY(-3px);
- background-color: var(--charcoal) ;
- color: var(--sky-blue);
-
+ background-color: var(--color-fondo) ;
+ color: var(--mustard-yellow);
+border: solid 2px var(--mustard-yellow);
  
 }
 
@@ -223,24 +225,7 @@ margin-bottom: 2rem;
   margin: 20px;
 }
 
-/* .gallery-item {
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-  cursor: pointer;
-}
 
-.gallery-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-
-.gallery-item:hover img {
-  transform: scale(1.05);
-} */
 
 .gallery-item {
   position: relative;
