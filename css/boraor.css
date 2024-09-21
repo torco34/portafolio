@@ -209,8 +209,8 @@ border: solid 2px var(--mustard-yellow);
 /* Media Query para pantallas más grandes */
 @media (min-width: 769px) {
   .section-inicio {
-    /* Estilos específicos para pantallas más grandes */
-    margin-top: 50px; /* Ejemplo de ajuste de margen superior */
+ 
+    margin-top: 50px;
   }
 
   .container-image img {
@@ -253,9 +253,9 @@ border: solid 2px var(--mustard-yellow);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: var(--mustard-yellow);
   font-size: 1.5rem;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.9);
   padding: 10px 20px;
   border-radius: 8px;
   opacity: 0;

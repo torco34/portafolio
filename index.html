@@ -1,515 +1,554 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio - Torcoroma Arias Ascanio</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" /> -->
-  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
-  <link rel="icon" href="./img/perfil2.jpg" type="img" />
-  <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
 
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <title>My portafolio</title>
-</head>
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
 
-<body>
-  <section>
-    <nav class="navbar fixed-top navbar-top P-5">
-      <div class="container-fluid text-uppercas containe">
-        <!-- colorBackgroun -->
-        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon  text-white"></span>
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    <link rel="stylesheet" href="./css/boraor.css" />
+    <!-- AOS (Animate on Scroll) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./img/perfil2.jpg" type="image/jpeg" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navContainer navbar-expand-lg fixed-top">
+      <div class="container d-flex justify-content-between align-items-center">
+        <button
+          class="navbar-toggler d-lg-none me-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas  offcanvas-end " tabindex="-1" id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header portafolio">
-            <h2 class="offcanvas-title fw-bold mx-5" id="offcanvasNavbarLabel">
-              PORTAFOLIO
-            </h2>
-            <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <!-- Enlace de la marca -->
+        <a class="navbar-brand fw-bold" href="#inicio">Torcoroma Arias</a>
+        <!-- Texto en el centro -->
+        <span class="color-text-title-primario fw-bold d-none d-lg-inline"
+          >Desarrolladora web UI</span
+        >
+        <!-- Contenido del menú -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experiencia">Experiencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#estudios">Estudios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galeria">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- sesión de inicio -->
+    <section id="inicio" class="section-inicio">
+      <div class="container">
+        <div class="row">
+          <!-- Primero la imagen y luego el texto en pantallas grandes -->
+          <div
+            class="col-lg-6 col-md-12 d-flex justify-content-center mb-4 mb-lg-0 order-2 order-lg-1"
+          >
+            <div
+              class="container-image container d-flex justify-content-center"
+            >
+              <img
+                src="./img/blancoImg.jpg"
+                alt="Foto de Torcoroma Arias"
+                class="img-fluid rounded-circle"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              />
+            </div>
           </div>
-          <div class="offcanvas-body ">
-            <ul class="navbar-nav justify-content-end flex-grow-1 p-5 text-link text-light">
-              <li class="nav-item dropdown change-color active">
-                <a class="nav-link nav-link-item" href="#inicio">Inicio</a>
-              </li>
-              <li class="nav-item dropdown  change-color">
-                <a class="nav-link nav-link-item" href="#sobre">Acerca de mi</a>
-              </li>
-              <li class="nav-item dropdown change-color">
-                <a class="nav-link nav-link-item" href="#habili">Estudios</a>
-              </li>
+          <div
+            class="col-lg-6 col-md-12 containerText text-start order-1 order-lg-2"
+          >
+            <div>
+              <h1
+                class="display-4 mb-3 color-text-title-primario fw-bold"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                Hola!
+              </h1>
+              <h3 class="mb-1 fw-bold" data-aos="fade-up" data-aos-delay="800">
+                Un poco de mí
+              </h3>
+              <p class="mb-3" data-aos="fade-up" data-aos-delay="700">
+                <span class="mb-3 fw-bold">Desarrolladora web UI</span> |
+                Especialista en Interfaces Responsivas.
+              </p>
+              <p
+                class="mb-3 color-text-dark"
+                data-aos="fade-up"
+                data-aos-delay="600"
+              >
+                Desarrollador web autodidacta con experiencia en la creación de
+                aplicaciones web, con o sin plantillas de diseño. He trabajado
+                con frameworks como <span class="fw-bold">React.js,</span>
 
-              <li class="nav-item dropdown change-color">
-                <a class="nav-link nav-link-item" href="#porta">Galeria</a>
+                <span class="fw-bold"> Vue.js, </span>
+                <span class="fw-bold"> Quasar</span>
+                <span class="fw-bold"> y Bootstrap, </span>
+              </p>
+              <p class="mb-5" data-aos="fade-up" data-aos-delay="400">
+                También tengo conocimiento en<br />
+
+                <span class="fw-bold">JavaScript, </span>
+                <span class="fw-bold">TypeScript, </span>
+                <span class="fw-bold">HTML5, </span>
+                <span class="fw-bold">CSS3, </span>
+              </p>
+            </div>
+            <div class="container mt-5 d-flex flex-wrap justify-content-start">
+              <a
+                href="#experiencia"
+                class="btn btn-warnin boton-ovalado my-2 mx-2 col-12 col-md-3 text-center"
+                data-aos="fade-up"
+                data-aos-delay="900"
+                >Experiencia</a
+              >
+              <a
+                href="#galeria"
+                class="boton-ovalado btn btn-dange my-2 mx-2 col-12 col-md-3 text-center"
+                data-aos="fade-up"
+                data-aos-delay="900"
+                >Proyectos</a
+              >
+              <a
+                href="#footer"
+                class="boton-ovalado btn my-2 mx-2 col-12 col-md-3 text-center"
+                data-aos="fade-up"
+                data-aos-delay="900"
+                >Contacto</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--sesión de experiencia  -->
+    <section id="experiencia" class="section-experiencia">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2
+            class="fw-bold display-4 color-text-title-primario"
+            data-aos="fade-right"
+          >
+            Experiencia
+          </h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <!-- Experiencia 1 -->
+          <div class="col-lg-5 col-md-6 mb-4 mx-2 p-4" data-aos="fade-right">
+            <p class="fw-bold color-text-yellow">
+              Febrero-2023 - Diciembre-2023
+            </p>
+            <h4 class="fw-bold color-text-title-primario mb-5">
+              Desarrolladora web
+            </h4>
+            <p>
+              <span class="fw-bold">Tecnologías :</span> Bootstrap, React.js,
+              TypeScript, React Hook Form, Redux
+            </p>
+            <p>
+              Visita la plataforma
+              <a href="https://plataforma.talentlogy.com/login" target="_blank"
+                >TalentLogy</a
+              >
+            </p>
+          </div>
+
+          <!-- Descripción detallada de TalentLogy -->
+          <div class="col-lg-5 col-md-6 mb-4 mx-2 p-4" data-aos="fade-right">
+            <h2 class="fw-bold color-text-title-primario">TalentLogy</h2>
+            <p>Contribuí en el desarrollo de la plataforma TalentLogy.</p>
+            <ul>
+              <li>Desarrollé modales interactivos en React.</li>
+              <li>
+                Implementé consumo de APIs en Node.js para gestionar archivos.
               </li>
-              <li class="nav-item dropdown change-color">
-                <a class="nav-link nav-link-item" href="#footer">Contaitos</a>
+              <li>
+                Diseñé y optimicé formularios dinámicos para perfiles
+                estudiantiles.
               </li>
+              <li>
+                Mejoré la accesibilidad y experiencia del usuario en la
+                plataforma.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Experiencia 2 -->
+          <div class="col-lg-5 col-md-6 mb-4 mx-2 p-4" data-aos="fade-right">
+            <p class="fw-bold color-text-yellow">
+              Junio-2024 - Septiembre-2024
+            </p>
+            <h4 class="fw-bold color-text-title-primario mb-5">
+              Desarrolladora web
+            </h4>
+            <p><span class="fw-bold">Tecnologías :</span> Vue.js, Quasar</p>
+            <p>
+              Visita la plataforma
+              <a
+                href="https://reforestacion.bosquenagal.com/#/perfil"
+                target="_blank"
+                >Reforestación BosqueNagal</a
+              >
+            </p>
+          </div>
+
+          <!-- Descripción detallada de Bosque Nagal -->
+          <div class="col-lg-5 col-md-6 mb-4 mx-2 p-4" data-aos="fade-right">
+            <h2 class="fw-bold color-text-title-primario">Bosque Nagal</h2>
+            <p>Contribuí en el desarrollo de la plataforma Reforestación.</p>
+            <ul>
+              <li>Creé componentes reutilizables y botones interactivos.</li>
+              <li>Desarrollé tarjetas y tablas dinámicas.</li>
+              <li>Implementé páginas de reproducción de sonidos.</li>
+              <li>Optimicé el código para mejorar el rendimiento.</li>
             </ul>
           </div>
         </div>
       </div>
-    </nav>
-
-  </section>
-  <!-- SECTION INICIO -->
-  <section id="inicio" class="container-fluid imgfondo" data-aos="fade-up-right">
-
-    <div class="content" data-aos="fade-up-right">
-      <div class="row" data-aos="fade-up-right">
-        <div class="col-2"></div>
-
-        <div
-          class="col-sm-10 col-xs-6 col-lg-12 text-light d-flex flex-column align-items-center justify-content-center">
-
-          <div class="containerInicioText text-center">
-            <!-- <hr class="hr" /> -->
-
-            <h2 class="display-6 fw-bold ">
-
-              <span class="text-white "></span> Torcoroma Arias Ascanio.
-            </h2>
-            <hr class="hr" />
-            <div data-aos="fade-up-rightdiv-containerAbout">
-              <h2 class="">Desarrolladora UI/UX</h2>
-            </div>
-            <hr class="hr" />
-            <h3 class="h2Skills" data-aos="fade-up-right">
-              JavaScript.js, Vue.js, Quasar, React.js, TypeScript.js, Html5, <br />
-              Css3, Bootstrap, Git y GitHub.
-              <hr class="hr" />
-            </h3>
-            
-            <div class=" d-flex justify-content-center containe">
-              <div class="div-button">
-                <a href="./img/CV2024.pdf">
-                  <button class="boton-ovalado p-2">Descargar cv</button>
-                </a>
-              </div>
-            </div>
-          </div>
+    </section>
+    <!--sesión de estudio  -->
+    <section id="estudios" class="section-estudios">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2
+            class="fw-bold color-text-title-primario display-4"
+            data-aos="fade-right"
+          >
+            Historia de carrera
+          </h2>
+          <p data-aos="fade-left">
+            Mi formación académica y profesional abarca diversas áreas del
+            desarrollo y diseño web.
+          </p>
         </div>
-        <div class="col-2"></div>
-      </div>
-  </section>
-  <!-- SECTION SOBRE MI  -->
 
-  <section id="sobre" class="container ">
-    <div class="container-fluid espacie-container">
-      <div class="imgfondo p-5" data-aos="fade-up-right" data-oas="zoom-in-up">
-        <h2 class="titles fw-bold shadow  rounded bg-light text-center">
-          <span class="borders mx-3"></span>Acerca de mí<span class="borders mx-3"></span>
-        </h2>
-      </div>
-      <br />
-      <div class="row ">
-        <div class="col-sm-12 col-md-6 col-lg-6  rounded d-flex justify-content-center" data-aos="fade-up-right">
-          <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-12  ">
-              <div class="d-flex align-items-center justify-content-center containerImgMia">
-
-                <img src="./img/fhotomia.jpg" alt="Torcoroma Arias Ascanio"
-                  class="img-fluid rounded-circle shadow image-animation">
-              </div>
-            </div>
-            <div class="col-sm-12 div-containerAbout  shadow card rounded col-md-10 col-lg-10">
-
-              <div class="textName rounded bg-white" data-aos="zoom-in">
-                <h2 class="fw-bold p-3 textNam  text-cente">Mis Habilidades</h2>
-                <table class="table my-5">
-                  <tr>
-                    <td class="colorTabla">Habilidad</td>
-                    <td class="colorTabla">Nivel</td>
-                  </tr>
-                  <tr>
-                    <td class="colorTabla">CSS3</td>
-                    <td class="colorIntermedio">Intermedio</td>
-                  </tr>
-                  <tr>
-                    <td class="colorTabla ">HTML</td>
-                    <td class="colorIntermedio">Intermedio</td>
-                  </tr>
-                  <tr>
-                    <td class="colorTabla">Bootstrap</td>
-                    <td class="colorIntermedio">Intermedio</td>
-                  </tr>
-                  <tr>
-                    <td class="colorTabla">Tailwind CSS</td>
-                    <td class="colorBasico">Básico</td>
-                  </tr>
-                  <tr>
-                    <td class="colorTabla">JavaScript</td>
-                    <td class="colorIntermedio">Intermedio</td>
-                  </tr>
-                  <tr>
-                    <td class="colorTabla">React</td>
-                    <td class="colorIntermedio">Intermedio</td>
-                  </tr>
-                  <tr>
-                    <td class="colorTabla">Quasar</td>
-                    <td class="colorBasico">Básico</td>
-                  </tr>
-                  <tr>
-                    <td class="colorTabla">Vue.js </td>
-                    <td class="colorBasico">Básico</td>
-                  </tr>
-                  <tr>
-                    <td class="colorTabla">TypeScript.js</td>
-                    <td class="colorIntermedio">Básico</td>
-                  </tr>
-                  <tr>
-                    <td class="colorTabla">GitHub</td>
-                    <td class="colorIntermedio">Intermedio</td>
-                  </tr>
-                  <!-- Tu tabla de habilidades aquí -->
-                </table>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 mt-">
-          <div class="div-containerAbout shadow  p-5" data-aos="zoom-in-up">
-            <p class="card p-4 shadow  bg-white rounded ">
-              <span class="fw-bold fs-3">Soy Torcoroma Arias Ascanio</span><span class="punto">.</span>
-             
-              Desarrolladora web autodidacta con pasión por el aprendizaje continuo y la resolución de problemas
-              complejos. Comprometida con la excelencia y la innovación en tecnología.
-            </p>
-            <hr>
-            <h2 class="text-center fw-bold colorPrimario">¡Gracias por visitar mi portafolio!</h2>
-          </div>
-          <br>
-          <div class="div-botones-cv-spa d-grid text-center">
-
-          </div>
-          <div class="rounded  p-4 shadow div-containerAbout " data-aos="zoom-in-up">
-            <h2 class=" fw-bold ">Experiencia actual</h2>
-
-            <p>Actualmente me encuentro trabajando en una empresa llamada Bosque Nagal en una aplicación con las
-              tecnologías Vue,js y Quasar
-
-            </p>
-            <h2>Contacto</h2>
-            <div class="p-2 colorPrimario">
-              <a href="https://www.linkedin.com/in/torcoroma-arias-ascanio-a20315227/" target="_blank">
-                <i class="bi bi-linkedin shadow mb-5 fs-5"></i> Conéctate conmigo en LinkedIn
-              </a>
-
-            </div>
-            <div class="p-2">
-              <span class="bg-light iconos p-1 rounded shadow">
-                <i class="bi bi-envelope-at-fill text-dark"></i>
-              </span> torcoromaarias@gmail.com
-            </div>
-          </div>
-          <br>
-
-          <div class="mb-5 mt-4 d-flex justify-content-center containe" data-aos="zoom-in-up">
-            <div class="div-button ">
-              <a href="https://www.youtube.com/channel/UCt-kXvzaxi_nE6-V9W_gTjA">
-                <button class="boton-ovalado">Más sobre mí</button>
-              </a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- SECTION HABILIDADES -->
-  <section id="habili" class=" container ">
-    <div class="container-fluid espacie-container  ">
-      <div class=" p-5 imgfondo" data-aos="zoom-in-up">
-        <h2 class="titles  bg-white shadow  rounded fw-bold text-center">
-          <span class="borders mx-3"></span>Estudios Realizados<span class="borders mx-3"></span>
-        </h2>
-      </div>
-      <br />
-      <div class="containe ">
-        <div class="row">
-          <div class="col-sm-6 col-md-8">
-            <div class="p-5  shadow my-4 card div-containerAbout" data-aos="zoom-in-up">
-              <h3 class="fw-bold">Bootcamp Peaku</h3>
-              <p class="fw-bold colorPrimario">Inicio: 01/04/2024 - Actualmente</p>
+        <div class="row justify-content-center">
+          <!-- Estudio 1 -->
+          <div class="col-lg-5 col-md-6 mb-4" data-aos="fade-right">
+            <div class="color-background-lavendar-gray p-4">
+              <p class="text-muted fw-bold">Febrero 2023 - Diciembre 2023</p>
+              <h4
+                class="fw-bold mb-5 color-text-title-primario color-text-yellow"
+              >
+                Desarrollo web
+              </h4>
+              <h5 class="fw-bold color-text-yellow">
+                TalentLogy Entrenamiento de Software
+              </h5>
               <p>
-                Actualmente me encuentro en un bootcamp llamado Peaku Bootcamp. He trabajado en proyectos con mis
-                compañeros, destacando mis conocimientos. Actualmente, estoy en las prácticas.
+                En 2023, me uní a TalentLogy, donde recibí un entrenamiento
+                intensivo en JavaScript y desarrollo web.
               </p>
-              <p class="fw-bold colorPrimario ">Habilidades aprendidas:</p>
-              <p class="">Vue.js, Node, Express, MongoDB</p>
-              <p class="fw-bold colorPrimario">Reforcé:</p>
-              <p class="colorPrimari">HTML, CSS, Bootstrap, JavaScript, React</p>
-            </div>
-
-            <div class="p-5 card shadow div-containerAbout" data-aos="zoom-in-up">
-              <h3 class="fw-bold">TalentLogy</h3>
-              <p class="fw-bold colorPrimario">Inicio 27/02/2023 - finalizado 10/12/2023</p>
               <p>
-                Estuve vinculado en un programa presencial donde practiqué en proyectos reales. Durante el curso,
-                trabajé
-                en equipo con otros estudiantes y desarrollé habilidades en programación, resolución de problemas y
-                gestión de proyectos con supervisión. También recibí mentoría de profesionales experimentados, lo que
-                enriqueció aún más mi experiencia y me preparó para enfrentar los desafíos del mundo laboral en
-                tecnología.
+                Visita la página de
+                <a href="https://talentlogy.com/es" target="_blank"
+                  >TalentLogy</a
+                >
               </p>
-              <p class="fw-bold colorPrimario">Habilidades aprendidas:</p>
-              <p>HTML, CSS3, Bootstrap, JavaScript, React, TypeScript</p>
 
-              <div class=" d-flex  justify-content-center " data-aos="zoom-in-up">
-                <div class="div-button mt-4">
-                  <a href="./img/CartaRecomendacion.pdf">
-                    <button class="boton-ovalado mb-3 p-2">Certificado</button>
-                  </a>
-                </div>
+              <div class="full-widht">
+                <a
+                  href="./img/CV2024.pdf"
+                  class="boton-ovalado btn my-2"
+                  data-aos="fade-up"
+                  data-aos-delay="900"
+                  >Certificado
+                </a>
               </div>
             </div>
-
           </div>
-          <div class="col-sm-12 col-md-4">
-            <div class="p-5 my-4 shadow  card div-containerAbout" data-aos="zoom-in-up">
-              <h3 class="fw-bold">Inglés</h3>
+
+          <!-- Estudio 2 -->
+          <div class="col-lg-5 col-md-6 mb-4" data-aos="fade-right">
+            <div class="color-background-lavendar-gray p-4">
+              <p class="text-muted fw-bold">Abril 2024 - Septiembre 2024</p>
+              <h4 class="fw-bold mb-5 color-text-title-primario">
+                Desarrollo web
+              </h4>
+              <h5 class="fw-bold color-text-yellow">Bootcamp PeakU</h5>
               <p>
-                Actualmente estoy estudiando inglés y cuento con un nivel B1.
+                Durante 2024, participé en el bootcamp de PeakU, donde adquirí
+                conocimientos en Vue.js y fortalecí mis habilidades en
+                JavaScript.
               </p>
-              <p class="fw-bold colorPrimario">Nivel: <span>B1</span></p>
+              <div class="full-wedth">
+                <a
+                  href="./img/CV2024.pdf"
+                  class="boton-ovalado btn my-2"
+                  data-aos="fade-up"
+                  data-aos-delay="900"
+                  >Certificado</a
+                >
+              </div>
             </div>
+          </div>
 
+          <!-- Estudio 3 -->
+          <div class="col-lg-5 col-md-6 mb-4" data-aos="fade-left">
+            <div class="color-background-lavendar-gray p-4">
+              <p class="text-muted fw-bold">Febrero 2024 - Actualmente</p>
+              <h4 class="fw-bold color-text-yellow">Libros</h4>
 
-            <!-- Puedes añadir más items de educación aquí -->
+              <ul class="list-unstyled">
+                <li>
+                  <span class="fw-bold color-text-yellow"
+                    >Clean JavaScript</span
+                  >
+                  Aplicar codigo limpio
+                </li>
+                <li>
+                  <span class="fw-bold color-text-yellow">Principio SOLID</span>
+                  (SRP), (OCP), (LSP), (ISP) y (DIP)
+                </li>
+                <li>
+                  <span class="fw-bold color-text-yellow"
+                    >Arquitectura de Software</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Estudio 3 -->
+          <div class="col-lg-5 col-md-6 mb-4" data-aos="fade-left">
+            <div class="color-background-lavendar-gray p-4">
+              <p class="text-muted fw-bold">Febrero 2022 - Diciembre 2022</p>
+              <h4 class="fw-bold color-text-yellow">Cursos de UX/UI</h4>
+
+              <ul class="list-unstyled">
+                <li>
+                  <span class="fw-bold color-text-yellow">Platzi:</span> Curso
+                  intensivo de UX/UI.
+                </li>
+                <li>
+                  <span class="fw-bold color-text-yellow"
+                    >YouTube (Victor Robles):</span
+                  >
+                  Tutoriales sobre buenas prácticas de UX/UI y desarrollo web.
+                </li>
+                <li>
+                  <span class="fw-bold color-text-yellow">Udemy:</span> Curso
+                  completo sobre diseño de interfaces y experiencia de usuario.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- PROYECTOS -->
-  <section id="porta" class="container ">
-    <div class="container-fluid mb-5 espacie-container">
-      <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-12">
-          <div class=" mb-5 p-5 text-center imgfondo" data-aos="zoom-in-up">
-            <h2 class="titles bg-white  rounded shadow fw-bold">
-
-              <span class="borders fw-bold mx-3"></span>Proyectos realizados<span class="borders mx-3"></span>
-            </h2>
+    </section>
+    <!--sesión de galería  -->
+    <section id="galeria" class="section-galeria">
+      <div class="container">
+        <div class="mb-5 text-center">
+          <h2
+            class="display-4 color-text-title-primario fw-bold"
+            data-aos="fade-up"
+          >
+            Galería de Proyectos
+          </h2>
+          <p data-aos="fade-left">Mis proyectos mas importantes</p>
+        </div>
+        <div class="gallery">
+          <div class="gallery-item shadow card" data-modal="modal1">
+            <img src="./img/proyec1.png" alt="Proyecto 1" />
+            <div class="overlay-text">Haz click para obtener más detalle</div>
+          </div>
+          <div class="gallery-item shadow card" data-modal="modal2">
+            <img src="./img/proyectN4.png" alt="Proyecto 2" />
+            <div class="overlay-text">Haz click para obtener más detalle</div>
+          </div>
+          <div class="gallery-item shadow card" data-modal="modal3">
+            <img src="./img/proyectN1.png" alt="Proyecto 3" />
+            <div class="overlay-text">Haz click para obtener más detalle</div>
+          </div>
+          <div class="gallery-item shadow card" data-modal="modal4">
+            <img src="./img/proyecN2.png" alt="Proyecto 4" />
+            <div class="overlay-text">Haz click para obtener más detalle</div>
+          </div>
+          <div class="gallery-item shadow card" data-modal="modal5">
+            <img src="./img/proyectoN3.png" alt="Proyecto 5" />
+            <div class="overlay-text">Haz click para obtener más detalle</div>
+          </div>
+          <div class="gallery-item shadow card" data-modal="modal5">
+            <img src="./img/proyectoN3.png" alt="Proyecto 5" />
+            <div class="overlay-text">Haz click para obtener más detalle</div>
           </div>
         </div>
-      </div>
 
-      <div class="container my-5">
-        <div class="row">
-          <!-- project 1 -->
-          <div class="col-sm-12 col-md-12 col-lg-4 my-4">
-            <div class="card  shadow" data-aos="zoom-in">
-              <img src="./img/proyect.png" alt="Trello con localStorage" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="mb-2 fw-bold">Commerce</h5>
-                <p class="fw-bold">Fecha: <span class="fw-bold my-3 colorPrimario">12/04/2024</span></p>
-                <div class="d-flex  my-3">
-                  <h5 class="fw-bold">Tecnologías:</h5>
-                  <p class="mx-3">Vue.js, Node.js, MongoDB</p>
-                </div>
-                <p class="card-text">Commerce es una plataforma para probar mis habilidades en diseño y desarrollo web,
-                  utilizando Vue.js para la interfaz, Node.js para el backend y MongoDB para la base de datos.</p>
-                <a href="https://github.com/torco34/ecommercevue"> <button class="boton-ovalado  ">Visitar</button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- Project 2-->
-          <div class="col-sm-12 col-md-12 col-lg-4 my-4 ">
-            <div class="card  shadow" data-aos="zoom-in">
-              <img src="./img/peaku.png" alt="Trello con localStorage" class="card-img-top" />
-              <div class="card-body">
-                <h3 class="mb-2 fw-bold">PeakU Empleo</h3>
-                <p>Fecha: <span class="fw-bold  colorPrimario">29/05/2024</span></p>
-                <div class="d-flex my-3">
-                  <h5 class="fw-bold">Tecnologías: </h5>
-                  <p class="mx-3">React y bootstrap</p>
-                </div>
-                <p>Este proyecto recrea el sitio web PeakU en cuatro días, destacando por su modularización, componentes
-                  reutilizable, y manejo de arrays en React y Bootstrap.</p>
-                <a href="https://github.com/torco34/peaku-empleo"> <button class="boton-ovalado  ">Visitar</button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- Project 3 -->
-          <div class="col-sm-12 col-md-12 col-lg-4 my-4 ">
-            <div class="card  shadow" data-aos="zoom-in">
-              <img src="./img/peeku.png" alt="Trello con localStorage" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title fw-bold ">Trabook </h5>
-                <p class="fw-bold">Fecha: <span class="fw-bold colorPrimario">01/04/2024</span></p>
-                <div class="d-flex my-3">
-                  <h5 class="fw-bold">Tecnologías: </h5>
-                  <p class="mx-3">Html5, css, bootstrap</p>
-                </div>
-                <p>Esta página web muestra mis habilidades en maquetación con HTML, CSS y Bootstrap, destacando un
-                  diseño modular y principios de diseño efectivos.</p>
-                <a href="https://torco34.github.io/peaku-templete-first/"><button
-                    class="boton-ovalado  ">Visitar</button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- Project 4 -->
-          <div class="col-sm-12 col-md-12 col-lg-4 my-4 ">
-            <div class="card  shadow" data-aos="zoom-in">
-              <img src="./img/estudiante.png" alt="Trello con localStorage" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title fw-bold ">Pagina estudiantil</h5>
-                <p class="fw-bold">Fecha: <span class="fw-bold colorPrimario">10/09/2023</span></p>
-                <div class="d-flex my-3">
-                  <h5 class="fw-bold">Tecnologías: </h5>
-                  <p class="mx-3">React</p>
-                </div>
-                <p class="card-text">Creé una página estudiantil utilizando React, donde la interfaz se adapta
-                  dinámicamente al estado del usuario. Al registrarse o iniciar sesión, el header cambia automáticamente
-                  para mostrar opciones personalizadas, </p>
-                <a href="https://github.com/torco34/ecommercevue"> <button class="boton-ovalado  ">Visitar</button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- Project 5 -->
-          <div class="col-sm-12 col-md-12 col-lg-4 my-4 ">
-            <div class="card  shadow" data-aos="zoom-in">
-              <img src="./img/rike.png" alt="Trello con localStorage" class="card-img-top" />
-              <div class="card-body">
-
-                <h5 class="card-title fw-bold ">Rick and Morty</h5>
-                <p class="fw-bold">Fecha: <span class="fw-bold colorPrimario">10/04/2022</span></p>
-                <div class="d-flex my-3">
-                  <h5 class="fw-bold">Tecnologías: </h5>
-                  <p class="mx-3">React </p>
-                </div>
-                <p class="card-text">Desarrollé una aplicación en React que consume la API de Rick and Morty,
-                  permitiendo a los usuarios filtrar y navegar a través de las distintas páginas de personajes. La
-                  interfaz es interactiva y fácil de usar</p>
-                <a href="https://torco34.github.io/appRickAndMorty/"> <button class="boton-ovalado  ">Visitar</button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- project 6 -->
-          <div class="col-sm-12  col-md-12 col-lg-4  my-4">
-            <div class="card shadow" data-aos="zoom-in">
-              <img src="./img/img4.png" alt="Trello con localStorage" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title fw-bold ">MacBook Air</h5>
-                <p class="fw-bold">Fecha: <span class="fw-bold colorPrimario">9/01/2022</span></p>
-                <div class="d-flex my-3">
-                  <h5 class="fw-bold">Tecnologías: </h5>
-                  <p class="mx-3">React y React router</p>
-                </div>
-                <p class="card-text">Desarrollé una réplica de la página de compra del MacBook Air como ejercicio
-                  práctico en React, enfocándome en la implementación de componentes, enrutamiento con React Router, y
-                  estilización utilizando styled-components</p>
-
-                <a href=" https://torco34.github.io/pages-apple/"> <button class="boton-ovalado  ">Visitar</button>
-                </a>
-
-              </div>
-            </div>
-
-          </div>
-
-          <!-- project 7 -->
-          <div class="col-sm-12  col-md-12 col-lg-4  my-4">
-            <div class="card shadow" data-aos="zoom-in">
-              <img src="./img/refugio.png" alt="Trello con localStorage" class="card-img-top" />
-              <div class="card-body">
-                <h5 class="card-title fw-bold ">Refugio Amor y Paz</h5>
-                <p class="fw-bold">Fecha: <span class="fw-bold colorPrimario">4/04/2022</span></p>
-                <div class="d-flex my-3">
-                  <h5 class="fw-bold">Tecnologías: </h5>
-                  <p class="mx-3">JavaScript, HTML y Css</p>
-                </div>
-                <p class="card-text">Este proyecto se basó en una plantilla web comprada, la cual personalicé al agregar
-                  imágenes, contenido, y realizar ajustes específicos para adaptarla completamente a las necesidades del
-                  cliente.</p>
-
-                <a href="https://torco34.github.io/refugio-amor-paz/"> <button class="boton-ovalado  ">Visitar</button>
-                </a>
-
-              </div>
-            </div>
-
-          </div>
-          <!-- button -->
-          <div class="col-sm-12 col-md-12 col-lg-12 my-3">
-
-            <div class=" botonVerGitHud p-4" data-aos="zoom-in-up">
-              <a href="https://github.com/torco34?tab=repositories">
-                <button class="boton-ovalado mx-3 mt-3 w-5">Descubrir más sobre mis proyectos</button>
-
-
-              </a>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="footer" class="bg-dark d-grid text-light border">
-
-    <div class="container">
-      <div class="row mt-5">
-        <div class="col-6 mb-5 justify-content-center align-items-center gap-3">
-          <div>
-            <a href="https://github.com/torco34">
-              <i class="bi bi-github mb-5 text-white fs-5"></i> https://github.com
-            </a>
-          </div>
-          <br>
-          <div class="mb-5">
-            <a href="https://www.linkedin.com/in/torcoroma-arias-ascanio-a20315227/">
-              <i class="bi bi-linkedin text-white mb-5 fs-5"></i> https://www.linkedin.com
-            </a>
-          </div>
-        </div>
-        <div class="col d-flex">
-          <div class="col-md-12">
-            <h2 class="fs-6 text-white">
-              Este portafolio esta hecho por
-              <span class="colorR">Torcoroma Arias Ascanio</span>
-            </h2>
-            <p class="mx-5 text-light">
-              <br />
-              <span class="bg-light iconos p-1 rounded shadow">
-                <i class="bi bi-envelope-at-fill text-dark"></i>
-              </span> torcoromaarias@gmail.com
-            </p>
-            <br />
-            <p class="mx-5 text-light">
-              <span class="bg-light iconos p-1 rounded shadow">
-                <i class="bi bi-house-fill text-dark"></i>
-              </span> San José de Cúcuta,
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>PeakU Empleo</h2>
+          <div class="mb-4">
+           
+            <img src="./img/proyec1.png" alt="Proyecto 1" />
+            <p>Fecha: <strong> 29/05/2024 </strong></p>
+            <p><strong>Tecnologías:</strong> React, Tailwind CSS</p>
+            <p>
+              <strong>Descripción:</strong>Este proyecto recrea el sitio web
+              PeakU en cuatro días, destacando por su modularización,
+              componentes reutilizable, y manejo de arrays en React y Bootstrap.
             </p>
           </div>
+            <div class="d-flex justify-content-center">
+              <a
+                href="https://github.com/torco34/peaku-empleo"
+                class="btn mx-3 boton-ovalado"
+                >Ver código</a
+              >
+              <a href="" class="btn boton-ovalado">Ver interfaces</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="modal2" class="modal">
+          <div class="modal-content">
+            <div class="d-flex justify-content-arounded gap-5">
+              <span class="close" onclick="closeModal('modal2')">&times;</span>
+              <h2><strong>Trabook</strong></h2>
+            </div>
+            <img src="./img/proyectN4.png" alt="Proyecto 2" />
+            <p>Fecha: <strong> 29/06/2024 </strong></p>
+            <p><strong>Tecnologías:</strong>Vue,js</p>
+            <p>
+              <strong>Descripción:</strong>Este proyecto esta enfocoado ha
+              practicar curso de Vue.js
+            </p>
+            <div class="d-flex justify-content-center">
+              <a
+                href="https://github.com/torco34/pages-apple"
+                class="btn mx-3 boton-ovalado"
+                >Código</a
+              >
+              <a
+                href=" https://torco34.github.io/pages-apple/"
+                class="btn boton-ovalado"
+                >Interfaz</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div id="modal3" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>Shoppe Live</h2>
+            <img src="./img/proyectN1.png" alt="Proyecto 3" />
+            <p>Fecha: <strong> 03/05/2024 </strong></p>
+            <p><strong>Tecnologías:</strong>Html, Css, Bootstrap</p>
+            <p><strong>Descripción:</strong>fue un trabajo pedido por</p>
+            <div class="d-flex justify-content-center">
+              <a
+                href="https://github.com/torco34/pages-apple"
+                class="btn mx-3 boton-ovalado"
+                >Código</a
+              >
+              <a
+                href=" https://torco34.github.io/pages-apple/"
+                class="btn boton-ovalado"
+                >Interfaz</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div id="modal4" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h2>Proyecto 4</h2>
+            <img src="./img/peeku.png" alt="Proyecto 4" />
+            <p><strong>Fecha:</strong> 21 Septiembre 2024</p>
+            <p><strong>Descripción:</strong> Descripción del proyecto 4.</p>
+          </div>
+        </div>
+
+        <div id="modal5" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <h2>Proyecto 5</h2>
+            <img src="./img/peeku.png" alt="Proyecto 5" />
+            <p><strong>Fecha:</strong> 22 Septiembre 2024</p>
+            <p><strong>Descripción:</strong> Descripción del proyecto 5.</p>
+          </div>
+        </div>
+        <!-- link -->
+        <div class="text-cente mt-5 p-5">
+          <a href="./pages/proyectos.html" class="h3 color-text-title-primario"
+            ><strong>Ver más proyectos</strong></a
+          >
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- Sección Contacto -->
+    <section id="footer" class="section-contacto">
+      <div class="container">
+        <h2 class="fw-bold mb-4" data-aos="fade-up">Contacto</h2>
+        <p data-aos="fade-up">¿Quieres trabajar conmigo? ¡Hablemos!</p>
+        <div class="d-flex justify-content-center align-items-center">
+          <a
+            href="mailto:torcoromaarias@gmail.com"
+            class="me-3"
+            data-aos="fade-up"
+          >
+            <i class="bi bi-envelope-at-fill fs-2 text-dark"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/torcoroma-arias-ascanio-a20315227/"
+            target="_blank"
+            data-aos="fade-up"
+          >
+            <i class="bi bi-linkedin fs-2 text-primary"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
 
-
-  <script src="./bootstrap/js/bootstrap.min.js"></script>
-  <script src="./js/main.js"></script>
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-</body>
-<script>
-  AOS.init();
-</script>
-
+    <script src="./js/index.js"></script>
+    <!-- AOS (Animate on Scroll) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init(); // Inicializa AOS
+    </script>
+  </body>
 </html>
