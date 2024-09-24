@@ -1,425 +1,386 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio - Torcoroma Arias Ascanio</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio - Torcoroma Arias Ascanio</title>
 
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
-    />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
 
-    <!-- Custom CSS -->
-    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
-    <link rel="stylesheet" href="./css/boraor.css" />
-    <!-- AOS (Animate on Scroll) -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
 
-    <!-- Favicon -->
-    <link rel="icon" href="./img/perfil2.jpg" type="image/jpeg" />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Custom CSS -->
+  <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+  <link rel="stylesheet" href="./css/boraor.css" />
+  <!-- AOS (Animate on Scroll) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="./img/perfil2.jpg" type="image/jpeg" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    .projects-grid {
+      height: auto;
+    }
+  
+    .projects-grid img {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      object-fit: cover;
+      /* display: block; */
+    }
+  
+    /* desde */
+    .section-estudios {
+      position: relative;
+      background-image: url('./img/imagen.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+  
+    .section-estudios::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(8, 8, 8, 0.7);
+      /* Ajusta el nivel de opacidad */
+      z-index: 1;
+      /* Asegúrate de que el overlay esté por encima de la imagen */
+    }
+  
+    .section-estudios .container {
+      position: relative;
+      z-index: 2;
+      /* Asegúrate de que el contenido esté por encima del overlay */
+    }
+  </style>
   </head>
 
-  <body>
-    <nav class="navbar navContainer navbar-expand-lg fixed-top">
-      <div class="container d-flex justify-content-between align-items-center">
-        <button
-          class="navbar-toggler d-lg-none me-2"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Enlace de la marca -->
-        <a class="navbar-brand fw-bold" href="#inicio">Torcoroma Arias</a>
-        <!-- Texto en el centro -->
-        <span class="color-text-title-primario fw-bold d-none d-lg-inline"
-          >Desarrolladora web UI</span
-        >
-        <!-- Contenido del menú -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#inicio">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#experiencia">Experiencia</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#estudios">Estudios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#galeria">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#footer">Contacto</a>
-            </li>
-          </ul>
-        </div>
+<body>
+  <nav class="navbar navContainer navbar-expand-lg fixed-top">
+    <div class="container d-flex justify-content-between align-items-center">
+      <button class="navbar-toggler d-lg-none me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Enlace de la marca -->
+      <a class="navbar-brand fw-bold" href="#inicio">Torcoroma Arias</a>
+      <!-- Texto en el centro -->
+      <span class="color-text-title-primario fw-bold d-none d-lg-inline">Desarrolladora web UI</span>
+      <!-- Contenido del menú -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experiencia">Experiencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#estudios">Estudios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#galeria">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Contacto</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- sesión de inicio -->
-    <section id="inicio" class="section-inicio">
-      <div class="container">
-        <div class="row">
-          <!-- Primero la imagen y luego el texto en pantallas grandes -->
-          <div
-            class="col-lg-6 col-md-12 d-flex justify-content-center mb-4 mb-lg-0 order-2 order-lg-1"
-          >
-            <div
-              class="container-image container d-flex justify-content-center"
-            >
-              <img
-                src="./img/blancoImg.jpg"
-                alt="Foto de Torcoroma Arias"
-                class="img-fluid rounded-circle"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              />
-            </div>
+      </div>
+      </nav>
+      <!-- sección  de inicio -->
+      <section id="inicio" class="section-inicio">
+        <div class="container">
+          <div class="row">
+            <!-- Primero la imagen y luego el texto en pantallas grandes -->
+        <div class="col-lg-6 col-md-12 d-flex justify-content-center mb-4 mb-lg-0 order-2 order-lg-1">
+          <div class="container-image container d-flex justify-content-center">
+            <img src="./img/blancoImg.jpg" alt="Foto de Torcoroma Arias" class="img-fluid rounded-circle" data-aos="fade-up"
+              data-aos-delay="300" />
           </div>
-          <div
-            class="col-lg-6 col-md-12 containerText text-start order-1 order-lg-2"
-          >
-            <div>
-              <h1
-                class="display-4 mb-3 color-text-title-primario fw-bold"
-                data-aos="fade-up"
-                data-aos-delay="500"
-              >
-                Hola!
-              </h1>
-              <h3 class="mb-1 fw-bold" data-aos="fade-up" data-aos-delay="800">
-                Un poco de mí
-              </h3>
-              <p class="mb-3" data-aos="fade-up" data-aos-delay="700">
-                <span class="mb-3 fw-bold">Desarrolladora web UI</span> |
-                Especialista en Interfaces Responsivas.
-              </p>
-              <p
-                class="mb-3 color-text-dark"
-                data-aos="fade-up"
-                data-aos-delay="600"
-              >
-                Desarrollador web autodidacta con experiencia en la creación de
-                aplicaciones web, con o sin plantillas de diseño. He trabajado
-                con frameworks como <span class="fw-bold">React.js,</span>
+        </div>
+        <div class="col-lg-6 col-md-12 containerText text-start order-1 order-lg-2">
+          <div>
+            <h1 class="display-4 mb-3 color-text-title-primario fw-bold" data-aos="fade-up" data-aos-delay="500">
+              Hola!
+            </h1>
+            <h3 class="mb-1 fw-bold" data-aos="fade-up" data-aos-delay="800">
+              Un poco de mí
+            </h3>
+            <p class="mb-3" data-aos="fade-up" data-aos-delay="700">
+              <span class="mb-3 fw-bold">Desarrolladora web UI</span> |
+              Especialista en Interfaces Responsivas.
+            </p>
+            <p class="mb-3 color-text-dark" data-aos="fade-up" data-aos-delay="600">
+              Desarrollador web autodidacta con experiencia en la creación de
+              aplicaciones web, con o sin plantillas de diseño. He trabajado
+              con frameworks como <span class="fw-bold">React.js,</span>
 
-                <span class="fw-bold"> Vue.js, </span>
-                <span class="fw-bold"> Quasar</span>
-                <span class="fw-bold"> y Bootstrap, </span>
+              <span class="fw-bold"> Vue.js, </span>
+              <span class="fw-bold"> Quasar</span>
+              <span class="fw-bold"> y Bootstrap, </span>
               </p>
               <p class="mb-5" data-aos="fade-up" data-aos-delay="400">
                 También tengo conocimiento en<br />
 
-                <span class="fw-bold">JavaScript, </span>
-                <span class="fw-bold">TypeScript, </span>
-                <span class="fw-bold">HTML5, </span>
-                <span class="fw-bold">CSS3, </span>
+              <span class="fw-bold">JavaScript, </span>
+              <span class="fw-bold">TypeScript, </span>
+              <span class="fw-bold">HTML5, </span>
+              <span class="fw-bold">CSS3, </span>
               </p>
+              </div>
+              <div class="container mt-5 d-flex flex-wrap justify-content-start">
+            <a href="#experiencia" class="btn btn-warnin btn-ovalado my-2 mx-2 col-12 col-md-3 text-center" data-aos="fade-up"
+              data-aos-delay="900">Experiencia</a>
+            <a href="#galeria" class="btn-ovalado btn btn-dange my-2 mx-2 col-12 col-md-3 text-center" data-aos="fade-up"
+              data-aos-delay="900">Proyectos</a>
+            <a href="#footer" class="btn-ovalado btn my-2 mx-2 col-12 col-md-3 text-center" data-aos="fade-up"
+              data-aos-delay="900">Contacto</a>
             </div>
-            <div class="container mt-5 d-flex flex-wrap justify-content-start">
-              <a
-                href="#experiencia"
-                class="btn btn-warnin boton-ovalado my-2 mx-2 col-12 col-md-3 text-center"
-                data-aos="fade-up"
-                data-aos-delay="900"
-                >Experiencia</a
-              >
-              <a
-                href="#galeria"
-                class="boton-ovalado btn btn-dange my-2 mx-2 col-12 col-md-3 text-center"
-                data-aos="fade-up"
-                data-aos-delay="900"
-                >Proyectos</a
-              >
-              <a
-                href="#footer"
-                class="boton-ovalado btn my-2 mx-2 col-12 col-md-3 text-center"
-                data-aos="fade-up"
-                data-aos-delay="900"
-                >Contacto</a
-              >
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            </div>
+            </div>
+            </section>
 
-    <!--sesión de experiencia  -->
-    <section id="experiencia" class="section-experiencia">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h2
-            class="fw-bold display-4 color-text-title-primario"
-            data-aos="fade-right"
-          >
-            Experiencia
-          </h2>
+  <!--sesión de experiencia  -->
+  <section id="experiencia" class="section-experiencia">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold display-4 color-text-title-primario" data-aos="fade-right">
+          Experiencia
+        </h2>
         </div>
 
-        <div class="row justify-content-center">
-          <!-- Experiencia 1 -->
-          <div class="col-lg-5 col-md-6 mb-4 mx-2 p-4" data-aos="fade-right">
+      <div class="row justify-content-center">
+        <!-- Experiencia 1 -->
+        <div class="col-lg-5 col-md-8 mb-4 mx-2 p-4 img-fondo" data-aos="fade-right">
+          <div class="mb-5 ">
             <p class="fw-bold color-text-yellow">
-              Febrero-2023 - Diciembre-2023
+              Febrero 2023 - Diciembre 2023
             </p>
-            <h4 class="fw-bold color-text-title-primario mb-5">
-              Desarrolladora web
+            <h4 class="fw-bold color-text-title-primario mb-2">
+              Desarrolladora Web
             </h4>
+            <h2 class="fw-bold color-text-title-primario mb-4">
+              TalentLogy
+            </h2>
             <p>
-              <span class="fw-bold">Tecnologías :</span> Bootstrap, React.js,
-              TypeScript, React Hook Form, Redux
+            <p>
+              Trabajar en equipo en la creación de la aplicación educativa <strong>TalentLogy.</strong>Además, diseñé y
+              cree la interfaz
+              del
+              perfil e implementé el consumo de la API.
+            </p>
+
             </p>
             <p>
-              Visita la plataforma
-              <a href="https://plataforma.talentlogy.com/login" target="_blank"
-                >TalentLogy</a
-              >
+              <span class="fw-bold">Tecnologías utilizadas:</span> Bootstrap, React.js, TypeScript, React Hook Form,
+              Redux.
             </p>
           </div>
 
-          <!-- Descripción detallada de TalentLogy -->
-          <div class="col-lg-5 col-md-6 mb-4 mx-2 p-4" data-aos="fade-right">
-            <h2 class="fw-bold color-text-title-primario">TalentLogy</h2>
-            <p>Contribuí en el desarrollo de la plataforma TalentLogy.</p>
-            <ul>
-              <li>Desarrollé modales interactivos en React.</li>
-              <li>
-                Implementé consumo de APIs en Node.js para gestionar archivos.
-              </li>
-              <li>
-                Diseñé y optimicé formularios dinámicos para perfiles
-                estudiantiles.
-              </li>
-              <li>
-                Mejoré la accesibilidad y experiencia del usuario en la
-                plataforma.
-              </li>
-            </ul>
-          </div>
-
-          <!-- Experiencia 2 -->
-          <div class="col-lg-5 col-md-6 mb-4 mx-2 p-4" data-aos="fade-right">
+          <div class="p-">
             <p class="fw-bold color-text-yellow">
               Junio-2024 - Septiembre-2024
             </p>
-            <h4 class="fw-bold color-text-title-primario mb-5">
+            <h4 class="fw-bold color-text-title-primario mb-2">
               Desarrolladora web
             </h4>
-            <p><span class="fw-bold">Tecnologías :</span> Vue.js, Quasar</p>
+            <h2 class="fw-bold color-text-title-primario">Bosque Nagal</h2>
+            <p>Contribuí en el desarrollo de la plataforma <strong>Reforestación </strong>
+            <ul>
+              <li>Creé componentes reutilizables botones, cards, tablas.</li>
+            
+              <li>diseñé y desarrollé la página 'Sonidos del Bosque'</li>
+              <li>Creé componentes. Apliqué principios SOLID y seguí buenas prácticas de desarrollo como SCRUD,
+                utilizando nombres descriptivos</li>
+            </ul>
             <p>
-              Visita la plataforma
-              <a
-                href="https://reforestacion.bosquenagal.com/#/perfil"
-                target="_blank"
-                >Reforestación BosqueNagal</a
-              >
+              <span class="fw-bold">Tecnologías utilizadas:</span> Vue.js, Quasar
             </p>
           </div>
-
-          <!-- Descripción detallada de Bosque Nagal -->
-          <div class="col-lg-5 col-md-6 mb-4 mx-2 p-4" data-aos="fade-right">
-            <h2 class="fw-bold color-text-title-primario">Bosque Nagal</h2>
-            <p>Contribuí en el desarrollo de la plataforma Reforestación.</p>
-            <ul>
-              <li>Creé componentes reutilizables y botones interactivos.</li>
-              <li>Desarrollé tarjetas y tablas dinámicas.</li>
-              <li>Implementé páginas de reproducción de sonidos.</li>
-              <li>Optimicé el código para mejorar el rendimiento.</li>
-            </ul>
-          </div>
         </div>
+        
+        <!-- Descripción detallada de TalentLogy -->
+        <div class="col-lg-5 col-md-6 mb-4 mx- p-4 d-gri shadow rounded color-background-fondo-primario" data-aos="fade-right">
+        
+          <!-- <section id="proyectos" class="projects-section"> -->
+        
+          <div class="projects-grid  ">
+            <img src="./img/fondo4.jpg" alt="">
+          </div>
+        
+          <div>
+            <div class="bg-white rounded shadow text-center p-4 mt-5">
+              <p class="text-muted">Desarrollando estrategias innovadoras</p>
+              <h2 class="display-5 fw-bold color-text-title-primario">LOGRANDO CRECER</h2>
+            </div>
+          </div>
+          <!-- </section> -->
+
+        </div>
+
+
       </div>
-    </section>
-    <!--sesión de estudio  -->
-    <section id="estudios" class="section-estudios">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h2
-            class="fw-bold color-text-title-primario display-4"
-            data-aos="fade-right"
-          >
-            Historia de carrera
-          </h2>
-          <p data-aos="fade-left">
-            Mi formación académica y profesional abarca diversas áreas del
-            desarrollo y diseño web.
-          </p>
+      </div>
+      </section>
+      <!--sesión de estudio  -->
+      <section id="estudios" class="section-estudios">
+        <div class="container">
+          <div class="text-center mb-5">
+        <h2 class="fw-bold color-text-title-primario display-4" data-aos="fade-right">
+          Historia de carrera
+        </h2>
+        <p data-aos="fade-left" class="text-white">
+          Mi formación académica y profesional abarca diversas áreas del
+          desarrollo y diseño web.
+        </p>
         </div>
 
-        <div class="row justify-content-center">
-          <!-- Estudio 1 -->
-          <div class="col-lg-5 col-md-6 mb-4" data-aos="fade-right">
-            <div class="color-background-lavendar-gray p-4">
-              <p class="text-muted fw-bold">Febrero 2023 - Diciembre 2023</p>
-              <h4
-                class="fw-bold mb-5 color-text-title-primario color-text-yellow"
-              >
-                Desarrollo web
-              </h4>
-              <h5 class="fw-bold color-text-yellow">
-                TalentLogy Entrenamiento de Software
-              </h5>
-              <p>
-                En 2023, me uní a TalentLogy, donde recibí un entrenamiento
-                intensivo en JavaScript y desarrollo web.
-              </p>
-              <p>
-                Visita la página de
-                <a href="https://talentlogy.com/es" target="_blank"
-                  >TalentLogy</a
-                >
+      <div class="row justify-content-center">
+        <!-- Estudio 1 -->
+        <div class="col-lg-5 col-md-6 mb-4" data-aos="fade-right">
+          <div class="color-background-lavendar-gray p-4">
+            <p class=" text-white fw-bold">Febrero 2023 - Diciembre 2023</p>
+            <h4 class="fw-bold mb-5 color-text-title-primario color-text-yellow">
+              Desarrollo web
+            </h4>
+            <h5 class="fw-bold color-text-yellow">
+              TalentLogy Entrenamiento de Software
+            </h5>
+            <p class="text-white">
+              En 2023, me uní a TalentLogy, donde recibí un entrenamiento
+              intensivo en JavaScript y desarrollo web.
+            </p>
+            <p class="text-white">
+              Visita la página de
+              <a href="https://talentlogy.com/es" target="_blank">TalentLogy</a>
               </p>
 
-              <div class="full-widht">
-                <a
-                  href="./img/CV2024.pdf"
-                  class="boton-ovalado btn my-2"
-                  data-aos="fade-up"
-                  data-aos-delay="900"
-                  >Certificado
-                </a>
+            <div class="btn-certificado ">
+              <a href="./img/CV2024.pdf" class="btn-ovalado  text-center " data-aos="fade-up" data-aos-delay="900">Certificado
+              </a>
               </div>
-            </div>
-          </div>
-
-          <!-- Estudio 2 -->
-          <div class="col-lg-5 col-md-6 mb-4" data-aos="fade-right">
-            <div class="color-background-lavendar-gray p-4">
-              <p class="text-muted fw-bold">Abril 2024 - Septiembre 2024</p>
-              <h4 class="fw-bold mb-5 color-text-title-primario">
-                Desarrollo web
-              </h4>
-              <h5 class="fw-bold color-text-yellow">Bootcamp PeakU</h5>
-              <p>
-                Durante 2024, participé en el bootcamp de PeakU, donde adquirí
-                conocimientos en Vue.js y fortalecí mis habilidades en
-                JavaScript.
-              </p>
-              <div class="full-wedth">
-                <a
-                  href="./img/CV2024.pdf"
-                  class="boton-ovalado btn my-2"
-                  data-aos="fade-up"
-                  data-aos-delay="900"
-                  >Certificado</a
-                >
               </div>
-            </div>
-          </div>
+              </div>
 
-          <!-- Estudio 3 -->
-          <div class="col-lg-5 col-md-6 mb-4" data-aos="fade-left">
-            <div class="color-background-lavendar-gray p-4">
-              <p class="text-muted fw-bold">Febrero 2024 - Actualmente</p>
-              <h4 class="fw-bold color-text-yellow">Libros</h4>
+        <!-- Estudio 2 -->
+        <div class="col-lg-5 col-md-6 mb-4" data-aos="fade-right">
+          <div class="color-background-lavendar-gray p-4">
+            <p class="text-white fw-bold">Abril 2024 - Septiembre 2024</p>
+            <h4 class="fw-bold mb-5 color-text-title-primario">
+              Desarrollo web
+            </h4>
+            <h5 class="fw-bold  color-text-yellow">Bootcamp PeakU</h5>
+            <p class="text-white">
+              Durante 2024, participé en el bootcamp de PeakU, donde adquirí
+              conocimientos en Vue.js y fortalecí mis habilidades en
+              JavaScript.
+            </p>
+            <div class="btn-certificado">
+              <a href="./img/CV2024.pdf" class="btn-ovalado mt-5" data-aos="fade-up" data-aos-delay="900">Certificado</a>
+              </div>
+              </div>
+              </div>
 
-              <ul class="list-unstyled">
-                <li>
-                  <span class="fw-bold color-text-yellow"
-                    >Clean JavaScript</span
-                  >
-                  Aplicar codigo limpio
+        <!-- Estudio 3 -->
+        <div class="col-lg-5 col-md-6 mb-4" data-aos="fade-left">
+          <div class="color-background-lavendar-gray p-4">
+            <p class="text-white fw-bold">Actualmente</p>
+            <h4 class="fw-bold color-text-yellow">Libros</h4>
+
+            <ul class="list-unstyled">
+              <li>
+                <span class="fw-bold color-text-yellow">Clean JavaScript</span>
+                Aplicar codigo limpio
                 </li>
                 <li>
                   <span class="fw-bold color-text-yellow">Principio SOLID</span>
                   (SRP), (OCP), (LSP), (ISP) y (DIP)
                 </li>
                 <li>
-                  <span class="fw-bold color-text-yellow"
-                    >Arquitectura de Software</span
-                  >
+                <span class="fw-bold color-text-yellow">Arquitectura de Software</span>
                 </li>
-              </ul>
-            </div>
-          </div>
+                </ul>
+                </div>
+                </div>
 
-          <!-- Estudio 3 -->
-          <div class="col-lg-5 col-md-6 mb-4" data-aos="fade-left">
-            <div class="color-background-lavendar-gray p-4">
-              <p class="text-muted fw-bold">Febrero 2022 - Diciembre 2022</p>
-              <h4 class="fw-bold color-text-yellow">Cursos de UX/UI</h4>
+        <!-- Estudio 3 -->
+        <div class="col-lg-5 col-md-6 mb-4" data-aos="fade-left">
+          <div class="color-background-lavendar-gray p-4">
+            <h4 class="fw-bold color-text-yellow">Cursos </h4>
 
-              <ul class="list-unstyled">
-                <li>
-                  <span class="fw-bold color-text-yellow">Platzi:</span> Curso
-                  intensivo de UX/UI.
-                </li>
-                <li>
-                  <span class="fw-bold color-text-yellow"
-                    >YouTube (Victor Robles):</span
-                  >
-                  Tutoriales sobre buenas prácticas de UX/UI y desarrollo web.
+            <ul class="list-unstyled">
+              <li>
+                <span class="fw-bold color-text-yellow">Platzi:</span> Curso
+                intensivo de UX/UI.
+              </li>
+              <li>
+                <span class="fw-bold color-text-yellow">YouTube (Victor Robles):</span>
+                Tutoriales sobre buenas prácticas de UX/UI y desarrollo web.
                 </li>
                 <li>
                   <span class="fw-bold color-text-yellow">Udemy:</span> Curso
                   completo sobre diseño de interfaces y experiencia de usuario.
                 </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--sesión de galería  -->
-    <section id="galeria" class="section-galeria">
-      <div class="container">
-        <div class="mb-5 text-center">
-          <h2
-            class="display-4 color-text-title-primario fw-bold"
-            data-aos="fade-up"
-          >
-            Galería de Proyectos
-          </h2>
-          <p data-aos="fade-left">Mis proyectos mas importantes</p>
+                </ul>
+                </div>
+                </div>
+                </div>
+                </div>
+                </section>
+                <!--sesión de galería  -->
+                <section id="galeria" class="section-galeria">
+                  <div class="container">
+                    <div class="mb-5 text-center">
+        <h2 class="display-4 color-text-title-primario fw-bold" data-aos="fade-up">
+          Galería de Proyectos
+        </h2>
+        <p data-aos="fade-left">Mis proyectos mas importantes</p>
         </div>
         <div class="gallery">
           <div class="gallery-item shadow card" data-modal="modal1">
-            <img src="./img/proyec1.png" alt="Proyecto 1" />
-            <div class="overlay-text">Haz click para obtener más detalle</div>
+            <img src="./img/bosque1.png" alt="Proyecto 1" />
+            <div class="overlay-text fw-bold">Haz click para obtener más detalle</div>
           </div>
           <div class="gallery-item shadow card" data-modal="modal2">
-            <img src="./img/proyectN4.png" alt="Proyecto 2" />
-            <div class="overlay-text">Haz click para obtener más detalle</div>
+            <img src="./img/talentl.png" alt="Proyecto 2" />
+            <div class="overlay-text fw-bold">Haz click para obtener más detalle</div>
           </div>
           <div class="gallery-item shadow card" data-modal="modal3">
             <img src="./img/proyectN1.png" alt="Proyecto 3" />
-            <div class="overlay-text">Haz click para obtener más detalle</div>
+            <div class="overlay-text fw-bold">Haz click para obtener más detalle</div>
           </div>
           <div class="gallery-item shadow card" data-modal="modal4">
             <img src="./img/proyecN2.png" alt="Proyecto 4" />
-            <div class="overlay-text">Haz click para obtener más detalle</div>
+            <div class="overlay-text fw-bold">Haz click para obtener más detalle</div>
           </div>
           <div class="gallery-item shadow card" data-modal="modal5">
-            <img src="./img/proyectoN3.png" alt="Proyecto 5" />
-            <div class="overlay-text">Haz click para obtener más detalle</div>
+            <img src="./img/proyec1.png" alt="Proyecto 5" />
+            <div class="overlay-text fw-bold">Haz click para obtener más detalle</div>
           </div>
           <div class="gallery-item shadow card" data-modal="modal5">
-            <img src="./img/proyectoN3.png" alt="Proyecto 5" />
-            <div class="overlay-text">Haz click para obtener más detalle</div>
+            <img src="./img/proyectN4.png" alt="Proyecto 6" />
+            <div class="overlay-text fw-bold">Haz click para obtener más detalle</div>
           </div>
         </div>
 
-        <div id="modal1" class="modal">
-          <div class="modal-content">
-            <span class="close" onclick="closeModal('modal1')">&times;</span>
-            <h2>PeakU Empleo</h2>
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal1')">&times;</span>
+          <h2>PeakU Empleo</h2>
           <div class="mb-4">
-           
+
             <img src="./img/proyec1.png" alt="Proyecto 1" />
             <p>Fecha: <strong> 29/05/2024 </strong></p>
             <p><strong>Tecnologías:</strong> React, Tailwind CSS</p>
@@ -429,126 +390,97 @@
               componentes reutilizable, y manejo de arrays en React y Bootstrap.
             </p>
           </div>
-            <div class="d-flex justify-content-center">
-              <a
-                href="https://github.com/torco34/peaku-empleo"
-                class="btn mx-3 boton-ovalado"
-                >Ver código</a
-              >
-              <a href="" class="btn boton-ovalado">Ver interfaces</a>
+          <div class="d-flex justify-content-center">
+            <a href="https://github.com/torco34/peaku-empleo" class="btn mx-3 btn-ovalado">Ver código</a>
+            <a href="" class="btn btn-ovalado">Ver interfaces</a>
             </div>
-          </div>
-        </div>
+            </div>
+            </div>
 
-        <div id="modal2" class="modal">
-          <div class="modal-content">
-            <div class="d-flex justify-content-arounded gap-5">
-              <span class="close" onclick="closeModal('modal2')">&times;</span>
-              <h2><strong>Trabook</strong></h2>
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <div class="d-flex justify-content-arounded gap-5">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2><strong>Aplicación Talentlogy</strong></h2>
             </div>
-            <img src="./img/proyectN4.png" alt="Proyecto 2" />
-            <p>Fecha: <strong> 29/06/2024 </strong></p>
-            <p><strong>Tecnologías:</strong>Vue,js</p>
+            <img src="./img/talentl.png" alt="Proyecto 2" />
+            <p>Fecha: <strong> 29/06/2023 </strong></p>
+            <p><strong>Tecnologías:</strong> React.js, react bootstrap</p>
             <p>
               <strong>Descripción:</strong>Este proyecto esta enfocoado ha
               practicar curso de Vue.js
             </p>
             <div class="d-flex justify-content-center">
-              <a
-                href="https://github.com/torco34/pages-apple"
-                class="btn mx-3 boton-ovalado"
-                >Código</a
-              >
-              <a
-                href=" https://torco34.github.io/pages-apple/"
-                class="btn boton-ovalado"
-                >Interfaz</a
-              >
+            <a href="https://github.com/torco34/pages-apple" class="btn mx-3 btn-ovalado">Código</a>
+            <a href=" https://torco34.github.io/pages-apple/" class="btn btn-ovalado">Interfaz</a>
             </div>
-          </div>
-        </div>
-
-        <div id="modal3" class="modal">
-          <div class="modal-content">
-            <span class="close" onclick="closeModal('modal3')">&times;</span>
-            <h2>Shoppe Live</h2>
-            <img src="./img/proyectN1.png" alt="Proyecto 3" />
-            <p>Fecha: <strong> 03/05/2024 </strong></p>
-            <p><strong>Tecnologías:</strong>Html, Css, Bootstrap</p>
-            <p><strong>Descripción:</strong>fue un trabajo pedido por</p>
-            <div class="d-flex justify-content-center">
-              <a
-                href="https://github.com/torco34/pages-apple"
-                class="btn mx-3 boton-ovalado"
-                >Código</a
-              >
-              <a
-                href=" https://torco34.github.io/pages-apple/"
-                class="btn boton-ovalado"
-                >Interfaz</a
-              >
             </div>
-          </div>
-        </div>
+            </div>
 
-        <div id="modal4" class="modal">
-          <div class="modal-content">
-            <span class="close" onclick="closeModal('modal4')">&times;</span>
-            <h2>Proyecto 4</h2>
-            <img src="./img/peeku.png" alt="Proyecto 4" />
-            <p><strong>Fecha:</strong> 21 Septiembre 2024</p>
-            <p><strong>Descripción:</strong> Descripción del proyecto 4.</p>
-          </div>
-        </div>
+      <div id="modal3" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal3')">&times;</span>
+          <h2>Shoppe Live</h2>
+          <img src="./img/proyectN1.png" alt="Proyecto 3" />
+          <p>Fecha: <strong> 03/05/2024 </strong></p>
+          <p><strong>Tecnologías:</strong>Html, Css, Bootstrap</p>
+          <p><strong>Descripción:</strong>fue un trabajo pedido por</p>
+          <div class="d-flex justify-content-center">
+            <a href="https://github.com/torco34/pages-apple" class="btn mx-3 btn-ovalado">Código</a>
+            <a href=" https://torco34.github.io/pages-apple/" class="btn btn-ovalado">Interfaz</a>
+            </div>
+            </div>
+            </div>
 
-        <div id="modal5" class="modal">
-          <div class="modal-content">
-            <span class="close" onclick="closeModal('modal5')">&times;</span>
-            <h2>Proyecto 5</h2>
-            <img src="./img/peeku.png" alt="Proyecto 5" />
-            <p><strong>Fecha:</strong> 22 Septiembre 2024</p>
-            <p><strong>Descripción:</strong> Descripción del proyecto 5.</p>
-          </div>
-        </div>
-        <!-- link -->
-        <div class="text-cente mt-5 p-5">
-          <a href="./pages/proyectos.html" class="h3 color-text-title-primario"
-            ><strong>Ver más proyectos</strong></a
-          >
+      <div id="modal4" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal4')">&times;</span>
+          <h2>Proyecto 4</h2>
+          <img src="./img/peeku.png" alt="Proyecto 4" />
+          <p><strong>Fecha:</strong> 21 Septiembre 2024</p>
+          <p><strong>Descripción:</strong> Descripción del proyecto 4.</p>
         </div>
       </div>
-    </section>
 
-    <!-- Sección Contacto -->
-    <section id="footer" class="section-contacto">
-      <div class="container">
-        <h2 class="fw-bold mb-4" data-aos="fade-up">Contacto</h2>
-        <p data-aos="fade-up">¿Quieres trabajar conmigo? ¡Hablemos!</p>
-        <div class="d-flex justify-content-center align-items-center">
-          <a
-            href="mailto:torcoromaarias@gmail.com"
-            class="me-3"
-            data-aos="fade-up"
-          >
-            <i class="bi bi-envelope-at-fill fs-2 text-dark"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/torcoroma-arias-ascanio-a20315227/"
-            target="_blank"
-            data-aos="fade-up"
-          >
-            <i class="bi bi-linkedin fs-2 text-primary"></i>
-          </a>
+      <div id="modal5" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal5')">&times;</span>
+          <h2>Proyecto 5</h2>
+          <img src="./img/peeku.png" alt="Proyecto 5" />
+          <p><strong>Fecha:</strong> 22 Septiembre 2024</p>
+          <p><strong>Descripción:</strong> Descripción del proyecto 5.</p>
         </div>
       </div>
-    </section>
-    <script src="./bootstrap/js/bootstrap.min.js"></script>
+      <!-- link -->
+      <div class="text-cente mt-5 p-5">
+        <a href="./pages/proyectos.html" class="h3  color-text-title-primario"><strong>Ver más proyectos</strong></a>
+        </div>
+        </div>
+        </section>
 
-    <script src="./js/index.js"></script>
-    <!-- AOS (Animate on Scroll) -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init(); // Inicializa AOS
-    </script>
+  <!-- Sección Contacto -->
+  <section id="footer" class="section-contacto">
+    <div class="container">
+      <h2 class="fw-bold mb-4" data-aos="fade-up">Contacto</h2>
+      <p data-aos="fade-up">¿Quieres trabajar conmigo? ¡Hablemos!</p>
+      <div class="d-flex justify-content-center align-items-center">
+        <a href="mailto:torcoromaarias@gmail.com" class="me-3" data-aos="fade-up">
+          <i class="bi bi-envelope-at-fill fs-2 text-dark"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/torcoroma-arias-ascanio-a20315227/" target="_blank" data-aos="fade-up">
+          <i class="bi bi-linkedin fs-2 text-primary"></i>
+        </a>
+        </div>
+        </div>
+        </section>
+        <script src="./bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="./js/index.js"></script>
+  <!-- AOS (Animate on Scroll) -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init(); // Inicializa AOS
+  </script>
   </body>
+
 </html>

@@ -26,37 +26,25 @@ html {
  
  
   }
-/* clases de base para aplicacion */
+/* clases de base para aplicación */
 p{
   font-size: 18px;
   color: var(--charcoal);
   line-height: 1.2; 
 }
+/* color títulos */
 .color-text-title-primario{
   color: var(--mustard-yellow);
+  text-decoration: none;
 }
+/* color fondo  imgen */
 .color-background-fondo-primario{
   background-color: var(--mustard-yellow);
-}
-/*  */
-.color-text-subtitle-dark{
-  color: var(--charcoal);
-}
-.color-text-subtitle-light {
-  color: var(--sky-blue);
-}
-.color-background-light{
-  background-color: var( --sky-blue);
-}
-.color-background-dark{
-  background-color: var( --lavender-gray);
 
 }
-.size-text-p{
-font-size: 22px;
-}
 
-/* estilos de link de lista */
+
+
 /* sesión de body pagina  */
 
 section {
@@ -64,63 +52,32 @@ section {
   min-height: 100vh; 
   padding: 20px;
   box-sizing: border-box;
-}
-.section-inicio {
-  scroll-margin-top: 100px; 
- 
+  /* background-color: #5A639C; */
 }
 
-.section-experiencia {
-  scroll-margin-top: 100px; 
- 
-}
-
-.section-galeria {
-  scroll-margin-top: 100px; 
-
-}
-.section-estudios {
-  scroll-margin-top: 100px; 
-
-}
-
+/* estilos de scroll */
+.section-inicio,
+.section-experiencia,
+.section-galeria,
+.section-estudios,
 .section-contacto {
-  scroll-margin-top: 100px; 
+  scroll-margin-top: 100px;
 }
 
 /* Asegura que el contenido no se apile */
 section h2, section p {
   margin: 10px 0;
-}
-
-/* MODAL */
-
-.modal-body .content {
-  display: none;
-}
-.modal-body img {
-  display: block;
-  width: 100%;
-}
-.container-image img{
-  margin-top: 120px;
-  max-width:  100%;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
-
-
+  
 }
 
 
-.containerText{
-  margin-top: 120px;
-  text-align: center;
-}
+
+/* estilos header */
 .navContainer{
-background-color: var(--color-fondo);
-padding: 1rem;
-color: var(--charcoal);
-margin-bottom: 2rem;
-
+  background-color: var(--color-fondo);
+  padding: 1rem;
+  color: var(--charcoal);
+  margin-bottom: 2rem;
 }
 .nav-link {
   text-decoration: none; 
@@ -152,24 +109,25 @@ margin-bottom: 2rem;
   transform: scaleX(1);
   transform-origin: bottom left; 
 }
-/* inicio estilos */
+/* estilos de primer sección*/
 .container-image {
   width: 500px;
+  margin-top: 150px;
 
-  /* max-width: 300px; */
+ 
 
 }
 
-.espacie-container{
- 
+/* .espacie-container{
+ background-color: #5A639C;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
  
-}
+} */
 /* estilos del button  */
-.boton-ovalado {
+.btn-ovalado {
   background-color:var(--mustard-yellow);
   color: var(--color-fondo);
   border-radius: 30px;
@@ -177,52 +135,33 @@ margin-bottom: 2rem;
   font-weight: 600;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease;
-
+text-decoration: none;
   border: solid 2px transparent;
 }
 
-.boton-ovalado:hover {
+.btn-ovalado:hover {
 
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
-  transform: translateY(-3px);
- background-color: var(--color-fondo) ;
- color: var(--mustard-yellow);
+box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+transform: translateY(-3px);
+background-color: var(--color-fondo) ;
+color: var(--mustard-yellow);
 border: solid 2px var(--mustard-yellow);
- 
 }
 
+.btn-certificado{
+  margin-top: 40px;
+  margin-bottom: 30px;
 
-
-/* Media Query para pantallas más pequeñas */
-@media (max-width: 768px) { /* Ajusta el valor según tus necesidades */
-  .section-inicio {
-   
-    margin-top: 40px; 
-  }
-
-  .container-image img {
-   
-    /* width: 50%;  */
-  }
 }
 
-/* Media Query para pantallas más grandes */
-@media (min-width: 769px) {
-  .section-inicio {
- 
-    margin-top: 50px;
-  }
-
-  .container-image img {
-    /* Ajusta el ancho o cualquier otro estilo para pantallas grandes aquí */
-    width: 100%; /* Asegúrate de que la imagen siga ocupando el 100% del contenedor */
-  }
-}
+/* seccion modal */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
-  gap: 15px;
-  margin: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 25px;
+ 
+  
+  
 }
 
 
@@ -231,15 +170,14 @@ border: solid 2px var(--mustard-yellow);
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  
 }
-
-.gallery-item img {
+/* .gallery-item img {
   width: 100%;
   height: auto;
   display: block;
   transition: transform 0.3s ease;
-}
+} */
 
 .gallery-item:hover img {
   transform: scale(1.05); /* Efecto de zoom en hover */
@@ -253,14 +191,15 @@ border: solid 2px var(--mustard-yellow);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: var(--mustard-yellow);
+ 
   font-size: 1.5rem;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(29, 37, 65, 0.8);
   padding: 10px 20px;
   border-radius: 8px;
   opacity: 0;
   text-align: center;
   display: flex;
+  color:white;
   justify-content: center;
   align-items: center;
   transition: opacity 0.3s ease;
@@ -280,7 +219,8 @@ border: solid 2px var(--mustard-yellow);
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(19, 24, 44, 0.9);
+  /* background-color: rgba(0, 0, 0, 0.9); */
 }
 
 .modal-content {
@@ -308,4 +248,31 @@ border: solid 2px var(--mustard-yellow);
 
 .close:hover {
   color: black;
+}
+
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 768px) { /* Ajusta el valor según tus necesidades */
+  .section-inicio {
+   
+    margin-top: 40px; 
+  }
+
+  .container-image img {
+   
+    /* width: 50%;  */
+  }
+}
+
+/* Media Query para pantallas más grandes */
+@media (min-width: 769px) {
+  .section-inicio {
+ 
+    margin-top: 50px;
+  }
+
+  .container-image img {
+    /* Ajusta el ancho o cualquier otro estilo para pantallas grandes aquí */
+    width: 100%; /* Asegúrate de que la imagen siga ocupando el 100% del contenedor */
+  }
 }
