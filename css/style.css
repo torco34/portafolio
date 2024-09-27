@@ -20,6 +20,7 @@ html {
 
     --color-fondo: #F5F5F5;
     --mustard-yellow: #5A639C;
+    /* --mustard-yellow: #f0b7b7; */
     --charcoal: #333;
     --sky-blue: #fff;
 
@@ -69,6 +70,15 @@ section h2, section p {
   margin: 10px 0;
   
 }
+.imgfondo {
+  /* background-image: url("../img/imgf1.jpg"); */
+  background-size: cover;
+  background-position: center;
+  /* height: 90%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
@@ -112,20 +122,13 @@ section h2, section p {
 /* estilos de primer sección*/
 .container-image {
   width: 500px;
-  margin-top: 150px;
+  /* margin-top: 150px; */
 
  
 
 }
 
-/* .espacie-container{
- background-color: #5A639C;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
- 
-} */
+
 /* estilos del button  */
 .btn-ovalado {
   background-color:var(--mustard-yellow);
@@ -246,6 +249,60 @@ border: solid 2px var(--mustard-yellow);
   color: black;
 }
 
+/* Footer */
+
+.section-contacto {
+  position: relative;
+  background-image: url('../img/fondo.jpg'); /* Replace with your image path */
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the image */
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.section-contacto::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(8, 8, 8, 0.7);
+
+  z-index: 1;
+
+}
+.icon-link {
+  display: inline-block;
+  width: 80px; /* Width of the circular icon */
+  height: 80px; /* Height of the circular icon */
+  background-color: rgba(255, 255, 255, 0.2); /* Light background for icons */
+  border-radius: 50%; /* Makes the icon circular */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease; 
+
+  margin-bottom: 8px; 
+}
+.icon-link a{
+ text-decoration: none;
+ color: var(--sky-blue);
+ display: grid;
+}
+.icon-link:hover {
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+
+
+.container {
+  position: relative; /* Ensure container is above the overlay */
+  z-index: 2;
+}
+
 
 /* Media Query para pantallas más pequeñas */
 @media (max-width: 768px) { /* Ajusta el valor según tus necesidades */
@@ -254,10 +311,7 @@ border: solid 2px var(--mustard-yellow);
     margin-top: 40px; 
   }
 
-  .container-image img {
-   
-    /* width: 50%;  */
-  }
+
 }
 
 /* Media Query para pantallas más grandes */

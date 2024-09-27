@@ -14,16 +14,17 @@ html {
 }
 
 
-  :root {
 
-    --color-fondo: #FCF8F3;
-    --mustard-yellow: #DCA47C;
-    --charcoal: #333;
-    --sky-blue: #fff;
+:root {
 
- 
- 
-  }
+  --color-fondo: #F5F5F5;
+  --mustard-yellow: #5A639C;
+  --charcoal: #333;
+  --sky-blue: #fff;
+
+
+
+}
 
   .boton-ovalado {
     background-color:var(--mustard-yellow);
@@ -130,4 +131,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .container{
+
   }
