@@ -10,47 +10,55 @@ html {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   background-color: var(--color-fondo);
+ 
   color: var(--charcoal);
-  /* color: var(--sky-blue); */
-
 }
 
+:root {
+  --color-fondo: #E1DED8;
 
-  :root {
-
-    --color-fondo: #F5F5F5;
-    --mustard-yellow: #5A639C;
-    /* --mustard-yellow: #f0b7b7; */
-    --charcoal: #333;
-    --sky-blue: #fff;
-
+  --mustard-yellow: #e6a8a6;
  
- 
-  }
+    --charcoal: #535251;
+  --sky-blue: #fff;
+  --dorado: #e6a8a6;
+}
+/* javascript */
+
+.active-link {
+  color: var(--dorado); /* Change to your desired color */
+}
+.text-fondo-color{
+  color: var(--color-fondo);
+}
+.nav-link.active-link::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 /* clases de base para aplicación */
-p{
+p {
   font-size: 18px;
   color: var(--charcoal);
-  line-height: 1.2; 
+  line-height: 1.2;
 }
 /* color títulos */
-.color-text-title-primario{
+.color-text-title-primario {
   color: var(--mustard-yellow);
   text-decoration: none;
 }
 /* color fondo  imgen */
-.color-background-fondo-primario{
+.color-background-fondo-primario {
   background-color: var(--mustard-yellow);
-
 }
-
-
+.color-text {
+  color: var(--dorado);
+}
 
 /* sesión de body pagina  */
 
 section {
   width: 100%;
-  min-height: 100vh; 
+  min-height: 100vh;
   padding: 20px;
   box-sizing: border-box;
   /* background-color: #5A639C; */
@@ -66,9 +74,9 @@ section {
 }
 
 /* Asegura que el contenido no se apile */
-section h2, section p {
+section h2,
+section p {
   margin: 10px 0;
-  
 }
 .imgfondo {
   /* background-image: url("../img/imgf1.jpg"); */
@@ -80,81 +88,71 @@ section h2, section p {
   align-items: center;
 }
 
-
-
 /* estilos header */
-.navContainer{
+.navContainer {
   background-color: var(--color-fondo);
   padding: 1rem;
   color: var(--charcoal);
   margin-bottom: 2rem;
 }
 .nav-link {
-  text-decoration: none; 
-  position: relative; 
-  padding-bottom: 2px; 
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 2px;
   font-size: 18px;
 }
 
 .nav-link:hover {
   color: var(--mustard-yellow);
-  
-
 }
 /* Animación del linead lista */
 .nav-link::after {
-  content: ''; 
-  position: absolute; 
+  content: "";
+  position: absolute;
   left: 0;
-  bottom: 0; 
-  width: 100%; 
-  height: 3px; 
-  background-color: var(--mustard-yellow);
-  transform: scaleX(0); 
-  transform-origin: bottom right; 
-  transition: transform 0.3s ease-out; 
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--dorado);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
 }
 
 .nav-link:hover::after {
   transform: scaleX(1);
-  transform-origin: bottom left; 
+  transform-origin: bottom left;
 }
 /* estilos de primer sección*/
 .container-image {
   width: 500px;
   /* margin-top: 150px; */
-
- 
-
 }
-
 
 /* estilos del button  */
 .btn-ovalado {
-  background-color:var(--mustard-yellow);
+  background-color: var(--mustard-yellow);
   color: var(--color-fondo);
   border-radius: 30px;
   padding: 10px 30px;
   font-weight: 600;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease;
-text-decoration: none;
+  text-decoration: none;
   border: solid 2px transparent;
 }
 
 .btn-ovalado:hover {
-
-box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
-transform: translateY(-3px);
-background-color: var(--color-fondo) ;
-color: var(--mustard-yellow);
-border: solid 2px var(--mustard-yellow);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3px);
+  background-color: var(--color-fondo);
+  color: var(--mustard-yellow);
+  border: solid 2px var(--mustard-yellow);
 }
 
-.btn-certificado{
+.btn-certificado {
   margin-top: 40px;
   margin-bottom: 30px;
-
 }
 
 /* seccion modal */
@@ -162,18 +160,12 @@ border: solid 2px var(--mustard-yellow);
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   gap: 25px;
- 
-  
-  
 }
-
-
 
 .gallery-item {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  
 }
 
 .gallery-item:hover img {
@@ -188,7 +180,7 @@ border: solid 2px var(--mustard-yellow);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
- 
+
   font-size: 1.5rem;
   background-color: rgba(29, 37, 65, 0.8);
   padding: 10px 20px;
@@ -196,7 +188,7 @@ border: solid 2px var(--mustard-yellow);
   opacity: 0;
   text-align: center;
   display: flex;
-  color:white;
+  color: white;
   justify-content: center;
   align-items: center;
   transition: opacity 0.3s ease;
@@ -205,7 +197,6 @@ border: solid 2px var(--mustard-yellow);
 .gallery-item:hover .overlay-text {
   opacity: 1;
 }
-
 
 /* Modal styles */
 .modal {
@@ -253,7 +244,7 @@ border: solid 2px var(--mustard-yellow);
 
 .section-contacto {
   position: relative;
-  background-image: url('../img/fondo.jpg'); /* Replace with your image path */
+  background-image: url("../img/fondo.jpg"); /* Replace with your image path */
   background-size: cover; /* Cover the entire section */
   background-position: center; /* Center the image */
   z-index: 1;
@@ -263,7 +254,7 @@ border: solid 2px var(--mustard-yellow);
   color: white;
 }
 .section-contacto::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -272,7 +263,6 @@ border: solid 2px var(--mustard-yellow);
   background: rgba(8, 8, 8, 0.7);
 
   z-index: 1;
-
 }
 .icon-link {
   display: inline-block;
@@ -283,41 +273,35 @@ border: solid 2px var(--mustard-yellow);
   display: grid;
   justify-content: center;
   align-items: center;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 
-  margin-bottom: 8px; 
+  margin-bottom: 8px;
 }
-.icon-link a{
- text-decoration: none;
- color: var(--sky-blue);
- display: grid;
+.icon-link a {
+  text-decoration: none;
+  color: var(--sky-blue);
+  display: grid;
 }
 .icon-link:hover {
   transform: scale(1.1); /* Slightly enlarge the icon on hover */
 }
-
-
 
 .container {
   position: relative; /* Ensure container is above the overlay */
   z-index: 2;
 }
 
-
 /* Media Query para pantallas más pequeñas */
-@media (max-width: 768px) { /* Ajusta el valor según tus necesidades */
+@media (max-width: 768px) {
+  /* Ajusta el valor según tus necesidades */
   .section-inicio {
-   
-    margin-top: 40px; 
+    margin-top: 40px;
   }
-
-
 }
 
 /* Media Query para pantallas más grandes */
 @media (min-width: 769px) {
   .section-inicio {
- 
     margin-top: 50px;
   }
 
