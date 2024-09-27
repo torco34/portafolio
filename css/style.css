@@ -18,7 +18,7 @@ html {
   --mustard-yellow: #e6a8a6;
   --charcoal: #535251;
   --sky-blue: #fff;
-  /* --dorado: #e6a8a6; */
+  --mustard-pink: #f5bfbd;
 }
 
 /* Manejado con javascript */
@@ -158,9 +158,8 @@ section p {
 .btn-ovalado:hover {
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
   transform: translateY(-3px);
-  background-color: var(--color-fondo);
-  color: var(--mustard-yellow);
-  border: solid 2px var(--mustard-yellow);
+  background-color: var(--mustard-pink);
+  color: var(--sky-blue);
 }
 
 .btn-certificado {
@@ -324,11 +323,11 @@ section p {
 .section-contacto {
   position: relative;
   background-image: url("../img/fondo.jpg");
-  /* Replace with your image path */
+
   background-size: cover;
-  /* Cover the entire section */
+
   background-position: center;
-  /* Center the image */
+ 
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -351,9 +350,9 @@ section p {
 .icon-link {
   display: inline-block;
   width: 80px;
-  /* Width of the circular icon */
+
   height: 80px;
-  /* Height of the circular icon */
+ 
   background-color: rgba(255, 255, 255, 0.2);
   /* Light background for icons */
   border-radius: 50%;
