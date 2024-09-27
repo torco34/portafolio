@@ -10,50 +10,63 @@ html {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   background-color: var(--color-fondo);
- 
   color: var(--charcoal);
 }
 
 :root {
   --color-fondo: #E1DED8;
-
   --mustard-yellow: #e6a8a6;
- 
-    --charcoal: #535251;
+  --charcoal: #535251;
   --sky-blue: #fff;
-  --dorado: #e6a8a6;
+  /* --dorado: #e6a8a6; */
 }
-/* javascript */
 
-.active-link {
-  color: var(--dorado); /* Change to your desired color */
-}
-.text-fondo-color{
-  color: var(--color-fondo);
-}
+/* Manejado con javascript */
+
 .nav-link.active-link::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
 /* clases de base para aplicación */
 p {
   font-size: 18px;
   color: var(--charcoal);
   line-height: 1.2;
 }
+
 /* color títulos */
 .color-text-title-primario {
   color: var(--mustard-yellow);
   text-decoration: none;
 }
-/* color fondo  imgen */
-.color-background-fondo-primario {
-  background-color: var(--mustard-yellow);
-}
-.color-text {
-  color: var(--dorado);
+
+
+/* color primario */
+.color-text-primary {
+  color: var(--mustard-yellow);
 }
 
+/* color negro texto */
+.color-text-dark {
+  color: var(--charcoal);
+}
+
+/* color texto blanco */
+.color-text-white-fondo {
+  color: var(--color-fondo);
+}
+
+.text-fondo-color {
+  color: var(--color-fondo);
+}
+
+.background-white-fondo {
+  background-color: var(--color-fondo);
+}
+.background-primary-fondo {
+  background-color: var(--mustard-yellow);
+}
 /* sesión de body pagina  */
 
 section {
@@ -61,7 +74,7 @@ section {
   min-height: 100vh;
   padding: 20px;
   box-sizing: border-box;
-  /* background-color: #5A639C; */
+
 }
 
 /* estilos de scroll */
@@ -78,11 +91,8 @@ section h2,
 section p {
   margin: 10px 0;
 }
-.imgfondo {
-  /* background-image: url("../img/imgf1.jpg"); */
-  background-size: cover;
-  background-position: center;
-  /* height: 90%; */
+
+.section-inicio {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,6 +105,7 @@ section p {
   color: var(--charcoal);
   margin-bottom: 2rem;
 }
+
 .nav-link {
   text-decoration: none;
   position: relative;
@@ -102,9 +113,8 @@ section p {
   font-size: 18px;
 }
 
-.nav-link:hover {
-  color: var(--mustard-yellow);
-}
+
+
 /* Animación del linead lista */
 .nav-link::after {
   content: "";
@@ -112,8 +122,8 @@ section p {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 3px;
-  background-color: var(--dorado);
+  height: 4px;
+  background-color: var(--mustard-yellow);
   transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform 0.3s ease-out;
@@ -123,10 +133,13 @@ section p {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+/* SECCIÓN INICIO */
+
 /* estilos de primer sección*/
 .container-image {
   width: 500px;
-  /* margin-top: 150px; */
+
 }
 
 /* estilos del button  */
@@ -155,6 +168,55 @@ section p {
   margin-bottom: 30px;
 }
 
+/* SECCIÓN ESTUDIOS */
+
+
+/* IMG FONDO*/
+.section-estudios {
+  position: relative;
+  background-image: url('../img/imgf1.jpg');
+  background-size: cover;
+  background-position: center;
+  /* color: white; */
+  color: var(--color-fondo);
+}
+
+.section-estudios::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(17, 16, 16, 0.7);
+  z-index: 1;
+
+}
+
+.section-estudios .container {
+  position: relative;
+  z-index: 2;
+
+}
+
+.graficos-habilidad {
+  max-width: 600px;
+  margin: auto;
+  background-color: var(--color-fondo);
+  padding: 20px;
+
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+
+
+
+/* SECCIÓN PROYECTOS */
+
+
 /* seccion modal */
 .gallery {
   display: grid;
@@ -168,8 +230,22 @@ section p {
   cursor: pointer;
 }
 
+.projects-grid img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+
+}
+
 .gallery-item:hover img {
-  transform: scale(1.05); /* Efecto de zoom en hover */
+  transform: scale(1.05);
+  /* Efecto de zoom en hover */
+}
+
+.modal img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Texto superpuesto al pasar el mouse */
@@ -182,13 +258,13 @@ section p {
   transform: translate(-50%, -50%);
 
   font-size: 1.5rem;
-  background-color: rgba(29, 37, 65, 0.8);
+  background-color: rgba(80, 77, 77, 0.8);
   padding: 10px 20px;
   border-radius: 8px;
   opacity: 0;
   text-align: center;
   display: flex;
-  color: white;
+  color: var(--color-fondo);
   justify-content: center;
   align-items: center;
   transition: opacity 0.3s ease;
@@ -198,7 +274,7 @@ section p {
   opacity: 1;
 }
 
-/* Modal styles */
+/* Modal styles proyectos */
 .modal {
   display: none;
   position: fixed;
@@ -210,7 +286,7 @@ section p {
   justify-content: center;
   align-items: center;
   background-color: rgba(19, 24, 44, 0.9);
-  /* background-color: rgba(0, 0, 0, 0.9); */
+
 }
 
 .modal-content {
@@ -223,13 +299,10 @@ section p {
   border-radius: 8px;
 }
 
-.modal img {
-  max-width: 100%;
-  height: auto;
-}
+
 
 .close {
-  color: #e26767;
+  color: var(--mustard-yellow);
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -237,22 +310,32 @@ section p {
 }
 
 .close:hover {
-  color: black;
+  color: var(--charcoal);
 }
+
+/* imgenes del proyecto */
+.projects-grid {
+  height: auto;
+}
+
 
 /* Footer */
 
 .section-contacto {
   position: relative;
-  background-image: url("../img/fondo.jpg"); /* Replace with your image path */
-  background-size: cover; /* Cover the entire section */
-  background-position: center; /* Center the image */
+  background-image: url("../img/fondo.jpg");
+  /* Replace with your image path */
+  background-size: cover;
+  /* Cover the entire section */
+  background-position: center;
+  /* Center the image */
   z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
 }
+
 .section-contacto::before {
   content: "";
   position: absolute;
@@ -264,12 +347,17 @@ section p {
 
   z-index: 1;
 }
+
 .icon-link {
   display: inline-block;
-  width: 80px; /* Width of the circular icon */
-  height: 80px; /* Height of the circular icon */
-  background-color: rgba(255, 255, 255, 0.2); /* Light background for icons */
-  border-radius: 50%; /* Makes the icon circular */
+  width: 80px;
+  /* Width of the circular icon */
+  height: 80px;
+  /* Height of the circular icon */
+  background-color: rgba(255, 255, 255, 0.2);
+  /* Light background for icons */
+  border-radius: 50%;
+  /* Makes the icon circular */
   display: grid;
   justify-content: center;
   align-items: center;
@@ -277,22 +365,27 @@ section p {
 
   margin-bottom: 8px;
 }
+
 .icon-link a {
   text-decoration: none;
   color: var(--sky-blue);
   display: grid;
 }
+
 .icon-link:hover {
-  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+  transform: scale(1.1);
+  /* Slightly enlarge the icon on hover */
 }
 
 .container {
-  position: relative; /* Ensure container is above the overlay */
+  position: relative;
+  /* Ensure container is above the overlay */
   z-index: 2;
 }
 
 /* Media Query para pantallas más pequeñas */
 @media (max-width: 768px) {
+
   /* Ajusta el valor según tus necesidades */
   .section-inicio {
     margin-top: 40px;
@@ -307,6 +400,7 @@ section p {
 
   .container-image img {
     /* Ajusta el ancho o cualquier otro estilo para pantallas grandes aquí */
-    width: 100%; /* Asegúrate de que la imagen siga ocupando el 100% del contenedor */
+    width: 100%;
+    /* Asegúrate de que la imagen siga ocupando el 100% del contenedor */
   }
 }

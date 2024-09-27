@@ -53,3 +53,46 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+const ctx = document.getElementById('skillsChart').getContext('2d');
+
+const skillsChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['JavaScript', 'TypeScript', 'HTML5', 'CSS3', 'React.js', 'Vue.js', 'Quasar', 'Bootstrap'],
+        datasets: [{
+            label: 'Nivel de Habilidad',
+            data: [4, 4, 4, 4, 4, 4, 3, 4], // Escala del 1 al 5
+            backgroundColor: [
+                'rgba(255, 206, 86, 0.6)',
+                'rgba(54, 162, 235, 0.6)',
+                'rgba(255, 159, 64, 0.9)',
+                'rgba(34, 143, 216, 0.9)',
+                'rgba(139, 208, 248, 0.6)',
+                'rgba(7, 194, 138, 0.938)',
+                'rgba(154, 197, 226, 0.938)',
+                'rgba(153, 102, 255, 0.6)'
+            ],
+            borderColor: [
+                'rgba(255, 206, 86, 0.6)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(139, 208, 248, 1)',
+                'rgba(7, 194, 138, 0.938)',
+                'rgba(201, 203, 207, 1)',
+                'rgba(153, 102, 255, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true,
+                max: 5 // Nivel máximo
+            }
+        }
+    }
+});
+
+console.log(skillsChart)
