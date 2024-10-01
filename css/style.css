@@ -9,25 +9,20 @@
 }
 
 body {
-  overflow-x: hidden; 
-  font-family: "Roboto", sans-serif;
-  background-color: var(--color-fondo);
-  color: var(--charcoal);
-}
-html {
-  /* margin: 0;
-  padding: 0; */
-  height: 100%;
-  font-size: calc(10px + 0.5vw);
-  box-sizing: border-box;
-  font-size: 16px;
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
   background-color: var(--color-fondo);
   color: var(--charcoal);
-  box-sizing: border-box;
-  /* color: var(--color-fondo); */
 }
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  overflow-x: hidden;
+
+}
+
 :root {
   --color-fondo: #E1DED8;
   --mustard-yellow: #B17457;
@@ -79,9 +74,11 @@ p {
 .background-white-fondo {
   background-color: var(--color-fondo);
 }
+
 .background-primary-fondo {
   background-color: var(--mustard-yellow);
 }
+
 /* sesión de body pagina  */
 
 section {
@@ -115,7 +112,9 @@ section p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
 }
+
 .section-inicio::before {
   content: '';
   position: absolute;
@@ -127,6 +126,7 @@ section p {
   z-index: 1;
 
 }
+
 /* estilos header */
 .navContainer {
   background-color: var(--color-fondo);
@@ -204,10 +204,10 @@ section p {
 .section-estudios {
   position: relative;
   background-image: url('../img/fondoIn2.jpg');
-  /* background-image: url('../img/fondoBlanco.jpg'); */
+
   background-size: cover;
   background-position: center;
-  /* color: white; */
+
   color: var(--color-fondo);
 }
 
@@ -236,7 +236,7 @@ section p {
   padding: 20px;
 
   border-radius: 8px;
-  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+
   text-align: center;
 }
 
@@ -270,7 +270,7 @@ section p {
 
 .gallery-item:hover img {
   transform: scale(1.05);
-  /* Efecto de zoom en hover */
+
 }
 
 .modal img {
@@ -356,7 +356,7 @@ section p {
   background-image: url("../img/imgfondo6.jpg");
   background-size: cover;
   background-position: center;
- /* height: 40vh; */
+  /* height: 40vh; */
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -382,7 +382,7 @@ section p {
   width: 80px;
 
   height: 80px;
- 
+
   background-color: rgba(255, 255, 255, 0.2);
   /* Light background for icons */
   border-radius: 50%;
@@ -412,24 +412,6 @@ section p {
   z-index: 2;
 }
 
-/* Media Query para pantallas más pequeñas */
-@media (max-width: 768px) {
 
-  /* Ajusta el valor según tus necesidades */
-  .section-inicio {
-    margin-top: 40px;
-  }
-}
 
-/* Media Query para pantallas más grandes */
-@media (min-width: 769px) {
-  .section-inicio {
-    margin-top: 50px;
-  }
 
-  .container-image img {
-    /* Ajusta el ancho o cualquier otro estilo para pantallas grandes aquí */
-    width: 100%;
-    /* Asegúrate de que la imagen siga ocupando el 100% del contenedor */
-  }
-}
