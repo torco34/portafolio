@@ -29,7 +29,7 @@ const imgProjectArray = Array.from(document.querySelectorAll('.gallery-item'));
 imgProjectArray.forEach(function (item) {
     item.addEventListener('click', function () {
         const modalId = item.getAttribute('data-modal'); // Obtener el ID del modal desde 'data-modal'
-        console.log(modalId)
+
         openModal(modalId);
     });
 });
