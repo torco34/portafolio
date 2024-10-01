@@ -14,12 +14,18 @@ html {
 }
 
 
+
+
 :root {
   --color-fondo: #E1DED8;
-  --mustard-yellow: #e6a8a6;
-  --charcoal: #535251;
+  --mustard-yellow: #B17457;
+  --charcoal: #5f5e5d;
   --sky-blue: #fff;
-  --mustard-pink: #f5bfbd;
+  --mustard-pink: #cea592;
+}
+
+.color-text-primary {
+  color: var(--mustard-yellow);
 }
 
 .boton-ovalado {
@@ -47,7 +53,7 @@ html {
 }
 
 .content {
-  /* background-color: rgba(0, 0, 0, 0.7); */
+
   padding: 40px;
   text-align: center;
   border-radius: 10px;
@@ -63,7 +69,7 @@ html {
 /* Grid para proyectos */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 20px;
 }
 
@@ -86,15 +92,34 @@ html {
   object-fit: cover;
 }
 
-.project-info {
+.project-card:nth-child(-n+6) {
+  margin-bottom: 20px;
   padding: 20px;
-  /* height: 30vh; */
+  /* Ajusta según sea necesario */
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+
+}
+
+.project-info {
+  /* height: 200px; */
+}
+
+.text-container {
+  line-height: 1;
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  height: 15vh;
 }
 
 .project-title {
   font-size: 1.5rem;
   color: var(--mustard-yellow);
-  margin-bottom: 10px;
 }
 
 .project-description {
@@ -103,6 +128,12 @@ html {
   margin-bottom: 15px;
 }
 
+.container-button {
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+}
 
 
 
@@ -116,9 +147,6 @@ html {
   justify-content: center;
   align-items: center;
   width: 100%;
-
-
-  /* z-index: 2; */
 }
 
 .imgfondo::before {
@@ -136,11 +164,8 @@ html {
 .section-contacto {
   position: relative;
   background-image: url("../img/fondo.jpg");
-
   background-size: cover;
-
   background-position: center;
- 
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -156,25 +181,20 @@ html {
   right: 0;
   bottom: 0;
   background: rgba(8, 8, 8, 0.7);
-
   z-index: 1;
 }
 
 .icon-link {
   display: inline-block;
   width: 80px;
-
   height: 80px;
- 
   background-color: rgba(255, 255, 255, 0.2);
-  /* Light background for icons */
   border-radius: 50%;
-  /* Makes the icon circular */
   display: grid;
   justify-content: center;
   align-items: center;
   transition: transform 0.3s ease;
-
+  padding: 10px;
   margin-bottom: 8px;
 }
 
@@ -186,17 +206,19 @@ html {
 
 .icon-link:hover {
   transform: scale(1.1);
-  /* Slightly enlarge the icon on hover */
+
 }
 
 .container {
   position: relative;
-  /* Ensure container is above the overlay */
   z-index: 2;
 }
-.div-button{
+
+.div-button {
   height: 150px;
+
 }
-.div-button a{
+
+.div-button a {
   text-decoration: none;
 }
