@@ -1,19 +1,33 @@
 /* Reset and Base Styles */
 /* Codigo todo la pagina */
-body,
-html {
+
+
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  overflow-x: hidden; 
+  font-family: "Roboto", sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--charcoal);
+}
+html {
+  /* margin: 0;
+  padding: 0; */
   height: 100%;
   font-size: calc(10px + 0.5vw);
   box-sizing: border-box;
   font-size: 16px;
+  overflow-x: hidden;
   font-family: "Roboto", sans-serif;
   background-color: var(--color-fondo);
   color: var(--charcoal);
+  box-sizing: border-box;
   /* color: var(--color-fondo); */
 }
-
 :root {
   --color-fondo: #E1DED8;
   --mustard-yellow: #B17457;
@@ -74,7 +88,7 @@ section {
   width: 100%;
   min-height: 100vh;
   padding: 20px;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 
 }
 
@@ -95,11 +109,7 @@ section p {
 
 .section-inicio {
   position: relative;
-  /* background-image: url('../img/fondoBlanco.jpg'); */
-  /* background-image: url('../img/fundoIn.jpg'); */
-  /* background-image: url('../img/fondoIn2.jpg'); */
   background-image: url('../img/fondoIn3.jpg');
-  
   background-size: cover;
   background-position: center;
   display: flex;
@@ -123,6 +133,7 @@ section p {
   padding: 1rem;
   color: var(--charcoal);
   margin-bottom: 2rem;
+  /* width: 80%; */
 }
 
 .nav-link {
