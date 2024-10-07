@@ -22,14 +22,13 @@ html {
   overflow-x: hidden;
 
 }
-
 :root {
-  --color-fondo: #E1DED8;
-  --mustard-yellow: #B17457;
+  --color-fondo: #FBF6E2;
+  --mustard-yellow: #E68369;
   --charcoal: #5f5e5d;
   --sky-blue: #fff;
-  --mustard-pink: #cea592;
-  --basico-color: #A7D948; 
+  --mustard-pink: #ECCEAE;
+  --basico-color: #4caf50; 
   --intermedio-color: #FFC107;
   --avanzado-color: #E74C3C;
 }
@@ -115,7 +114,10 @@ section p {
   background-image: url('../img/fondoIn3.jpg');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   display: flex;
+
   justify-content: center;
   align-items: center;
   margin-top: 40px;
@@ -128,7 +130,8 @@ section p {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(7, 7, 7, 0.5);
+  /* background-color: rgb(19, 24, 66, 0.3); */
+  background-color: rgba(20, 20, 20, 0.3);
   z-index: 1;
 
 }
@@ -202,15 +205,36 @@ section p {
   margin-top: 40px;
   margin-bottom: 30px;
 }
+/* Experiencia */
 
+.imgExperiencia{
+  position: relative;
+  background-image: url('../img/fondoBlanco.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  z-index: 5;
+}
+.imgExperiencia::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(20, 20, 20, 0.6);
+  /* background-color: rgb(19, 24, 66, 0.3); */
+  z-index: -1;
+
+}
 /* SECCIÓN ESTUDIOS */
 
 
 /* IMG FONDO ESTUDIO*/
 .section-estudios {
   position: relative;
-  background-image: url('../img/fondoIn2.jpg');
-
+  background-image: url('../img/fundoIn.jpg');
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
 
@@ -224,7 +248,8 @@ section p {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(7, 6, 6, 0.8);
+  background-color: rgba(20, 20, 20, 0.6);
+  /* background-color: rgb(19, 24, 66, 0.6); */
   z-index: 1;
 
 }
@@ -235,24 +260,44 @@ section p {
 
 }
 
-.graficos-habilidad {
-  max-width: 600px;
-  margin: auto;
-  background-color: var(--color-fondo);
-  padding: 20px;
-
-  border-radius: 8px;
-
-  text-align: center;
-}
-
-
 
 
 
 /* SECCIÓN PROYECTOS */
 
 
+
+.section-galeria{
+  position: relative;
+  background-image: url("../img/fonProy.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  z-index: 5;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 40px; */
+}
+
+.section-galeria::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(20, 20, 20, 0.6);
+  /* background-color: rgb(19, 24, 66, 0.6); */
+  z-index: 1;
+
+}
+.text-ligh{
+  position: relative;
+  z-index: -1;
+  color: var(--color-fondo);
+}
 /* seccion modal */
 .gallery {
   display: grid;
@@ -294,13 +339,13 @@ section p {
   transform: translate(-50%, -50%);
 
   font-size: 1.5rem;
-  background-color: rgba(12, 12, 12, 0.9);
+  background-color: rgba(10, 10, 10, 0.8);
   padding: 10px 20px;
   border-radius: 8px;
   opacity: 0;
   text-align: center;
   display: flex;
-  color: var(--color-fondo);
+  color: var(--mustard-yellow);
   justify-content: center;
   align-items: center;
   transition: opacity 0.3s ease;
@@ -321,7 +366,7 @@ section p {
   height: 100%;
   justify-content: center;
   align-items: center;
-  background-color: rgba(16, 17, 17, 0.9);
+  background-color: rgba(3, 3, 3, 0.6);
 
 }
 
@@ -364,18 +409,10 @@ section p {
   /* color: var(--color-fondo); */
 }
 
+/* HABILIDADES SECTION */
 
-.section-habilidade::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(7, 6, 6, 0.8);
-  z-index: 1;
 
-}
+
 .habilidades-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
@@ -408,68 +445,73 @@ section p {
 .color-intermedio{
   color: var(--intermedio-color);
 }
-/* .habilidad {
-  background-color: var(--mustard-yellow);
 
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 20px;
-  border-radius: 10px;
-color: #E1DED8;
-  /* transition: background-color 0.3s ease, transform 0.3s ease; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  position: relative;
-} */
+.progress-bar {
+  width: 100%;               
+  background-color: #ccccca;  
+  border-radius: 25px;         
+  overflow: hidden;          
+  height: 20px;             
+  position: relative;          
+}
+
+
+.progressBasico {
+  height: 100%;                
+  background-color: #4caf50;   
+  position: relative;          
+  transition: width 0.5s ease; 
+}
+.progressIntermedio {
+  height: 100%;               
+  background-color: var(--intermedio-color);   
+  position: relative;         
+  transition: width 0.5s ease; 
+}
+
+.progress-text {
+  position: absolute;        
+  right: 10px;                
+  top: 50%;                   
+  transform: translateY(-50%); 
+  font-weight: bold;           
+  color: white;                
+  z-index: 1;                  
+}
+
 .habilidad {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--mustard-yellow); /* Fondo blanco */
   padding: 20px;
-  color: var(--sky-blue);
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 12px rgb(19, 24, 66, 0.7);
+ 
 }
 
-.habilidad:hover {
-  transform: scale(1.05); /* Efecto hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
+
 .habilidad i {
   font-size: 50px;
-  /* color: var(--mustard-yellow); */
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .habilidad h3 {
-  font-size: 18px;
-  /* color: var(--charcoal); */
+  font-size: 22px;
   margin-bottom: 5px;
-  font-weight: 600;
-}
-
-.habilidad p {
-  font-size: 14px;
-  /* color: var(--charcoal); */
+  
 }
 
 
 
-@media (max-width: 768px) {
-  .habilidades-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
+
 
 
 /* Footer */
 
 .imgFooter {
   position: relative;
-  background-image: url("../img/imgfondo6.jpg");
+  /* background-image: url("../img/imgfondo6.jpg"); */
   background-size: cover;
   background-position: center;
   /* height: 40vh; */
@@ -488,7 +530,7 @@ color: #E1DED8;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(8, 8, 8, 0.7);
+  background-color: rgba(10, 10, 10, 0.9);
 
   z-index: 1;
 }
@@ -527,7 +569,3 @@ color: #E1DED8;
   /* Ensure container is above the overlay */
   z-index: 2;
 }
-
-
-
-
