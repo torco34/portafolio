@@ -41,6 +41,7 @@ html {
   transform-origin: bottom left;
 }
 
+
 /* clases de base para aplicación */
 p {
   font-size: 18px;
@@ -130,7 +131,6 @@ section p {
   left: 0;
   right: 0;
   bottom: 0;
-  /* background-color: rgb(19, 24, 66, 0.3); */
   background-color: rgba(20, 20, 20, 0.3);
   z-index: 1;
 
@@ -142,7 +142,7 @@ section p {
   padding: 1rem;
   color: var(--charcoal);
   margin-bottom: 2rem;
-  /* width: 80%; */
+ 
 }
 
 .nav-link {
@@ -214,6 +214,7 @@ section p {
   background-size: cover;
   background-position: center;
   z-index: 5;
+ 
 }
 .imgExperiencia::before {
   content: '';
@@ -223,7 +224,6 @@ section p {
   right: 0;
   bottom: 0;
   background-color: rgba(20, 20, 20, 0.6);
-  /* background-color: rgb(19, 24, 66, 0.3); */
   z-index: -1;
 
 }
@@ -237,7 +237,6 @@ section p {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-
   color: var(--color-fondo);
 }
 

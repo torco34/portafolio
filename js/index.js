@@ -36,7 +36,7 @@ imgProjectArray.forEach(function (item) {
 
 
 
-// SESION DE LINK ESTILOS
+// SECCIÓN DE LINK ESTILOS
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -53,3 +53,28 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('.nav-link');
+    console.log(navLinks)
+    // Recupera el enlace activo desde localStorage (si existe)
+    const activeLink = localStorage.getItem('activeLink');
+    if (activeLink) {
+        const activeElement = document.querySelector(`[href="${activeLink}"]`);
+        if (activeElement) {
+            activeElement.classList.add('active-link');
+        }
+    }
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function () {
+            // Elimina la clase 'active-link' de todos los enlaces
+            navLinks.forEach(nav => nav.classList.remove('active-link'));
+
+            // Añade la clase 'active-link' al enlace clicado
+            this.classList.add('active-link');
+
+            // Guarda la ruta del enlace activo en localStorage
+            localStorage.setItem('activeLink', this.getAttribute('href'));
+        });
+    });
+});

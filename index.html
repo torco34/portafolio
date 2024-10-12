@@ -72,7 +72,8 @@
         <!-- Primero la imagen y luego el texto en pantallas grandes -->
         <div class="col-lg-6 col-md-12 d-flex justify-content-center mb-4 mb-lg-0 order-2 order-lg-1">
           <div class="container-image container d-flex bg-whit justify-content-center">
-            <img src="./img/blancoImg.jpg" alt="Foto de Torcoroma Arias" class="img-fluid rounded-circle" data-aos="fade-up"
+            <img src="./img/blancoImg.jpg" loading="lazy" alt="Foto de Torcoroma Arias" class="img-fluid rounded-circle"
+              data-aos="fade-up"
               data-aos-delay="300" />
           </div>
         </div>
@@ -175,7 +176,6 @@
                 <li>Creé componentes reutilizables (botones, cards, tablas) con nombres descriptivos.</li>
                 <li>Diseñé y desarrollé la página "Sonidos del Bosque".</li>
                 <li>Apliqué principios SOLID y buenas prácticas de desarrollo en un entorno ágil con Scrum.</li>
-
               </ul>
               <p>
                 <span class="fw-bold text-dark">Tecnologías utilizadas:</span> Vue.js, Quasar
@@ -183,24 +183,16 @@
             </div>
             </div>
         </div>
-
-
-        <div class="col-lg-5 col-md-6 mb-4 rounded p-4 d-gri imgExperiencia shadow rounded " data-aos="fade-up"
+        <div class="col-lg-5 col-md-6 mb-4 p-4 imgExperiencia shadow d-flex justify-content-center align-items-center"
+          data-aos="fade-up"
           data-aos-delay="300">
-
-
-
           <div>
             <div class=" rounded background-white-fondo shadow text-center p-4 mt-5">
               <p class="fw-bold ">La experiencia como motor de innovación</p>
               <h3 class="color-text-primary fw-bold">Forjando un camino de crecimiento</h3>
               </div>
               </div>
-
-
         </div>
-
-
       </div>
     </div>
   </section>
@@ -425,27 +417,27 @@
 
       <div class="gallery">
         <div class="gallery-item shadow card" data-aos="fade-up" data-aos-delay="100" data-modal="modal1">
-          <img src="./img/bosque1.png" alt="Proyecto 1" />
+          <img src="./img/bosque1.png" loading="lazy" alt="Proyecto 1" />
           <div class="overlay-text fw-bold">Haz click para obtener más detalle</div>
         </div>
         <div class="gallery-item shadow card" data-aos="fade-up" data-aos-delay="200" data-modal="modal2">
-          <img src="./img/talentl.png" alt="Proyecto 2" />
+          <img src="./img/talentl.png" loading="lazy" alt="Proyecto 2" />
           <div class="overlay-text fw-bold">Haz click para obtener más detalle</div>
         </div>
         <div class="gallery-item shadow card" data-aos="fade-up" data-aos-delay="300" data-modal="modal3">
-          <img src="./img/proyectN1.png" alt="Proyecto 3" />
+          <img src="./img/proyectN1.png" loading="lazy" alt="Proyecto 3" />
           <div class="overlay-text fw-bold">Haz click para obtener más detalle</div>
         </div>
         <div class="gallery-item shadow card" data-aos="fade-up" data-aos-delay="400" data-modal="modal4">
-          <img src="./img/proyecN2.png" alt="Proyecto 4" />
+          <img src="./img/proyecN2.png" loading="lazy" alt="Proyecto 4" />
           <div class="overlay-text fw-bold">Haz click para obtener más detalle</div>
         </div>
         <div class="gallery-item shadow card" data-aos="fade-up" data-aos-delay="500" data-modal="modal5">
-          <img src="./img/proyec1.png" alt="Proyecto 5" />
+          <img src="./img/proyec1.png" loading="lazy" alt="Proyecto 5" />
           <div class="overlay-text fw-bold">Haz click para obtener más detalle</div>
         </div>
         <div class="gallery-item shadow card" data-aos="fade-up" data-aos-delay="600" data-modal="modal6">
-          <img src="./img/proyectN4.png" alt="Proyecto 6" />
+          <img src="./img/proyectN4.png" loading="lazy" alt="Proyecto 6" />
           <div class="overlay-text fw-bold">Haz click para obtener más detalle</div>
         </div>
       </div>
@@ -562,8 +554,8 @@
         </div>
       </div>
       <!-- link -->
-      <div class="text-cente mt-5 p-5">
-        <a href="./pages/projects.html" class="text-white  color-text-title-primario"><strong>Ver más
+      <div class="text-cente mt-5  mb-5 ">
+        <a href="./pages/projects.html" class="btn  btn-ovalado my-2 mx-2 col-12 col-md-3 text-center"><strong>Ver más
             proyectos</strong></a>
       </div>
     </div>
@@ -615,13 +607,16 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js" async></script>
+  
+  <script src="./bootstrap/js/bootstrap.min.js" async></script>
+  <script src="./js/index.js" async></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" async></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
-  <script src="./bootstrap/js/bootstrap.min.js"></script>
-  <script src="./js/index.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init(); // Inicializa AOS
+  <script async>
+    document.addEventListener('DOMContentLoaded', function () {
+      AOS.init(); // Inicializa AOS
+    });
   </script>
 </body>
 

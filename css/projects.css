@@ -17,40 +17,19 @@ html {
 
 
 :root {
-  --color-fondo: #E1DED8;
-  --mustard-yellow: #B17457;
+  --color-fondo: #FBF6E2;
+  --mustard-yellow: #E68369;
   --charcoal: #5f5e5d;
   --sky-blue: #fff;
-  --mustard-pink: #cea592;
+  --mustard-pink: #ECCEAE;
+
 }
 
 .color-text-primary {
   color: var(--mustard-yellow);
 }
 
-.boton-ovalado {
-  background-color: var(--mustard-yellow);
-  border-radius: 30px;
-  padding: 10px 30px;
-  font-weight: 600;
-  color: var(--sky-blue);
-  text-decoration: none;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
-  transition: all 0.3s ease;
 
-
-}
-
-.boton-ovalado:hover {
-
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
-  transform: translateY(-3px);
-  background-color: var(--mustard-pink);
-  color: var(--sky-blue);
-
-
-
-}
 
 .content {
 
@@ -95,7 +74,7 @@ html {
 .project-card:nth-child(-n+6) {
   margin-bottom: 20px;
   padding: 20px;
-  /* Ajusta según sea necesario */
+
   margin-bottom: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -103,8 +82,11 @@ html {
 
 }
 
-.project-info {
-  /* height: 200px; */
+.div-button{
+  height: 200px;
+  display: flex;
+  align-items: center;
+  /* background-color: #ECCEAE; */
 }
 
 .text-container {
@@ -139,10 +121,13 @@ html {
 
 
 .imgfondo {
+  position: relative;
   background-image: url("../img/compu.jpg");
   background-size: cover;
   background-position: center;
-  height: 50vh;
+  position: relative;
+  height: 60vh;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -156,33 +141,13 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(17, 16, 16, 0.3);
+ 
+  background: rgba(17, 16, 16, 0.7);
   z-index: -1;
 
 }
 
-.section-contacto {
-  position: relative;
-  background-image: url("../img/fondo.jpg");
-  background-size: cover;
-  background-position: center;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
 
-.section-contacto::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(8, 8, 8, 0.7);
-  z-index: 1;
-}
 
 .icon-link {
   display: inline-block;
@@ -197,7 +162,7 @@ html {
   padding: 10px;
   margin-bottom: 8px;
 }
-
+/* icons footer */
 .icon-link a {
   text-decoration: none;
   color: var(--sky-blue);
@@ -209,16 +174,23 @@ html {
 
 }
 
-.container {
-  position: relative;
-  z-index: 2;
-}
 
-.div-button {
-  height: 150px;
-
-}
-
-.div-button a {
+.btn-ovalado {
+  background-color: var(--mustard-yellow);
+  color: var(--color-fondo);
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-weight: 600;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
   text-decoration: none;
+
+  border: solid 2px transparent;
+}
+
+.btn-ovalado:hover {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3px);
+  background-color: var(--mustard-pink);
+
 }
