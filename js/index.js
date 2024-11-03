@@ -5,14 +5,14 @@
 // Función para abrir modal
 const openModal = (modalId) => {
     const modal = document.getElementById(modalId);
-    console.log(modal)
+
     modal.style.display = "block";
 }
 
 // Función para cerrar modal
 const closeModal = (modalId) => {
     const modal = document.getElementById(modalId);
-    console.log(modal.style.display)
+
     modal.style.display = "none";
 }
 
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('.nav-link');
-    console.log(navLinks)
+
     // Recupera el enlace activo desde localStorage (si existe)
     const activeLink = localStorage.getItem('activeLink');
     if (activeLink) {
@@ -67,13 +67,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     navLinks.forEach(link => {
         link.addEventListener('click', function () {
-            // Elimina la clase 'active-link' de todos los enlaces
+
             navLinks.forEach(nav => nav.classList.remove('active-link'));
 
-            // Añade la clase 'active-link' al enlace clicado
+
             this.classList.add('active-link');
 
-            // Guarda la ruta del enlace activo en localStorage
             localStorage.setItem('activeLink', this.getAttribute('href'));
         });
     });
