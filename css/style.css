@@ -23,11 +23,12 @@ html {
 
 }
 :root {
-  --color-fondo: #FBF6E2;
-  --mustard-yellow: #E68369;
-  --charcoal: #5f5e5d;
-  --sky-blue: #fff;
-  --mustard-pink: #ECCEAE;
+/* Definición de variables CSS */
+  --color-fondo: #f7e8d3;
+  --mustard-yellow: #fac4b7;
+  --charcoal: #0c0c0c;
+  --color-blanco: #fff;
+  --mustard-pink: #fca48e;
   --basico-color: #4caf50; 
   --intermedio-color: #FFC107;
   --avanzado-color: #E74C3C;
@@ -51,14 +52,15 @@ p {
 
 /* color títulos */
 .color-text-title-primario {
-  color: var(--mustard-yellow);
+  color: var(--mustard-pink);
   text-decoration: none;
 }
 
 
 /* color primario */
 .color-text-primary {
-  color: var(--mustard-yellow);
+
+  color: var(--mustard-pink);
 }
 
 /* color negro texto */
@@ -68,12 +70,9 @@ p {
 
 /* color texto blanco */
 .color-text-white-fondo {
-  color: var(--color-fondo);
+  color: var(--color-blanco);
 }
 
-.text-fondo-color {
-  color: var(--color-fondo);
-}
 
 .background-white-fondo {
   background-color: var(--color-fondo);
@@ -131,7 +130,8 @@ section p {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(20, 20, 20, 0.3);
+  background-color: rgba(20, 20, 20, 0.2);
+ 
   z-index: 1;
 
 }
@@ -177,34 +177,36 @@ section p {
 
 /* estilos de primer sección*/
 .container-image {
-  width: 500px;
+  width: 600px;
+  height: auto;
 
 }
 
 /* estilos del button  */
 .btn-ovalado {
-  background-color: var(--mustard-yellow);
-  color: var(--color-fondo);
+  color: var(--mustard-pink);
   border-radius: 30px;
   padding: 10px 30px;
   font-weight: 600;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease;
   text-decoration: none;
-  border: solid 2px transparent;
+  border: solid 1px ;
 }
 
 .btn-ovalado:hover {
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
   transform: translateY(-3px);
+  color: white;
   background-color: var(--mustard-pink);
 
 }
-
-.btn-certificado {
-  margin-top: 40px;
-  margin-bottom: 30px;
+.containerBoton {
+ padding: 20px;
+  background-color: var( --color-fondo);
 }
+
+
 /* Experiencia */
 
 .imgExperiencia{
@@ -223,7 +225,7 @@ section p {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(20, 20, 20, 0.6);
+ 
   z-index: -1;
 
 }
@@ -240,7 +242,7 @@ section p {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  color: var(--color-fondo);
+color: white;
 }
 
 .section-estudios::before {
@@ -250,9 +252,10 @@ section p {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(20, 20, 20, 0.6);
+  background-color: #fca48e;
   /* background-color: rgb(19, 24, 66, 0.6); */
   z-index: 1;
+  color: white;
 
 }
 
@@ -261,9 +264,27 @@ section p {
   z-index: 2;
 
 }
+/* sesiones de esi5lo botones ESTUDIO*/
 
+.btn-color-study {
+  color: var(--mustard-pink);
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-weight: 600;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border: solid 1px ;
+  background-color: var(--color-blanco);
+}
+.btn-certificado {
+  margin-top: 40px;
 
-
+  margin-bottom: 30px;
+  color: var(--mustard-pink);
+  border: solid 1px ;
+ 
+}
 
 /* SECCIÓN PROYECTOS */
 
@@ -290,7 +311,7 @@ section p {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(20, 20, 20, 0.6);
+  background-color: #f7e8d3;
   /* background-color: rgb(19, 24, 66, 0.6); */
   z-index: 1;
 
@@ -420,6 +441,12 @@ section p {
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 20px;
 }
+.card-habilidad {
+ 
+  background-color: var(--color-blanco);
+ 
+ 
+}
 .color-vue{
   color: #08c384;
 }
@@ -505,10 +532,6 @@ section p {
   margin-bottom: 5px;
   
 }
-
-
-
-
 
 
 /* Footer */
