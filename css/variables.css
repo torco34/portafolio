@@ -1,0 +1,41 @@
+/* variables.css */
+
+:root {
+  /* 🎨 Colores */
+  --primary-color: #2c2c2c;
+  --color-dark: #1a1a1a;
+  --secondary-color: #fac4b7;
+  --color-pink: #fca48e;
+  --background-color: #f8f9fa;
+  --color-fondo-claro: #f5f5f5;
+  --text-color: #3b3b3b;
+  --vue-color: #41b883;
+  --react-color: #61dbfb;
+  --js-color: #f0db4f;
+  --html-color: #e34c26;
+  --css-color: #3b82f6;
+  --node-color: #08c35c;
+  --bootstrap-color: #7952b3;
+  --basico-color: #4caf50;
+  --intermedio-color: #ffc107;
+  --avanzado-color: #e74c3c;
+
+  /* 🅰️ Tipografía */
+  --fuente-principal: "Roboto", sans-serif;
+  --fuente-secundaria: "Open Sans", sans-serif;
+
+  /* 📐 Espaciado */
+  --espaciado-xs: 4px;
+  --espaciado-sm: 8px;
+  --espaciado-md: 16px;
+  --espaciado-lg: 32px;
+
+  /* 🔠 Tamaños de texto */
+  --texto-sm: 0.875rem;
+  --texto-md: 1rem;
+  --texto-lg: 1.25rem;
+  --texto-xl: 2rem;
+
+  /* ⏱️ Transiciones */
+  --transicion: all 0.3s ease;
+}

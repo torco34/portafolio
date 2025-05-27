@@ -1,0 +1,277 @@
+/* ===================
+   Header y Navegación
+====================== */
+
+.navContainer {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 1rem 2rem;
+  color: var(--charcoal);
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background-color: var(--color-fondo);
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 1rem;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-logo {
+  font-weight: bold;
+  color: var(--color-fondo-claro);
+}
+
+.nav-menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  position: relative;
+  font-size: 18px;
+  color: var(--color-fondo-claro);
+  font-weight: 500;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--secondary-color);
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--secondary-color);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.nav-link:hover::after,
+.nav-link.active-link::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/* ================
+     Sección textos colores
+  =================== */
+.btn-ovalado {
+  background-color: var(--color-pink);
+  color: var(--background-color);
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  border: none;
+}
+
+.btn-ovalado:hover {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  transform: translateY(-6px);
+  box-shadow: 0 8px 30px rgba(252, 251, 251, 0.3);
+}
+
+/* ================
+     Sección de habilidades
+  =================== */
+
+.color-vue {
+  color: #41b883;
+}
+.color-react {
+  color: #61dbfb;
+}
+.color-js {
+  color: #f0db4f;
+}
+.color-html {
+  color: #e34c26;
+}
+.color-css {
+  color: #3b82f6;
+  font-size: 50%;
+}
+.color-node {
+  color: #08c35c;
+}
+.color-bootstrap {
+  color: #7952b3;
+}
+.color-basico {
+  color: var(--basico-color);
+}
+.color-intermedio {
+  color: var(--intermedio-color);
+}
+.progress-texts {
+  color: #ccccca;
+}
+.progress-bar {
+  width: 100%;
+  background-color: #ccccca;
+  border-radius: 25px;
+  overflow: hidden;
+  height: 20px;
+  position: relative;
+}
+/* ===================
+   Sección de habilidades
+====================== */
+.color-text-primary {
+  color: var(--color-pink);
+}
+.section-habilidades {
+  background: var(--color-dark);
+  padding: 60px 0;
+}
+.progressBasico,
+.progressIntermedio {
+  height: 100%;
+  transition: width 0.5s ease;
+}
+.card-habilidad {
+  background-color: #2a2a2a;
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+/* ================
+     SETION DE LAS CARD
+  =================== */
+
+.box {
+  color: var(--color-fondo-claro);
+  /* border-radius: 1rem; */
+  background-color: var(--text-color);
+  border-radius: 16px;
+  /* box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2); */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+/* Contenedores */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1050;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(10, 10, 10, 0.8); /* Fondo oscuro translúcido */
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+/* .itemgallery- {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  background-color: #c92f2f;
+} */
+
+.gallery-item:hover {
+  transform: scale(1.03);
+}
+
+.custom-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+}
+
+.custom-modal.active {
+  display: flex;
+}
+
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  position: relative;
+  max-width: 600px;
+  width: 90%;
+  z-index: 1060;
+}
+
+.gallery-item {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.footer {
+  background-color: var(--text-color);
+  color: white;
+}
+.footer-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  transition: var(--transicion);
+}
+
+.footer-icon:hover {
+  transform: scale(1.1);
+  color: var(--color-pink);
+}
