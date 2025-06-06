@@ -30,16 +30,17 @@
 <body>
   <header>
     <nav class="navbar navContainer navbar-expand-lg fixed-top">
-      <div class="container d-flex justify-content-between align-items-center">
-        <button class="navbar-toggler d-lg-none me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      <div class="container d-flex justify-content-between text-light align-items-center">
+        <button class="navbar-toggler z-index text-light d-lg-none text-light me-2" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon text-light"></span>
         </button>
         <!-- Enlace de la marca -->
-        <div class="">
-          <a class="navbar-brand  nav-logo fw-bold" href="#inicio">Torcoroma Arias</a>
-          <span class=" fw-bold color-text-primary d-none d-xl-inline">Full Stack Web Developer</span>
-        </div>
+      <div class="d-flex flex-column flex-wrap">
+        <a class="navbar-brand nav-logo fw-bold" href="#inicio">Torcoroma Arias</a>
+        <span class="fw-bold color-text-primary d-none d-xl-inline">Full Stack Web Developer</span>
+      </div>
         <!-- Contenido del menú -->
         <div class="collapse navbar-collapse" id="navbarNav">
 
@@ -73,13 +74,13 @@
     <div class="container">
       <div class="row">
         <!-- Primero la imagen y luego el texto en pantallas grandes -->
-        <div class="col-lg-6 col-md-12 d-flex justify-content-center mb-4 mb-lg-0 order-2 order-lg-1">
+        <div class="col-lg-6 col-md-12 d-flex justify-content-center mb-4 mb-lg-0 order-1 order-lg-1">
           <div class="container-image container d-flex bg-whit justify-content-center">
             <img src="./img/blancoImg.jpg" loading="lazy" alt="Foto de Torcoroma Arias" class="img-fluid rounded-circle"
               data-aos="fade-up" data-aos-delay="300" />
           </div>
         </div>
-        <div class="col-lg-6 rounded containerBoton col-md-12 containerText text-start  order-lg-2">
+        <div class="col-lg-6 rounded containerBoton col-md-12 containerText text-start order-2 order-lg-2">
           <div class="mt-5 ">
             <h1 class="display-4 mb-3 color-text-  fw-bold" data-aos="fade-up" data-aos-delay="500">
               Hello!
