@@ -2,29 +2,23 @@
    Header y Navegación
 ====================== */
 
+
 .navContainer {
-  background-color: rgba(0, 0, 0, 0.9);
-  padding: 1rem 2rem;
-  color: var(--charcoal);
-  position: sticky;
-  top: 0;
-  backdrop-filter: blur(10px);
-  position: fixed;
-  /* width: 100%; */
-  z-index: 999;
   background-color: var(--color-fondo);
   padding: 1rem 2rem;
+  color: var(--charcoal);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 7;
+  backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
   gap: 1rem;
+    width: 100vw; 
   border-bottom: 1px solid var(--secondary-color);
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .nav-logo {
@@ -138,11 +132,40 @@
 /* ===================
    Sección de habilidades
 ====================== */
+
+.text-center.mb-5 {
+  position: relative;
+  z-index: 10;
+}
 .color-text-primary {
   color: var(--color-pink);
 }
+
+/* nuevo */
+.experiencia-header {
+  position: relative;
+  z-index: 10;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.titulo-experiencia {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--color-fondo-claro); /* blanco u otro color claro */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* mejora contraste */
+}
+
+.subtitulo-experiencia {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-pink); /* o usa var(--secondary-color) si prefieres otro */
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+}
+
 .section-habilidades {
-  background: var(--color-dark);
+  /* background: var(--color-dark); */
   padding: 60px 0;
 }
 .progressBasico,
@@ -159,7 +182,7 @@
   transition: transform 0.3s;
 }
 /* ================
-     SETION DE LAS CARD
+     SECTION DE LAS CARD
   =================== */
 
 .box {
@@ -169,6 +192,7 @@
   border-radius: 16px;
   /* box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2); */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   
 }
 .card-grid {
   display: grid;
