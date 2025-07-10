@@ -1,6 +1,9 @@
 /* ===================
    Header y Navegación
 ====================== */
+#inicio {
+  padding-top: 80px; /* O lo que mida tu navbar */
+}
 
 
 .navContainer {
@@ -142,7 +145,7 @@
 }
 
 /* nuevo */
-.experiencia-header {
+/* .experiencia-header {
   position: relative;
   z-index: 10;
   padding-top: 2rem;
@@ -153,19 +156,19 @@
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: var(--color-fondo-claro); /* blanco u otro color claro */
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* mejora contraste */
+  color: var(--color-fondo-claro); /* blanco u otro color claro 
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* mejora contraste 
 }
 
 .subtitulo-experiencia {
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--color-pink); /* o usa var(--secondary-color) si prefieres otro */
+  color: var(--color-pink); /* o usa var(--secondary-color) si prefieres otro 
   text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
 }
 
 .section-habilidades {
-  /* background: var(--color-dark); */
+  background: var(--color-dark);
   padding: 60px 0;
 }
 .progressBasico,
@@ -174,13 +177,120 @@
   transition: width 0.5s ease;
 }
 .card-habilidad {
-  background-color: #2a2a2a;
+   background-color: var(--text-color);
   border-radius: 16px;
   padding: 30px;
   text-align: center;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s;
 }
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  
+} */
+
+/* === Grid para las cards === */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+/* === Card de cada habilidad === */
+.card-habilidad {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-habilidad:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* === Icono o imagen dentro de la card === */
+.card-habilidad i,
+.card-habilidad img {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* === Barra de progreso === */
+.progress-bar {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  height: 15px;
+  margin: 1rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* === Niveles visuales (basico/intermedio/etc) === */
+.progressBasico,
+.progressIntermedio,
+.progressAvanzado {
+  height: 100%;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: white;
+}
+
+.progressBasico {
+  background-color: #6c757d; /* gris */
+}
+
+.progressIntermedio {
+   background-color: #6c757d;
+}
+
+.progressAvanzado {
+  background-color: #198754; /* verde Bootstrap */
+}
+
+/* Texto dentro de la barra */
+.progress-text {
+  z-index: 1;
+  font-size: 0.75rem;
+  color: #fff;
+}
+.treita {
+ width: 30%;
+}
+.sesenta {
+ width: 60%;
+}
+/* Etiqueta del nivel debajo de la barra */
+.progress-texts {
+  margin-top: 0.5rem;
+  color: #ccc;
+  width: 60%;
+}
+
+/* Colores personalizados para íconos (puedes ajustar más si quieres) */
+.color-vue {
+  color: #42b883;
+}
+.color-react {
+  color: #61dbfb;
+}
+.color-js {
+  color: #f0db4f;
+}
+.color-html {
+  color: #e34c26;
+}
+
 /* ================
      SECTION DE LAS CARD
   =================== */
@@ -194,11 +304,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
    
 }
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-}
+
 /* Contenedores */
 
 .modal {
