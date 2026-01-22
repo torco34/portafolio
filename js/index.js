@@ -89,6 +89,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('.nav-link');
     const navbarCollapse = document.querySelector('.navbar-collapse');

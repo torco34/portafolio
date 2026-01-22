@@ -1,14 +1,15 @@
-/* body {
+body {
   font-family: var(--fuente-principal);
   background-color: var(--color-fondo);
   color: var(--charcoal);
   line-height: 1.6;
   font-size: 16px;
-  
-} */
+  overflow-x: hidden;
+}
 
 img {
-  width: 100vw; 
+  width: 100%;
+  max-width: 100%;
   display: block;
 }
 

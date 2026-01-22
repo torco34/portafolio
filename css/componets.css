@@ -5,7 +5,6 @@
   padding-top: 80px; /* O lo que mida tu navbar */
 }
 
-
 .navContainer {
   background-color: var(--color-fondo);
   padding: 1rem 2rem;
@@ -14,19 +13,19 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 7;
+  z-index: 1000;
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-    width: 100vw; 
+  width: 100vw;
+  padding-bottom: 0.8rem;
   border-bottom: 1px solid var(--secondary-color);
   box-sizing: border-box;
 }
 
 .nav-logo {
   font-weight: bold;
-
   color: var(--color-fondo-claro);
 }
 
@@ -38,23 +37,29 @@
 .nav-link {
   text-decoration: none;
   position: relative;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--color-fondo-claro);
   font-weight: 500;
   padding: 0.5rem;
   transition: color 0.3s ease;
+  overflow: hidden;
+}
+.nav-link {
 }
 
 .nav-link:hover {
   color: var(--secondary-color);
+  overflow: hidden;
 }
 .nav-link::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 4px;
   width: 100%;
   height: 3px;
+  height: 2px;
+  border-radius: 2px;
   background-color: var(--secondary-color);
   transform: scaleX(0);
   transform-origin: bottom right;
@@ -69,12 +74,13 @@
 /* ================
      Sección textos colores
   =================== */
+
 .btn-ovalado {
   background-color: var(--color-pink);
   color: var(--background-color);
-  padding: 12px 24px;
   border-radius: 50px;
   font-weight: bold;
+  padding: 10px;
   text-decoration: none;
   display: inline-block;
   transition: all 0.3s ease;
@@ -86,13 +92,44 @@
   background-color: var(--secondary-color);
   color: var(--background-color);
   transform: translateY(-6px);
-  box-shadow: 0 8px 30px rgba(252, 251, 251, 0.3);
+  box-shadow: 0 8px 30px rgba(252, 251, 251, 0.6);
+}
+/* trabajo de proyecto nuevo */
+
+.imgtrabajo3 {
+  position: relative;
+  background-image: url("../img/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
+.imgtrabajo3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 12px;
+}
+.img-content {
+  position: relative;
+  z-index: 10;
+  color: white;
+  padding: 1.5rem;
+  transition: all 0.4s ease;
+}
+.img-content:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
 /* ================
      Sección de habilidades
   =================== */
-
+.wordpress {
+  color: #000;
+  background-color: #ccc;
+}
 .color-vue {
   color: #41b883;
 }
@@ -107,7 +144,7 @@
 }
 .color-css {
   color: #3b82f6;
-  font-size: 50%;
+  /* font-size: 50%; */
 }
 .color-node {
   color: #08c35c;
@@ -143,53 +180,11 @@
 .color-text-primary {
   color: var(--color-pink);
 }
-
-/* nuevo */
-/* .experiencia-header {
+.experiencia-header {
   position: relative;
-  z-index: 10;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-
-.titulo-experiencia {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: var(--color-fondo-claro); /* blanco u otro color claro 
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* mejora contraste 
-}
-
-.subtitulo-experiencia {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--color-pink); /* o usa var(--secondary-color) si prefieres otro 
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
-}
-
-.section-habilidades {
-  background: var(--color-dark);
-  padding: 60px 0;
-}
-.progressBasico,
-.progressIntermedio {
-  height: 100%;
-  transition: width 0.5s ease;
-}
-.card-habilidad {
-   background-color: var(--text-color);
-  border-radius: 16px;
-  padding: 30px;
-  text-align: center;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s;
-}
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  
-} */
 
 /* === Grid para las cards === */
 .card-grid {
@@ -203,10 +198,16 @@
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 1rem;
-  padding: 2rem 1.5rem;
-  text-align: center;
+  padding: 1rem;
+  /* display: flex; */
+  display: inline;
+  justify-items: center;
+  justify-content: center;
+  /* text-align: center; */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .card-habilidad:hover {
@@ -219,16 +220,9 @@
 .card-habilidad img {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-}
-
-/* === Barra de progreso === */
-.progress-bar {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50px;
-  height: 15px;
-  margin: 1rem 0;
-  position: relative;
-  overflow: hidden;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
 }
 
 /* === Niveles visuales (basico/intermedio/etc) === */
@@ -251,7 +245,7 @@
 }
 
 .progressIntermedio {
-   background-color: #6c757d;
+  background-color: #6c757d;
 }
 
 .progressAvanzado {
@@ -265,10 +259,10 @@
   color: #fff;
 }
 .treita {
- width: 30%;
+  width: 30%;
 }
 .sesenta {
- width: 60%;
+  width: 60%;
 }
 /* Etiqueta del nivel debajo de la barra */
 .progress-texts {
@@ -301,95 +295,103 @@
   background-color: var(--text-color);
   border-radius: 16px;
   /* box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2); */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-   
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 /* Contenedores */
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1050;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(10, 10, 10, 0.8); /* Fondo oscuro translúcido */
-  backdrop-filter: blur(5px);
-}
-
-.modal-content {
-  background-color: #fff;
-  margin: 10% auto;
-  padding: 2rem;
-  border-radius: 12px;
-  width: 90%;
-  max-width: 600px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-}
-.gallery {
+/* GRID GENERAL */
+.gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-}
-/* .itemgallery- {
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  background-color: #c92f2f;
-} */
-
-.gallery-item:hover {
-  transform: scale(1.03);
+  justify-items: center;
 }
 
-.custom-modal {
-  position: fixed;
-  inset: 0;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 1050;
-}
-
-.custom-modal.active {
-  display: flex;
-}
-
-.modal-overlay {
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.modal-content {
-  position: relative;
-  max-width: 600px;
-  width: 90%;
-  z-index: 1060;
-}
-
-.gallery-item {
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-  border-radius: 1rem;
-  transition: transform 0.3s ease;
-}
-
-.gallery-item img {
+/* CARD */
+.simple-card {
   width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 1rem;
-  transition: transform 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100%;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 }
 
-.gallery-item:hover img {
-  transform: scale(1.05);
+.simple-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 2rem;
 }
 
+/* IMAGEN */
+.simple-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* CONTENIDO */
+.simple-card .card-body {
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.simple-card h5 {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.simple-card p {
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+/* BOTONES */
+.card-buttons {
+  margin-top: auto; /* EMPUJA LOS BOTONES AL FONDO */
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-buttons .btn {
+  padding: 6px 14px;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* CELULAR → 1 POR FILA */
+@media (max-width: 576px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
 .footer {
   background-color: var(--text-color);
   color: white;
@@ -406,4 +408,11 @@
 .footer-icon:hover {
   transform: scale(1.1);
   color: var(--color-pink);
+}
+.botones {
+  height: 10vh;
+  width: 100%;
+}
+.body-text {
+  height: 55vh;
 }
