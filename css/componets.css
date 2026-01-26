@@ -44,21 +44,19 @@
   transition: color 0.3s ease;
   overflow: hidden;
 }
-.nav-link {
-}
-
 .nav-link:hover {
   color: var(--secondary-color);
-  overflow: hidden;
+}
+.text-color-active {
+  color: var(--secondary-color);
 }
 .nav-link::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: 4px;
-  width: 100%;
+  width: 100px;
   height: 3px;
-  height: 2px;
   border-radius: 2px;
   background-color: var(--secondary-color);
   transform: scaleX(0);
@@ -66,10 +64,8 @@
   transition: transform 0.3s ease-out;
 }
 
-.nav-link:hover::after,
 .nav-link.active-link::after {
   transform: scaleX(1);
-  transform-origin: bottom left;
 }
 /* ================
      Sección textos colores
