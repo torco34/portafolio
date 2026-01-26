@@ -56,3 +56,49 @@
   border-radius: 50%;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
+/* botones responsivos */
+.btn-toggle {
+  background-color: var(--color-primario);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn-toggle i {
+  color: white;
+}
+
+.btn-toggle:hover {
+  background-color: #a53860; /* morado más oscuro */
+  transform: scale(1.05);
+}
+
+.btn-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgb(165, 56, 96);
+}
+/* ================ 
+   Sección experiencia 
+  =================== */
+
+/* Imagen principal del hero */
+.hero-img {
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .hero-img {
+    width: 180px;
+  }
+}
+
+/* Móvil */
+@media (max-width: 576px) {
+  .hero-img {
+    width: 150px;
+  }
+}
