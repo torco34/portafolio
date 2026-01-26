@@ -4,6 +4,10 @@
 #inicio {
   padding-top: 80px; /* O lo que mida tu navbar */
 }
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
 
 .navContainer {
   background-color: var(--color-fondo);
